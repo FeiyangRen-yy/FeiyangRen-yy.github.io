@@ -1,0 +1,666 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feiyang Ren | PhD Researcher</title>
+    <!-- Deployment: set SITE_BASE to '' for root, or e.g. '/strava' if the site is in a subpath (e.g. GitHub Pages: username.github.io/repo/) -->
+    <script>window.SITE_BASE = '';</script>
+    <!-- Tailwind CSS via CDN (for development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Suppress Tailwind CDN warning
+        if (window.tailwind) {
+            console.log = (function(originalLog) {
+                return function(...args) {
+                    if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) {
+                        return; // Suppress warning
+                    }
+                    originalLog.apply(console, args);
+                };
+            })(console.log);
+        }
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+    <script src="./gpx-data.js"></script>
+    <script src="./media-mapping.js"></script>
+</head>
+<body class="text-white/90 antialiased selection:bg-purple-400/30 selection:text-white min-h-screen flex justify-center p-4 md:p-12 lg:p-20">
+
+    <!-- Main Container -->
+    <div class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-12 relative">
+
+        <!-- Left Sidebar / Fixed Info (Sticky on Desktop) -->
+        <aside class="lg:col-span-4 lg:sticky lg:top-20 lg:h-[calc(100vh-10rem)] flex flex-col justify-between">
+            <div class="space-y-8">
+                <!-- Profile Photo Wrapper: default Portrait, hover shows IMG_2438 -->
+                <div class="relative w-32 h-32 md:w-40 md:h-40 group">
+                    <!-- Glow effect -->
+                    <div class="absolute inset-0 bg-white rounded-full blur-[2px] opacity-20 group-hover:opacity-30 transition-opacity duration-500 scale-105"></div>
+                    <div class="absolute inset-0 bg-white rounded-full p-1 shadow-2xl overflow-hidden">
+                        <img src="Portrait.JPG" alt="Feiyang Ren" class="absolute inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] object-cover rounded-full transition-opacity duration-500 group-hover:opacity-0">
+                        <img src="IMG_2438.jpg" alt="Feiyang Ren" class="absolute inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] object-cover rounded-full opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                    </div>
+                </div>
+
+                <!-- Identity -->
+                <div class="space-y-2">
+                    <h1 class="text-4xl md:text-5xl font-medium tracking-tight text-white">Feiyang Ren</h1>
+                    <p class="text-lg text-white/60 font-light tracking-wide">PhD Student &amp; Researcher</p>
+                </div>
+
+                <!-- Navigation Tabs -->
+                <nav class="flex flex-col space-y-2 w-full max-w-xs">
+                    <button onclick="switchTab('home')" id="btn-home" class="group flex items-center justify-between px-4 py-3 rounded-lg bg-white/10 border border-white/5 text-left transition-all hover:bg-white/15 active:scale-[0.98]">
+                        <span class="text-sm font-medium tracking-wide">About &amp; Research</span>
+                        <iconify-icon icon="solar:home-smile-linear" width="20" stroke-width="1.5" class="text-white/70 group-hover:text-white"></iconify-icon>
+                    </button>
+                    <button onclick="switchTab('resume')" id="btn-resume" class="group flex items-center justify-between px-4 py-3 rounded-lg hover:bg-white/5 border border-transparent text-left transition-all text-white/60 hover:text-white active:scale-[0.98]">
+                        <span class="text-sm font-medium tracking-wide">Curriculum Vitae</span>
+                        <iconify-icon icon="solar:document-text-linear" width="20" stroke-width="1.5" class="text-white/50 group-hover:text-white"></iconify-icon>
+                    </button>
+                    <!-- New Cycling Tab -->
+                    <button onclick="switchTab('cycling')" id="btn-cycling" class="group flex items-center justify-between px-4 py-3 rounded-lg hover:bg-white/5 border border-transparent text-left transition-all text-white/60 hover:text-white active:scale-[0.98]">
+                        <span class="text-sm font-medium tracking-wide">What Else</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="text-white/50 group-hover:text-white">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M10.577 8.704C11.21 7.568 11.527 7 12 7s.79.568 1.423 1.704l.164.294c.18.323.27.484.41.59c.14.107.316.147.665.226l.318.072c1.23.278 1.845.417 1.991.888c.147.47-.273.96-1.111 1.941l-.217.254c-.238.278-.357.418-.41.59c-.055.172-.037.358 0 .73l.032.338c.127 1.308.19 1.962-.193 2.253c-.383.29-.958.026-2.11-.504l-.298-.138c-.327-.15-.49-.226-.664-.226c-.173 0-.337.076-.664.226l-.298.138c-1.152.53-1.727.795-2.11.504c-.383-.29-.32-.945-.193-2.253l.032-.338c.037-.372.055-.558 0-.73c-.053-.172-.172-.312-.41-.59l-.217-.254c-.838-.98-1.258-1.47-1.111-1.941c.146-.47.76-.61 1.99-.888l.319-.072c.35-.08.524-.119.665-.225c.14-.107.23-.268.41-.59z" />
+                                <path stroke-linecap="round" d="M12 2v2m0 16v2M2 12h2m16 0h2M6 18l.343-.343M17.657 6.343L18 6m0 12l-.343-.343M6.343 6.343L6 6" />
+                            </g>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Footer / Contact on Sidebar -->
+            <div class="mt-8 lg:mt-0 pt-8 border-t border-white/10 space-y-3">
+                <a href="mailto:mbvc0637@leeds.ac.uk?subject=Contact" class="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors group">
+                    <iconify-icon icon="solar:letter-linear" width="18" stroke-width="1.5"></iconify-icon>
+                    <span class="group-hover:translate-x-1 transition-transform">mbvc0637@leeds.ac.uk</span>
+                </a>
+
+                <a href="https://scholar.google.com/citations?user=BLUy9i4AAAAJ&hl=en" target="_blank" class="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors group">
+                    <iconify-icon icon="solar:link-minimalistic-2-linear" width="18" stroke-width="1.5"></iconify-icon>
+                    <span class="group-hover:translate-x-1 transition-transform">Google Scholar</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/feiyang-ren-yangyang" target="_blank" class="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors group">
+                    <iconify-icon icon="solar:link-minimalistic-2-linear" width="18" stroke-width="1.5"></iconify-icon>
+                    <span class="group-hover:translate-x-1 transition-transform">LinkedIn Profile</span>
+                </a>
+
+                <a href="https://www.google.com/maps?q=Leeds+UK" target="_blank" class="flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors group">
+                    <iconify-icon icon="solar:map-point-linear" width="18" stroke-width="1.5"></iconify-icon>
+                    <span class="group-hover:translate-x-1 transition-transform">Leeds, UK</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Right Content Area -->
+        <main class="lg:col-span-8 relative">
+            
+            <!-- HOME SECTION -->
+            <div id="home-section" class="fade-enter-active space-y-12 pb-20">
+                
+                <!-- Introduction -->
+                <section class="space-y-6">
+                    <h2 class="text-2xl font-medium tracking-tight text-white">Biography</h2>
+                    <p class="text-base md:text-lg leading-relaxed text-white/80 font-light">
+                        I’m a first-year PhD student at the <a href="https://mobscilab.com/" target="_blank" class="text-white font-medium hover:text-purple-300 transition-colors">Mobility Science Lab</a>, supervised by <a href="https://environment.leeds.ac.uk/geography/staff/1003/dr-roger-beecham" target="_blank" class="text-white font-medium hover:text-purple-300 transition-colors">Dr. Roger Beecham</a> and <a href="https://environment.leeds.ac.uk/geography/staff/9293/professor-ed-manley" target="_blank" class="text-white font-medium hover:text-purple-300 transition-colors">Prof. Ed Manley</a>. My research focuses on social diffusion, especially how policy interventions shape people’s decisions and travel behaviour, and links with the <a href="https://in-fuze.org.uk/" target="_blank" class="text-white font-medium hover:text-purple-300 transition-colors">INFUZE</a> project. I aim to explore the dynamics of mobility transitions using computational and data-driven methods.
+                    </p>
+                    
+                    <!-- Call to Action Card -->
+                    <a href="https://in-fuze.org.uk/" target="_blank" class="block group relative overflow-hidden rounded-xl bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-1">INFUZE</h3>
+                                <p class="text-sm text-white/60">Inspiring Futures for Zero Carbon Mobility</p>
+                            </div>
+                            <div class="bg-white/10 p-2 rounded-full group-hover:bg-white group-hover:text-purple-900 transition-colors">
+                                <iconify-icon icon="solar:arrow-right-up-linear" width="20" stroke-width="1.5"></iconify-icon>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- Brief Highlights -->
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-6 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/10">
+                        <iconify-icon icon="solar:graph-up-linear" width="32" class="mb-4 text-purple-300"></iconify-icon>
+                        <h3 class="text-base font-medium mb-2">Research Focus</h3>
+                        <p class="text-sm text-white/60 font-light">Social diffusion and the role of the built environment in shaping travel behaviour and mobility transitions under policy interventions.</p>
+                    </div>
+                    <div class="p-6 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/10">
+                        <iconify-icon icon="solar:code-2-linear" width="32" class="mb-4 text-purple-300"></iconify-icon>
+                        <h3 class="text-base font-medium mb-2">Methods &amp; Tools</h3>
+                        <p class="text-sm text-white/60 font-light">Network analysis, spatial modelling, and machine learning for urban and behavioural data.</p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- RESUME SECTION -->
+            <div id="resume-section" class="hidden-content space-y-16 pb-20">
+                
+                <div class="flex items-center justify-between border-b border-white/10 pb-6">
+                    <h2 class="text-2xl font-medium tracking-tight">Curriculum Vitae</h2>
+                    <a href="./Feiyang%20Ren%20CV.pdf" download="Feiyang_Ren_CV.pdf" class="text-xs font-medium uppercase tracking-widest text-white/50 border border-white/20 px-3 py-1 rounded hover:bg-white/10 transition inline-block">Download PDF</a>
+                </div>
+
+                <!-- Education -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-purple-300">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 10.143C4 5.646 7.582 2 12 2s8 3.646 8 8.143c0 4.462-2.553 9.67-6.537 11.531a3.45 3.45 0 0 1-2.926 0C6.553 19.812 4 14.606 4 10.144Z" />
+                                <path d="M11.224 6.636a2.28 2.28 0 0 1 1.552 0l2.342.856c.51.186.51.83 0 1.016l-2.342.856a2.28 2.28 0 0 1-1.552 0l-2.342-.856c-.51-.186-.51-.83 0-1.016z" />
+                                <path stroke-linecap="round" d="M14.5 9v2.7a.92.92 0 0 1-.59.879c-.514.189-1.273.421-1.91.421s-1.396-.232-1.91-.421a.92.92 0 0 1-.59-.879V9" />
+                            </g>
+                        </svg>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Education</h3>
+                    </div>
+                    
+                    <div class="space-y-8 border-l border-white/10 pl-6 ml-3">
+                        <!-- University of Leeds -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-5 w-2.5 h-2.5 rounded-full bg-white ring-4 ring-[#330662]"></div>
+                            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+                                <div class="lg:col-span-7 space-y-1">
+                                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                        <h4 class="text-lg font-medium text-white flex-1">University of Leeds</h4>
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap md:ml-4">10/2025 — Present</span>
+                                    </div>
+                                    <p class="text-sm text-white/70">PhD Geography (Social) • Leeds, UK</p>
+                                    <p class="text-sm text-white/60 font-light leading-relaxed">
+                                        Research Interest: Data-driven method for human behavior investigation in network approaches under the shared mobility context.
+                                    </p>
+                                </div>
+                                <div class="lg:col-span-5">
+                                    <div class="overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                                        <iframe
+                                            src="https://www.google.com/maps?q=University+of+Leeds&output=embed"
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                            class="w-full h-40 md:h-44 lg:h-48 border-0"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New York University -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-5 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+                                <div class="lg:col-span-7 space-y-1">
+                                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                        <h4 class="text-lg font-medium text-white flex-1">New York University</h4>
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap md:ml-4">09/2023 — 05/2025</span>
+                                    </div>
+                                    <p class="text-sm text-white/70">MSc Applied Urban Science and Informatics • Brooklyn, NY</p>
+                                    <p class="text-xs text-white/50 font-light">
+                                        Core Modules: Applied Data Science; Data Governance, Ethics and Privacy; Innovative City Governance; Spatial Analysis; Machine Learning for Cities; Transportation and Logistics
+                                    </p>
+                                </div>
+                                <div class="lg:col-span-5">
+                                    <div class="overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                                        <iframe
+                                            src="https://www.google.com/maps?q=New+York+University+Brooklyn+NY&output=embed"
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                            class="w-full h-40 md:h-44 lg:h-48 border-0"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Xi’an Jiaotong Liverpool University -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-5 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+                                <div class="lg:col-span-7 space-y-1">
+                                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                        <h4 class="text-lg font-medium text-white flex-1">Xi’an Jiaotong Liverpool University</h4>
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap md:ml-4">09/2019 — 07/2023</span>
+                                    </div>
+                                    <p class="text-sm text-white/70">BSc Applied Mathematics • Suzhou, China</p>
+                                    <p class="text-xs text-white/50 font-light">
+                                        Core Modules: Programming in Java; Dynamic Modelling; Statistical Distribution Theory; Operational Research; Analysis; Population Dynamics; Applied Probability; Optimization Theory
+                                    </p>
+                                </div>
+                                <div class="lg:col-span-5">
+                                    <div class="overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                                        <iframe
+                                            src="https://www.google.com/maps?q=Xi%27an+Jiaotong+Liverpool+University+Suzhou+China&output=embed"
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                            class="w-full h-40 md:h-44 lg:h-48 border-0"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Publications -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <iconify-icon icon="solar:book-bookmark-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Publications</h3>
+                    </div>
+
+                    <div class="space-y-6">
+                        <a href="https://doi.org/10.1071/WF25092" target="_blank" class="block p-5 rounded-lg bg-white/5 border border-white/5 hover:border-white/20 hover:bg-white/10 transition-colors">
+                            <h4 class="text-base font-medium text-white mb-2 leading-snug">On the importance of both climate and vegetation evolution when predicting long-term wildfire susceptibility</h4>
+                            <p class="text-xs text-purple-200 mb-3"><span class="font-semibold">F Ren</span>, N Tobinsky, T Dorji, A Guibaud • <span class="italic">International Journal of Wildland Fire</span></p>
+                            <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30">
+                                <li>Preprocessed CMIP6, vegetation, topography and MODIS datasets via Python and R.</li>
+                                <li>Conducted long term wildfire susceptibility prediction in Portugal under Maxent and Graph Convolutional Networks (GCN).</li>
+                                <li>Fine-tuned models and analyzed variable gradients.</li>
+                            </ul>
+                        </a>
+
+                        <a href="https://doi.org/10.48550/arXiv.2510.19980" target="_blank" class="block p-5 rounded-lg bg-white/5 border border-white/5 hover:border-white/20 hover:bg-white/10 transition-colors">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-base font-medium text-white mb-2 leading-snug">Abstain Mask Retain Core: Time Series Prediction by Adaptive Masking Loss with Representation Consistency</h4>
+                                <!-- <span class="text-[10px] uppercase border border-white/20 px-1.5 py-0.5 rounded text-white/50">NeurIPS 2025</span> -->
+                            </div>
+                            <p class="text-xs text-purple-200 mb-3">R Liang, S Xu, C Xie, J Chen, <span class="font-semibold">F Ren</span>, S Yang, T Yabe • <span class="italic">NeurIPS 2025</span></p></p>
+                            <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30">
+                                <li>Implemented Dynamic masked loss to identify discriminative temporal segments.</li>
+                                <li>Applied Representation consistency constraint to stabilize mapping relationships.</li>
+                            </ul>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Academic Experience -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <iconify-icon icon="solar:graph-up-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Academic Experience</h3>
+                    </div>
+                    
+                    <div class="space-y-6 border-l border-white/10 pl-6 ml-3">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="space-y-2">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                    <div>
+                                        <h4 class="text-lg font-medium text-white">AI-Driven Urban Agent Lab</h4>
+                                        <p class="text-sm text-white/70">Student Researcher (Mentor: Dr. Zhang, Zhaoxi; Dr. Mendel, Tamir; Prof. Yabe, Takahiro)</p>
+                                    </div>
+                                    <div class="flex flex-col items-start md:items-end gap-1">
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap">Brooklyn, NY, US</span>
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap">05/2024 – 05/2025</span>
+                                    </div>
+                                </div>
+                                <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30 ml-2">
+                                    <li>Conducted literature review and defined research questions; refined and developed full stack codes; drafted research papers (in preparation for publication)</li>
+                                    <li>Built AI chatbots for collecting perspectives for Natural Language Processing and Sentimental Analysis</li>
+                                    <li>Designed surveys embedded with AI chatbots and collected data from over 50 participants</li>
+                                    <li>Built an individual chatbot based on Large Language Model (LLM) to explore features affecting human's perceived safety across various bike lane types in New York City and identified greenery and car existence as two primary factors</li>
+                                    <li>Upgrading the individual chatbot to a real-time multi-user and multi-agent group communication chatbot to explore the relationship of AI and social loneliness</li>
+                                    <li>Tech stack: Python (Flask, WebSocket, NLP toolkits), JavaScript, HTML, and Google Cloud Platform services (Vertex AI, Datastore, App Engine, speech APIs).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Conference -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <iconify-icon icon="solar:presentation-graph-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Conference</h3>
+                    </div>
+                    
+                    <div class="space-y-6 border-l border-white/10 pl-6 ml-3">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="space-y-2">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                    <h4 class="text-lg font-medium text-white flex-1">2025 American Association of Geography Annual Meeting</h4>
+                                    <span class="text-xs font-mono text-white/50 whitespace-nowrap md:ml-4">03/2025</span>
+                                </div>
+                                <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30 ml-2">
+                                    <li>Organized session "Technology and Innovation for Human and Community Health in Urban Management"</li>
+                                    <li>Presented "Identifying features of the built environment that influence perceptions of cycling safety in New York City" from results of individual part of AI-Driven Urban Agent</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Teaching Experience -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <iconify-icon icon="solar:diploma-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Teaching Experience</h3>
+                    </div>
+                    
+                    <div class="space-y-6 border-l border-white/10 pl-6 ml-3">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="space-y-2">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                    <div>
+                                        <h4 class="text-lg font-medium text-white">New York University</h4>
+                                        <p class="text-sm text-white/70">Course Assistant (Module: Urban AI: Deep Learning and Generative AI)</p>
+                                    </div>
+                                    <div class="flex flex-col items-start md:items-end gap-1">
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap">Brooklyn, NY, U.S.</span>
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap">01/2025 – 05/2025</span>
+                                    </div>
+                                </div>
+                                <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30 ml-2">
+                                    <li>Support Prof. Yabe, Takahiro in preparing and delivering course materials, grading assignments, proctoring in-class exams and fulfilling other general duties related to the course</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="space-y-2">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                    <div>
+                                        <h4 class="text-lg font-medium text-white">New York University</h4>
+                                        <p class="text-sm text-white/70">Course Assistant (Module: Civic Analytics and Urban Intelligence)</p>
+                                    </div>
+                                    <div class="flex flex-col items-start md:items-end gap-1">
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap">Brooklyn, NY, U.S.</span>
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap">09/2024 – 12/2024</span>
+                                    </div>
+                                </div>
+                                <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30 ml-2">
+                                    <li>Supported Prof. Manny, Patole in preparing and delivered course materials, graded policy memos, proctored in-class exams, presented in the lecture, and fulfilled other general duties related to the course</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Honors -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <iconify-icon icon="solar:medal-ribbons-star-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Honors</h3>
+                    </div>
+                    
+                    <div class="space-y-4 border-l border-white/10 pl-6 ml-3">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                <h4 class="text-lg font-medium text-white flex-1">CUSP Experiential Scholars</h4>
+                                <span class="text-xs font-mono text-white/50 whitespace-nowrap md:ml-4">2023-2024</span>
+                            </div>
+                        </div>
+                        
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                <h4 class="text-lg font-medium text-white flex-1">CUSP Promising Researcher</h4>
+                                <span class="text-xs font-mono text-white/50 whitespace-nowrap md:ml-4">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Course Projects -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <iconify-icon icon="solar:folder-with-files-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Course Projects</h3>
+                    </div>
+                    
+                    <div class="space-y-6 border-l border-white/10 pl-6 ml-3">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="space-y-2">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                    <h4 class="text-lg font-medium text-white flex-1">Applying Optimization Heuristics to Evaluate Service Improvement</h4>
+                                    <span class="text-xs font-mono text-white/50 whitespace-nowrap md:ml-4">09/2024-12/2024</span>
+                                </div>
+                                <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30 ml-2">
+                                    <li>Analyzed the impact of L train service improvements on total system travel time using BPR, MINLP, and optimization techniques, comparing benchmark and alternative designs for cost-effectiveness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Experience -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <iconify-icon icon="solar:case-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Professional Experience</h3>
+                    </div>
+                    
+                    <div class="space-y-6 border-l border-white/10 pl-6 ml-3">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="space-y-2">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                    <div>
+                                        <h4 class="text-lg font-medium text-white">Guolian Securities Co., Ltd.</h4>
+                                        <p class="text-sm text-white/70">Internet Finance Intern</p>
+                                    </div>
+                                    <div class="flex flex-col items-start md:items-end gap-1">
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap">Wuxi, Jiangsu, China</span>
+                                        <span class="text-xs font-mono text-white/50 whitespace-nowrap">01/2021-02/2021</span>
+                                    </div>
+                                </div>
+                                <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30 ml-2">
+                                    <li>Applied Tinysoft (an SQL-based software) for market data analysis using the "Bargain Hunting" algorithm for stock selection, achieving a success rate exceeding 50%.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Additional Activities -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <iconify-icon icon="solar:users-group-rounded-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Additional Activities</h3>
+                    </div>
+                    
+                    <div class="space-y-6 border-l border-white/10 pl-6 ml-3">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="space-y-2">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                    <h4 class="text-lg font-medium text-white flex-1">CUSP London Global Data Dive 2024</h4>
+                                    <span class="text-xs font-mono text-white/50 whitespace-nowrap md:ml-4">02/2024</span>
+                                </div>
+                                <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30 ml-2">
+                                    <li>Led a team on exploring relationship between air quality and mode of transit choices by using time series involving Pearson Correlation, Dynamic Time Warping, and reporting to fellows in CUSP London, NYU CUSP and guest audiences</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-2 w-2.5 h-2.5 rounded-full bg-white/40 ring-4 ring-[#330662]"></div>
+                            <div class="space-y-2">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                                    <h4 class="text-lg font-medium text-white flex-1">CUSP Summer School 2024</h4>
+                                    <span class="text-xs font-mono text-white/50 whitespace-nowrap md:ml-4">2024</span>
+                                </div>
+                                <ul class="list-disc list-inside space-y-1 text-sm text-white/60 font-light marker:text-white/30 ml-2">
+                                    <li>Delivered urban-focused presentations on rainfall modeling and simulation, material flows across the economy, and urban thermal risks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section class="space-y-8">
+                    <div class="flex items-center gap-3 text-purple-300">
+                        <iconify-icon icon="solar:code-2-linear" width="24" stroke-width="1.5"></iconify-icon>
+                        <h3 class="text-sm font-medium uppercase tracking-widest text-white/80">Skills</h3>
+                    </div>
+                    
+                    <div class="space-y-4 pl-6 ml-3">
+                        <div class="space-y-2">
+                            <p class="text-sm text-white/80 font-medium">Languages:</p>
+                            <p class="text-sm text-white/60 font-light">Fluent in English (IELTS: 7.0); Native Speaker of Mandarin</p>
+                        </div>
+                        <div class="space-y-2">
+                            <p class="text-sm text-white/80 font-medium">Programming & Software:</p>
+                            <p class="text-sm text-white/60 font-light">MATLAB; Python; JavaScript; R; Html; Esri ArcGIS Product Series; Google Cloud Platform; Google Earth Engine</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- CYCLING SECTION -->
+            <div id="cycling-section" class="hidden-content pb-20">
+                
+                <div class="flex items-center justify-between border-b border-white/10 pb-6 mb-6">
+                    <div class="space-y-2">
+                        <h2 class="text-2xl font-medium tracking-tight text-white">Cycling &amp; Exploration</h2>
+                        <p class="text-sm text-white/50 font-light">Interactive visualizations of my journeys.</p>
+                        <p class="text-sm text-white/60 font-light max-w-xl">To me cycling isn’t just training in the past 3 years. It’s how I get around and see places. Where I ride and how often has a lot to do with the city: bike lanes, street layout, what feels safe. That’s shaped the way I move and think about urban space.</p>
+                    </div>
+                </div>
+
+                <!-- Map with Sidebar Layout -->
+                <section class="cycling-map-layout flex flex-col lg:flex-row gap-4 lg:gap-6">
+                    <!-- Region Selector Dashboard (Left Sidebar) -->
+                    <div class="cycling-sidebar-wrap w-full lg:w-64 flex-shrink-0 lg:h-[600px]">
+                        <div class="cycling-sidebar-inner bg-[#330662]/95 backdrop-blur-md rounded-xl px-4 py-4 border border-white/20 shadow-lg h-full flex flex-col min-h-0">
+                            <h3 class="text-sm font-semibold text-white/90 mb-4 uppercase tracking-wider">Regions</h3>
+                            <div class="region-buttons flex flex-row flex-wrap lg:flex-col gap-2">
+                                <button id="region-all" class="region-btn active-region text-sm px-4 py-2.5 rounded-lg bg-purple-500/30 text-white hover:bg-purple-500/50 transition-all border border-purple-400/30 font-medium text-left">
+                                    All Routes
+                                </button>
+                                <button id="region-asia" class="region-btn text-sm px-4 py-2.5 rounded-lg bg-white/5 text-white/80 hover:bg-white/10 hover:text-white transition-all border border-white/10 text-left">
+                                    Asia
+                                </button>
+                                <button id="region-us" class="region-btn text-sm px-4 py-2.5 rounded-lg bg-white/5 text-white/80 hover:bg-white/10 hover:text-white transition-all border border-white/10 text-left">
+                                    US
+                                </button>
+                                <button id="region-uk" class="region-btn text-sm px-4 py-2.5 rounded-lg bg-white/5 text-white/80 hover:bg-white/10 hover:text-white transition-all border border-white/10 text-left">
+                                    UK
+                                </button>
+                            </div>
+                            
+                            <!-- Activity Summary (shown when a photo is clicked and route is highlighted) -->
+                            <div id="activity-summary-section" class="mt-4 p-3 rounded-lg bg-white/5 border border-white/10 hidden">
+                                <h3 class="text-xs font-semibold text-white/90 mb-2 uppercase tracking-wider">Activity Summary</h3>
+                                <div id="activity-summary-content" class="text-xs text-white/80 space-y-1">
+                                    <!-- Filled by JS when route is highlighted -->
+                                </div>
+                            </div>
+                            
+                            <!-- Stats -->
+                            <div class="mt-auto pt-6 border-t border-white/10">
+                                <h3 class="text-sm font-semibold text-white/90 mb-3 uppercase tracking-wider">Statistics</h3>
+                                <div class="space-y-2">
+                                    <div class="text-xs text-white/70" id="route-count-sidebar">Loading routes...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Container -->
+                    <div class="cycling-map-wrap flex-1 relative rounded-xl overflow-hidden border border-gray-300 bg-white shadow-lg min-h-[320px] h-[50vh] lg:h-[600px] w-full">
+                        <div id="gpx-heatmap" class="w-full h-full"></div>
+                        
+                        <!-- Legend: 与右下角 OpenStreetMap 署名同高、单行、不重叠 -->
+                        <div class="map-overlay absolute bottom-2 left-2 sm:bottom-3 sm:left-3 z-[1000] max-w-[calc(100%-11rem)]">
+                            <div class="bg-white/95 backdrop-blur-sm rounded px-2 py-0.5 border border-gray-300 shadow-md flex items-center gap-2 h-[22px] box-border">
+                                <span class="text-[10px] font-medium text-gray-900 whitespace-nowrap shrink-0">Cycling Route Frequency</span>
+                                <div class="legend-bar h-1.5 rounded-full overflow-hidden border border-gray-200 flex-1 min-w-[60px]" style="background: linear-gradient(to right, #FFF9C4, #FFE082, #CE93D8, #BA68C8, #9C27B0, #7B1FA2);"></div>
+                                <span class="text-[9px] text-gray-600 whitespace-nowrap shrink-0">low density → high density</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Loading indicator -->
+                        <div id="map-loading" class="absolute inset-0 flex items-center justify-center bg-white/90 z-[999]">
+                            <div class="text-center">
+                                <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
+                                <p class="text-gray-700 text-sm">Loading routes...</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Media Display Area (shown when route is clicked) -->
+                <section id="media-section" class="hidden-content mt-6">
+                    <div class="rounded-xl bg-white/5 border border-white/10 p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-medium text-white">Activity Media</h3>
+                            <button id="close-media" class="text-white/60 hover:text-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="media-container">
+                            <!-- Media items will be inserted here -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stats / Context -->
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+                        <div class="flex items-start justify-between mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-white/80">
+	<path fill="currentColor" d="M15.5 5.5q-.825 0-1.412-.587T13.5 3.5t.588-1.412T15.5 1.5t1.413.588T17.5 3.5t-.587 1.413T15.5 5.5m-4.7 5l2.2 2.3V19h-2v-5L6.3 9.9l4.3-4.3q.325-.325.688-.462T12.1 5t.813.138t.687.462l1.9 1.9q.675.675 1.575 1.088T19.1 9v2q-1.575 0-2.85-.562T14 8.9l-.8-.8zM5 12q2.125 0 3.563 1.438T10 17t-1.437 3.563T5 22t-3.562-1.437T0 17t1.438-3.562T5 12m0 8.5q1.425 0 2.463-1.037T8.5 17t-1.037-2.463T5 13.5t-2.463 1.038T1.5 17t1.038 2.463T5 20.5M19 12q2.125 0 3.563 1.438T24 17t-1.437 3.563T19 22t-3.562-1.437T14 17t1.438-3.562T19 12m0 8.5q1.425 0 2.463-1.037T22.5 17t-1.037-2.463T19 13.5t-2.463 1.038T15.5 17t1.038 2.463T19 20.5" />
+</svg>
+                            <span class="text-xs font-mono text-white/30 border border-white/10 px-2 py-1 rounded">2023 - 2025</span>
+                        </div>
+                        <a href="https://gonyuathletics.com/sports/2008/8/11/GEN_0811080228.aspx" target="_blank" class="group">
+                            <h3 class="text-lg font-medium text-white mb-2 group-hover:text-purple-300 transition-colors">NYU Cycling Team</h3>
+                        </a>
+                        <p class="text-sm text-white/60 font-light">
+                            Active member and racer in the <a href="https://www.eccc-cycling.com/home" target="_blank" class="text-white/80 hover:text-purple-300 transition-colors underline">Eastern Collegiate Cycling Conference (ECCC)</a>. Focusing on road cycling and criterium races.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+                        <div class="flex items-start justify-between mb-4">
+                            <iconify-icon icon="solar:route-linear" width="28" class="text-white/80"></iconify-icon>
+                            <span class="text-xs font-mono text-white/30 border border-white/10 px-2 py-1 rounded">Routes</span>
+                        </div>
+                        <h3 class="text-lg font-medium text-white mb-2">Urban Mobility</h3>
+                        <p class="text-sm text-white/60 font-light">
+                            Exploring city infrastructure through cycling. My routes often contribute to my research perspective on urban spatial analysis.
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- JavaScript for Interactions -->
+    <script src="./main.js"></script>
+    <script>
+        // Debug: Check if REGION_MEDIA_MAPPING is accessible
+        window.addEventListener('DOMContentLoaded', function() {
+            console.log('=== Media Mapping Debug ===');
+            console.log('REGION_MEDIA_MAPPING exists:', typeof REGION_MEDIA_MAPPING !== 'undefined');
+            if (typeof REGION_MEDIA_MAPPING !== 'undefined') {
+                console.log('Available regions:', Object.keys(REGION_MEDIA_MAPPING));
+                console.log('Asia files:', REGION_MEDIA_MAPPING['Asia'] ? REGION_MEDIA_MAPPING['Asia'].length : 'undefined');
+                console.log('US files:', REGION_MEDIA_MAPPING['US'] ? REGION_MEDIA_MAPPING['US'].length : 'undefined');
+                console.log('UK files:', REGION_MEDIA_MAPPING['UK'] ? REGION_MEDIA_MAPPING['UK'].length : 'undefined');
+            }
+            console.log('========================');
+        });
+    </script>
+
+</body></html>
