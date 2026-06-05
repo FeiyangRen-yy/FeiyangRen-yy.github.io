@@ -1,0 +1,169 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.48in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\hypersetup{colorlinks=true,urlcolor=black}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt}
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & #3 \\
+    #2 & #4 \\
+  \end{tabularx}
+}
+\newcommand{\pubtitle}[1]{\textbf{#1}\\}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Feiyang Ren}}\\
+Mobile: +44 07355447717 \textbar{} Email: \href{mailto:mbvc0637@leeds.ac.uk}{mbvc0637@leeds.ac.uk} \textbar{} Postcode: LS6
+\end{center}
+
+\section*{Education}
+\entry{University of Leeds}{PhD in Geography (Social)}{Leeds, West Yorkshire, UK}{10/2025--present}
+Research Interest: Data-driven method for human behavior investigation in network approaches under the shared mobility context
+
+\vspace{2pt}
+\entry{New York University}{MSc Applied Urban Science and Informatics}{Brooklyn, NY, U.S.}{09/2023--05/2025}
+Core Modules: Applied Data Science; Data Governance, Ethics and Privacy; Innovative City Governance; Spatial Analysis; Machine Learning for Cities; Transportation and Logistics
+
+\vspace{2pt}
+\entry{Xi'an Jiaotong Liverpool University}{BSc Applied Mathematics}{Suzhou, Jiangsu, China}{09/2019--07/2023}
+Core Modules: Introduction to Programming in Java; Dynamic Modelling; Statistical Distribution Theory; Introduction to Operational Research; Analysis; Population Dynamics; Applied Probability; Optimization Theory
+
+\section*{Publication}
+\pubtitle{Assessing the Feasibility of a Video-Based Conversational Chatbot Survey for Measuring Perceived Cycling Safety: A Pilot Study in New York City}
+\textbf{F Ren}, Z Zhang, T Mendel, T Yabe\\
+arXiv preprint arXiv:2604.07375 (under review)
+\begin{itemize}
+  \item Led the end-to-end design and implementation of the video-based conversational chatbot survey for perceived cycling safety.
+  \item Built the modular LLM workflow and conducted NLP, clustering, and regression analyses on participant responses.
+\end{itemize}
+
+\vspace{3pt}
+\pubtitle{CoDesignAI: An AI-Enabled Multi-Agent, Multi-User System for Collaborative Urban Design at the Conceptual Stage}
+Z Zhang, R Wu, \textbf{F Ren}, S Turaga, T Mendel\\
+arXiv preprint arXiv:2603.16008
+\begin{itemize}
+  \item Developed the multi-user and multi-agent chatroom for collaborative urban design discussions.
+  \item Built the full-stack front-end and back-end framework for real-time user-agent interaction.
+\end{itemize}
+
+\vspace{3pt}
+\pubtitle{On the importance of both climate and vegetation evolution when predicting long-term wildfire susceptibility}
+\textbf{F Ren}, N Tobinsky, T Dorji, A Guibaud\\
+International Journal of Wildland Fire
+\begin{itemize}
+  \item Preprocessed CMIP6, vegetation, topography and MODIS datasets via Python and R to conduct long term wildfire susceptibility prediction in Portugal under Maxent and Graph Convolutional Networks models under different shared socioeconomic scenarios.
+  \item Fine-tuned both Maxent and GCN models, compared the spatial patterns with current susceptibility and calculated gradient of variables contributing to the probability.
+\end{itemize}
+
+\vspace{2pt}
+\pubtitle{Abstain Mask Retain Core: Time Series Prediction by Adaptive Masking Loss with Representation Consistency}
+R Liang, S Xu, C Xie, J Chen, \textbf{F Ren}, S Yang, T Yabe\\
+NeurIPS 2025 Conference
+\begin{itemize}
+  \item Dynamic masked loss, which adaptively identified highly discriminative temporal segments to guide gradient descent during model training.
+  \item Representation consistency constraint, which stabilized the mapping relationships among inputs, labels, and predictions.
+\end{itemize}
+
+\section*{Academic Experience}
+\entry{The igNYte Lab}{Student Researcher (Mentor: Dr. Guibaud, Augustin)}{New York, NY, US.}{09/2024--05/2025}
+\begin{itemize}
+  \item Contributed to long-term wildfire susceptibility prediction research published in \textit{International Journal of Wildland Fire}.
+  \item Preprocessed CMIP6, vegetation, topography, and MODIS datasets for climate- and vegetation-aware wildfire modeling.
+  \item Developed and evaluated Maxent and Graph Convolutional Network (GCN) models under shared socioeconomic scenarios.
+\end{itemize}
+
+\entry{AI-Driven Urban Agent Lab}{Student Researcher (Mentor: Dr. Zhang, Zhaoxi; Dr. Mendel, Tamir; Prof. Yabe, Takahiro)}{Brooklyn, NY, US.}{05/2024--05/2025}
+\begin{itemize}
+  \item Conducted literature review and defined research questions; refined and developed full stack codes; drafted research papers.
+  \item Built AI chatbots for collecting perspectives for Natural Language Processing and Sentimental Analysis.
+  \item Designed surveys embedded with AI chatbots and collected data from over 50 participants.
+  \item Built an individual chatbot based on Large Language Model (LLM) to explore features affecting human's perceived safety across various bike lane types in New York City and identified greenery and car existence as two primary factors.
+  \item Upgrading the individual chatbot to a real-time multi-user and multi-agent group communication chatbot to explore the relationship of AI and social loneliness.
+  \item Tool Used: Python (Flask, WebSocket, Natural Language Toolkit); JavaScript; Html; Google Cloud Platform (Vertex AI, Cloud Datastore, App Engine, Speech-to-Text AI, Text-to-Speech AI).
+\end{itemize}
+
+\section*{Conference}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{Neural Information Processing Systems 2025} & 2025
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{2025 American Association of Geography Annual Meeting} & 03/2025
+\end{tabularx}
+\begin{itemize}
+  \item Organized session ``Technology and Innovation for Human and Community Health in Urban Management''.
+  \item Presented ``Identifying features of the built environment that influence perceptions of cycling safety in New York City'' from results of individual part of AI-Driven Urban Agent.
+\end{itemize}
+
+\section*{Teaching Experience}
+\entry{New York University}{Course Assistant (Module: Urban AI: Deep Learning and Generative AI)}{Brooklyn, NY, U.S.}{01/2025--05/2025}
+\begin{itemize}
+  \item Support Prof. Yabe, Takahiro in preparing and delivering course materials, grading assignments, proctoring in-class exams and fulfilling other general duties related to the course.
+\end{itemize}
+
+\entry{New York University}{Course Assistant (Module: Civic Analytics and Urban Intelligence)}{Brooklyn, NY, U.S.}{09/2024--12/2024}
+\begin{itemize}
+  \item Supported Prof. Manny, Patole in preparing and delivered course materials, graded policy memos, proctored in-class exams, presented in the lecture, and fulfilled other general duties related to the course.
+\end{itemize}
+
+\section*{Honors}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+CUSP Experiential Scholars & 2023--2024\\
+CUSP Promising Researcher & 2025
+\end{tabularx}
+
+\section*{Course Projects}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{Applying Optimization Heuristics to Evaluate Service Improvement} & 09/2024--12/2024
+\end{tabularx}
+\begin{itemize}
+  \item Analyzed the impact of L train service improvements on total system travel time using BPR, MINLP, and optimization techniques, comparing benchmark and alternative designs for cost-effectiveness.
+\end{itemize}
+
+\section*{Professional Experience}
+\entry{Guolian Securities Co., Ltd.}{Internet Finance Intern}{Wuxi, Jiangsu, China}{01/2021--02/2021}
+\begin{itemize}
+  \item Applied Tinysoft (an SQL-based software) for market data analysis using the ``Bargain Hunting'' algorithm for stock selection, achieving a success rate exceeding 50\%.
+\end{itemize}
+
+\section*{Additional Activities}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{CUSP London Global Data Dive 2024} & 02/2024
+\end{tabularx}
+\begin{itemize}
+  \item Led a team on exploring relationship between air quality and mode of transit choices by using time series involving Pearson Correlation, Dynamic Time Warping, and reporting to fellows in CUSP London, NYU CUSP and guest audiences.
+\end{itemize}
+
+\textbf{CUSP Summer School 2024}
+\begin{itemize}
+  \item Delivered urban-focused presentations on rainfall modeling and simulation, material flows across the economy, and urban thermal risks.
+\end{itemize}
+
+\section*{Skills}
+\textbf{Languages:} Fluent in English (IELTS: 7.0); Native Speaker of Mandarin\\
+\textbf{Programming \& Software:} MATLAB; Python; JavaScript; R; Html; Esri ArcGIS Product Series; Google Cloud Platform; Google Earth Engine
+
+\section*{Hobbies}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{New York University Cycling Team} & 2023--2025
+\end{tabularx}
+\begin{itemize}
+  \item A major member and raced in 2024 \& 2025 Eastern Collegiate Cycling Conference.
+\end{itemize}
+
+\end{document}
