@@ -115,6 +115,7 @@ function createContext(sport) {
         lastShownViewKey: null,
         mediaLoadTimeout: null,
         mediaUpdateTimeout: null,
+        renderRetryTimeout: null,
         skipMediaUpdateUntil: 0,
         rendered: false
     };
@@ -217,7 +218,16 @@ function calculateSegmentDensity(routes, gridSize = 0.0005) {
 function renderRoutes(ctx) {
     if (!ctx.map) return;
     const container = document.getElementById(ctx.config.mapId);
-    if (!container || container.offsetWidth === 0 || container.offsetHeight === 0) return;
+    if (!container) return;
+    if (container.offsetWidth === 0 || container.offsetHeight === 0) {
+        if (!ctx.renderRetryTimeout) {
+            ctx.renderRetryTimeout = setTimeout(() => {
+                ctx.renderRetryTimeout = null;
+                renderRoutes(ctx);
+            }, 250);
+        }
+        return;
+    }
     if (ctx.rendered) return;
 
     const { routes, ids } = filteredRoutesForSport(ctx.sport);
@@ -364,10 +374,15 @@ function zoomToRegion(ctx, regionName) {
     setTimeout(() => updateMediaForCurrentView(ctx), 350);
 }
 
-function setupRegionButtons(ctx) {
+function setupRegionButtons(ctx, attempt = 0) {
+    const missing = [];
     ['All', 'Asia', 'US', 'UK', 'Europe'].forEach(region => {
         const button = document.getElementById(`${ctx.sport}-region-${region.toLowerCase()}`);
-        if (!button || button.dataset.bound === 'true') return;
+        if (!button) {
+            missing.push(region);
+            return;
+        }
+        if (button.dataset.bound === 'true') return;
         button.dataset.bound = 'true';
         button.addEventListener('click', event => {
             event.preventDefault();
@@ -375,6 +390,11 @@ function setupRegionButtons(ctx) {
             zoomToRegion(ctx, region);
         });
     });
+
+    if (missing.length && attempt < 5) {
+        console.warn(`setupRegionButtons: Some region buttons not found, retrying...`, missing);
+        setTimeout(() => setupRegionButtons(ctx, attempt + 1), 150);
+    }
 }
 
 function updateRegionButtonState(ctx, activeRegion) {
