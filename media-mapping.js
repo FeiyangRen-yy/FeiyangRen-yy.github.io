@@ -370709,51 +370709,53 @@ const SPORT_GPX_ROUTE_IDS = {
   ]
 };
 
+const ACTIVITY_METADATA_VERSION = 2;
+
 const ACTIVITY_METADATA = {
   "18787364236": {
     "name": "Exactly catch by the rain😅",
     "date": "Jun 4, 2026, 5:35:31 PM",
     "type": "Run",
-    "distance_km": 0.0031,
+    "distance_km": 5.32,
     "elapsed_sec": 1732.0,
-    "moving_sec": 5320.0,
-    "elevation_gain_m": 69.0
+    "moving_sec": 1732.0,
+    "total_elevation_m": 64.0
   },
   "18775025756": {
     "name": "I don’t wanna tape 🫪",
     "date": "Jun 3, 2026, 7:19:49 PM",
     "type": "Run",
-    "distance_km": 0.0029,
-    "elapsed_sec": 2059.0,
-    "moving_sec": 6009.6,
-    "elevation_gain_m": 60.0
+    "distance_km": 6.0096,
+    "elapsed_sec": 2068.0,
+    "moving_sec": 2059.0,
+    "total_elevation_m": 76.0
   },
   "18732240562": {
     "name": "Heavy legs",
     "date": "May 31, 2026, 4:13:26 PM",
     "type": "Run",
-    "distance_km": 0.0029,
-    "elapsed_sec": 1740.0,
-    "moving_sec": 5017.4,
-    "elevation_gain_m": 70.0
+    "distance_km": 5.0174,
+    "elapsed_sec": 1786.0,
+    "moving_sec": 1740.0,
+    "total_elevation_m": 62.0
   },
   "18731235742": {
     "name": "Afternoon Ride",
     "date": "May 31, 2026, 3:33:55 PM",
     "type": "Ride",
-    "distance_km": 0.0062,
+    "distance_km": 2.0914,
     "elapsed_sec": 337.0,
-    "moving_sec": 2091.4,
-    "elevation_gain_m": 69.2
+    "moving_sec": 337.0,
+    "total_elevation_m": 19.0
   },
   "18731129012": {
     "name": "Avoid 🐰🦝🦌🐿️",
     "date": "May 31, 2026, 12:37:10 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 10197.0,
-    "moving_sec": 71292.7,
-    "elevation_gain_m": 15.2
+    "distance_km": 71.2927,
+    "elapsed_sec": 10402.0,
+    "moving_sec": 10197.0,
+    "total_elevation_m": 763.0
   },
   "18721216415": {
     "name": "Night Weight Training",
@@ -370761,26 +370763,26 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 2716.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 2716.0,
+    "total_elevation_m": 0.0
   },
   "18703506800": {
     "name": "Busy road🫪",
     "date": "May 29, 2026, 1:05:16 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 7528.0,
-    "moving_sec": 50062.7,
-    "elevation_gain_m": 34.4
+    "distance_km": 50.0627,
+    "elapsed_sec": 7704.0,
+    "moving_sec": 7528.0,
+    "total_elevation_m": 658.0
   },
   "18676044130": {
     "name": "Afternoon Ride",
     "date": "May 27, 2026, 12:50:37 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 6704.0,
-    "moving_sec": 44621.2,
-    "elevation_gain_m": 43.6
+    "distance_km": 44.6212,
+    "elapsed_sec": 7196.0,
+    "moving_sec": 6704.0,
+    "total_elevation_m": 578.0
   },
   "18652540622": {
     "name": "Evening Weight Training",
@@ -370788,35 +370790,35 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 4351.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 4351.0,
+    "total_elevation_m": 0.0
   },
   "18652716943": {
     "name": "Evening Ride",
     "date": "May 25, 2026, 5:36:13 PM",
     "type": "Ride",
-    "distance_km": 0.0048,
-    "elapsed_sec": 1743.0,
-    "moving_sec": 8379.0,
-    "elevation_gain_m": 34.0
+    "distance_km": 8.379,
+    "elapsed_sec": 7719.0,
+    "moving_sec": 1743.0,
+    "total_elevation_m": 102.0
   },
   "18632867310": {
     "name": "Summer",
     "date": "May 24, 2026, 7:39:23 AM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 9200.0,
-    "moving_sec": 59459.2,
-    "elevation_gain_m": 18.2
+    "distance_km": 59.4592,
+    "elapsed_sec": 10346.0,
+    "moving_sec": 9200.0,
+    "total_elevation_m": 629.0
   },
   "18612082514": {
     "name": "🫪",
     "date": "May 22, 2026, 4:07:11 PM",
     "type": "Ride",
-    "distance_km": 0.0056,
-    "elapsed_sec": 9748.0,
-    "moving_sec": 54822.4,
-    "elevation_gain_m": 58.4
+    "distance_km": 54.8224,
+    "elapsed_sec": 10264.0,
+    "moving_sec": 9748.0,
+    "total_elevation_m": 914.0
   },
   "18608375117": {
     "name": "Lunch Weight Training",
@@ -370824,35 +370826,35 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 7252.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 7252.0,
+    "total_elevation_m": 0.0
   },
   "18608015980": {
     "name": "Morning Ride",
     "date": "May 22, 2026, 9:21:12 AM",
     "type": "Ride",
-    "distance_km": 0.0047,
-    "elapsed_sec": 1817.0,
-    "moving_sec": 8480.8,
-    "elevation_gain_m": 27.4
+    "distance_km": 8.4808,
+    "elapsed_sec": 12823.0,
+    "moving_sec": 1817.0,
+    "total_elevation_m": 111.0
   },
   "18602093090": {
     "name": "Night Run",
     "date": "May 21, 2026, 11:25:59 PM",
     "type": "Run",
-    "distance_km": 0.0025,
-    "elapsed_sec": 634.0,
-    "moving_sec": 1600.7,
-    "elevation_gain_m": 57.3
+    "distance_km": 1.6007,
+    "elapsed_sec": 733.0,
+    "moving_sec": 634.0,
+    "total_elevation_m": 33.5
   },
   "18597310673": {
     "name": "💐",
     "date": "May 21, 2026, 2:18:53 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 6820.0,
-    "moving_sec": 44422.8,
-    "elevation_gain_m": 43.0
+    "distance_km": 44.4228,
+    "elapsed_sec": 7426.0,
+    "moving_sec": 6820.0,
+    "total_elevation_m": 571.0
   },
   "18586547204": {
     "name": "Evening Weight Training",
@@ -370860,26 +370862,26 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 1479.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 1479.0,
+    "total_elevation_m": 0.0
   },
   "18585402760": {
     "name": "My cardio dead",
     "date": "May 20, 2026, 5:30:59 PM",
     "type": "Run",
-    "distance_km": 0.003,
-    "elapsed_sec": 2009.0,
-    "moving_sec": 6018.0,
-    "elevation_gain_m": 70.0
+    "distance_km": 6.018,
+    "elapsed_sec": 2115.0,
+    "moving_sec": 2009.0,
+    "total_elevation_m": 75.0
   },
   "18559675809": {
     "name": "Evening Run",
     "date": "May 18, 2026, 7:39:52 PM",
     "type": "Run",
-    "distance_km": 0.0028,
-    "elapsed_sec": 1856.0,
-    "moving_sec": 5224.0,
-    "elevation_gain_m": 62.0
+    "distance_km": 5.224,
+    "elapsed_sec": 1887.0,
+    "moving_sec": 1856.0,
+    "total_elevation_m": 66.0
   },
   "18549021859": {
     "name": "Night Physical Therapy",
@@ -370887,44 +370889,44 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 3897.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 3897.0,
+    "total_elevation_m": 0.0
   },
   "18548641468": {
     "name": "Afternoon Walk",
     "date": "May 17, 2026, 2:49:31 PM",
     "type": "Walk",
-    "distance_km": 0.0001,
+    "distance_km": 3.6331,
     "elapsed_sec": 24801.0,
-    "moving_sec": 3633.1,
-    "elevation_gain_m": 0.0
+    "moving_sec": 24801.0,
+    "total_elevation_m": 0.0
   },
   "18518631002": {
     "name": "I need Sainsbury😵‍💫",
     "date": "May 15, 2026, 2:45:17 PM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 4759.0,
-    "moving_sec": 28430.4,
-    "elevation_gain_m": 39.8
+    "distance_km": 28.4304,
+    "elapsed_sec": 5159.0,
+    "moving_sec": 4759.0,
+    "total_elevation_m": 340.0
   },
   "18453001724": {
     "name": "You shouldn’t run into the ambulance",
     "date": "May 10, 2026, 9:16:06 AM",
     "type": "Run",
-    "distance_km": 0.003,
-    "elapsed_sec": 6628.0,
-    "moving_sec": 20075.0,
-    "elevation_gain_m": 60.0
+    "distance_km": 20.075,
+    "elapsed_sec": 6700.0,
+    "moving_sec": 6628.0,
+    "total_elevation_m": 194.0
   },
   "18436514750": {
     "name": "Leg Opener",
     "date": "May 9, 2026, 10:20:34 AM",
     "type": "Run",
-    "distance_km": 0.0028,
-    "elapsed_sec": 1459.0,
-    "moving_sec": 4021.2,
-    "elevation_gain_m": 80.0
+    "distance_km": 4.0212,
+    "elapsed_sec": 1465.0,
+    "moving_sec": 1459.0,
+    "total_elevation_m": 32.0
   },
   "18428638744": {
     "name": "Afternoon Weight Training",
@@ -370932,35 +370934,35 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 4299.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 4299.0,
+    "total_elevation_m": 0.0
   },
   "18426230470": {
     "name": "Cardio Opener",
     "date": "May 8, 2026, 1:22:14 PM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 4635.0,
-    "moving_sec": 28437.4,
-    "elevation_gain_m": 40.0
+    "distance_km": 28.4374,
+    "elapsed_sec": 4776.0,
+    "moving_sec": 4635.0,
+    "total_elevation_m": 334.0
   },
   "18403234646": {
     "name": "Thanks",
     "date": "May 6, 2026, 6:48:45 PM",
     "type": "Run",
     "distance_km": 0.0,
-    "elapsed_sec": 17.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 46.0
+    "elapsed_sec": 24.0,
+    "moving_sec": 17.0,
+    "total_elevation_m": 0.0
   },
   "18372444604": {
     "name": "Zwift - recover",
     "date": "May 4, 2026, 1:10:47 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 3631.0,
-    "moving_sec": 22438.7,
-    "elevation_gain_m": 2.2
+    "distance_km": 22.4387,
+    "elapsed_sec": 3999.0,
+    "moving_sec": 3631.0,
+    "total_elevation_m": 241.0
   },
   "18366027367": {
     "name": "Night Physical Therapy",
@@ -370968,116 +370970,116 @@ const ACTIVITY_METADATA = {
     "type": "Workout",
     "distance_km": 0.0,
     "elapsed_sec": 3647.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 3647.0,
+    "total_elevation_m": 0.0
   },
   "18347957271": {
     "name": "Spring~",
     "date": "May 2, 2026, 9:08:28 AM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 15026.0,
-    "moving_sec": 89633.1,
-    "elevation_gain_m": 16.2
+    "distance_km": 89.6331,
+    "elapsed_sec": 22193.0,
+    "moving_sec": 15026.0,
+    "total_elevation_m": 946.0
   },
   "18337162002": {
     "name": "Recover and watch the race",
     "date": "May 1, 2026, 3:24:33 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 5263.0,
-    "moving_sec": 35161.4,
-    "elevation_gain_m": 41.6
+    "distance_km": 35.1614,
+    "elapsed_sec": 13456.0,
+    "moving_sec": 5263.0,
+    "total_elevation_m": 393.0
   },
   "18318709734": {
     "name": "Lunch Ride",
     "date": "Apr 30, 2026, 10:11:33 AM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 6909.0,
-    "moving_sec": 41868.5,
-    "elevation_gain_m": 71.2
+    "distance_km": 41.8685,
+    "elapsed_sec": 8384.0,
+    "moving_sec": 6909.0,
+    "total_elevation_m": 289.0
   },
   "18306872964": {
     "name": "Afternoon Ride",
     "date": "Apr 29, 2026, 12:46:31 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 6849.0,
-    "moving_sec": 44208.4,
-    "elevation_gain_m": 10.0
+    "distance_km": 44.2084,
+    "elapsed_sec": 7112.0,
+    "moving_sec": 6849.0,
+    "total_elevation_m": 501.0
   },
   "18305536589": {
     "name": "Morning Ride",
     "date": "Apr 29, 2026, 8:56:14 AM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 10942.0,
-    "moving_sec": 63751.9,
-    "elevation_gain_m": 7.2
+    "distance_km": 63.7519,
+    "elapsed_sec": 11307.0,
+    "moving_sec": 10942.0,
+    "total_elevation_m": 845.0
   },
   "18287589236": {
     "name": "Morning Run",
     "date": "Apr 28, 2026, 5:01:48 AM",
     "type": "Run",
-    "distance_km": 0.003,
-    "elapsed_sec": 1545.0,
-    "moving_sec": 4580.9,
-    "elevation_gain_m": 3.9
+    "distance_km": 4.5809,
+    "elapsed_sec": 2725.0,
+    "moving_sec": 1545.0,
+    "total_elevation_m": 27.5
   },
   "18287582311": {
     "name": "Morning Run",
     "date": "Apr 28, 2026, 5:01:44 AM",
     "type": "Run",
-    "distance_km": 0.0024,
-    "elapsed_sec": 2086.0,
-    "moving_sec": 5050.2,
-    "elevation_gain_m": 0.0
+    "distance_km": 5.0502,
+    "elapsed_sec": 2738.0,
+    "moving_sec": 2086.0,
+    "total_elevation_m": 34.8
   },
   "18264559190": {
     "name": "我又不在备战奥运会",
     "date": "Apr 26, 2026, 9:42:14 AM",
     "type": "Run",
-    "distance_km": 0.0027,
-    "elapsed_sec": 5645.0,
-    "moving_sec": 15456.0,
-    "elevation_gain_m": 74.8
+    "distance_km": 15.456,
+    "elapsed_sec": 6601.0,
+    "moving_sec": 5645.0,
+    "total_elevation_m": 183.4
   },
   "18241957421": {
     "name": "Cool down",
     "date": "Apr 24, 2026, 5:11:47 PM",
     "type": "Run",
-    "distance_km": 0.0027,
-    "elapsed_sec": 1872.0,
-    "moving_sec": 5020.4,
-    "elevation_gain_m": 77.6
+    "distance_km": 5.0204,
+    "elapsed_sec": 1875.0,
+    "moving_sec": 1872.0,
+    "total_elevation_m": 34.4
   },
   "18241014976": {
     "name": "Active Recovery",
     "date": "Apr 24, 2026, 2:06:51 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 8224.0,
-    "moving_sec": 46742.6,
-    "elevation_gain_m": 46.8
+    "distance_km": 46.7426,
+    "elapsed_sec": 8558.0,
+    "moving_sec": 8224.0,
+    "total_elevation_m": 701.0
   },
   "18229670218": {
     "name": "Evening Run",
     "date": "Apr 23, 2026, 6:03:02 PM",
     "type": "Run",
-    "distance_km": 0.0032,
-    "elapsed_sec": 1566.0,
-    "moving_sec": 5011.8,
-    "elevation_gain_m": 70.0
+    "distance_km": 5.0118,
+    "elapsed_sec": 1579.0,
+    "moving_sec": 1566.0,
+    "total_elevation_m": 65.6
   },
   "18214684764": {
     "name": "1st trail",
     "date": "Apr 22, 2026, 4:09:28 PM",
     "type": "Run",
-    "distance_km": 0.0028,
-    "elapsed_sec": 3249.0,
-    "moving_sec": 9104.0,
-    "elevation_gain_m": 54.6
+    "distance_km": 9.104,
+    "elapsed_sec": 3351.0,
+    "moving_sec": 3249.0,
+    "total_elevation_m": 139.8
   },
   "18204831986": {
     "name": "Night Weight Training",
@@ -371085,35 +371087,35 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 3466.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 3466.0,
+    "total_elevation_m": 0.0
   },
   "18187926933": {
     "name": "Puma x Run Dock",
     "date": "Apr 20, 2026, 5:46:20 PM",
     "type": "Run",
-    "distance_km": 0.003,
-    "elapsed_sec": 2363.0,
-    "moving_sec": 6980.5,
-    "elevation_gain_m": 51.0
+    "distance_km": 6.9805,
+    "elapsed_sec": 2382.0,
+    "moving_sec": 2363.0,
+    "total_elevation_m": 75.4
   },
   "18173187515": {
     "name": "ITT after flat",
     "date": "Apr 19, 2026, 11:45:49 AM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 8355.0,
-    "moving_sec": 52139.9,
-    "elevation_gain_m": 39.8
+    "distance_km": 52.1399,
+    "elapsed_sec": 9259.0,
+    "moving_sec": 8355.0,
+    "total_elevation_m": 658.0
   },
   "18169302223": {
     "name": "😅😅😅😅😅😅",
     "date": "Apr 19, 2026, 8:38:18 AM",
     "type": "Ride",
-    "distance_km": 0.0052,
-    "elapsed_sec": 246.0,
-    "moving_sec": 1286.9,
-    "elevation_gain_m": 70.0
+    "distance_km": 1.2869,
+    "elapsed_sec": 5764.0,
+    "moving_sec": 246.0,
+    "total_elevation_m": 17.0
   },
   "18162157601": {
     "name": "Afternoon Weight Training",
@@ -371121,26 +371123,26 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 7397.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 7397.0,
+    "total_elevation_m": 0.0
   },
   "18162662694": {
     "name": "Afternoon Ride",
     "date": "Apr 18, 2026, 3:07:37 PM",
     "type": "Ride",
-    "distance_km": 0.0042,
-    "elapsed_sec": 2040.0,
-    "moving_sec": 8535.7,
-    "elevation_gain_m": 29.4
+    "distance_km": 8.5357,
+    "elapsed_sec": 13631.0,
+    "moving_sec": 2040.0,
+    "total_elevation_m": 120.0
   },
   "18156113935": {
     "name": "I said I wanna a pb today",
     "date": "Apr 18, 2026, 10:24:54 AM",
     "type": "Run",
-    "distance_km": 0.0034,
-    "elapsed_sec": 1473.0,
-    "moving_sec": 5005.7,
-    "elevation_gain_m": 75.4
+    "distance_km": 5.0057,
+    "elapsed_sec": 1477.0,
+    "moving_sec": 1473.0,
+    "total_elevation_m": 42.6
   },
   "18149498235": {
     "name": "Evening Weight Training",
@@ -371148,53 +371150,53 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 2002.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 2002.0,
+    "total_elevation_m": 0.0
   },
   "18143321357": {
     "name": "Lunch Run",
     "date": "Apr 17, 2026, 10:22:30 AM",
     "type": "Run",
-    "distance_km": 0.0024,
-    "elapsed_sec": 2234.0,
-    "moving_sec": 5357.4,
-    "elevation_gain_m": 74.0
+    "distance_km": 5.3574,
+    "elapsed_sec": 2255.0,
+    "moving_sec": 2234.0,
+    "total_elevation_m": 36.8
   },
   "18142763556": {
     "name": "Morning Run",
     "date": "Apr 17, 2026, 9:45:02 AM",
     "type": "Run",
-    "distance_km": 0.0028,
-    "elapsed_sec": 1826.0,
-    "moving_sec": 5176.2,
-    "elevation_gain_m": 77.0
+    "distance_km": 5.1762,
+    "elapsed_sec": 1833.0,
+    "moving_sec": 1826.0,
+    "total_elevation_m": 39.0
   },
   "18123002270": {
     "name": "Zwift - recover",
     "date": "Apr 15, 2026, 6:40:53 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0067,
+    "distance_km": 12.3368,
     "elapsed_sec": 1838.0,
-    "moving_sec": 12336.8,
-    "elevation_gain_m": 60.2
+    "moving_sec": 1838.0,
+    "total_elevation_m": 82.0
   },
   "18104691786": {
     "name": "Afternoon Run",
     "date": "Apr 14, 2026, 1:18:10 PM",
     "type": "Run",
-    "distance_km": 0.0021,
-    "elapsed_sec": 964.0,
-    "moving_sec": 2017.2,
-    "elevation_gain_m": 44.4
+    "distance_km": 2.0172,
+    "elapsed_sec": 972.0,
+    "moving_sec": 964.0,
+    "total_elevation_m": 50.0
   },
   "18104472011": {
     "name": "It’s a 30k llllsd",
     "date": "Apr 14, 2026, 9:53:47 AM",
     "type": "Run",
-    "distance_km": 0.0023,
-    "elapsed_sec": 11903.0,
-    "moving_sec": 27619.6,
-    "elevation_gain_m": 24.2
+    "distance_km": 27.6196,
+    "elapsed_sec": 12209.0,
+    "moving_sec": 11903.0,
+    "total_elevation_m": 90.8
   },
   "18094544329": {
     "name": "Evening Weight Training",
@@ -371202,35 +371204,35 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 1369.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 1369.0,
+    "total_elevation_m": 0.0
   },
   "18094032028": {
     "name": "Leg opener",
     "date": "Apr 13, 2026, 4:59:35 PM",
     "type": "Run",
-    "distance_km": 0.003,
-    "elapsed_sec": 1681.0,
-    "moving_sec": 5008.0,
-    "elevation_gain_m": 60.8
+    "distance_km": 5.008,
+    "elapsed_sec": 1773.0,
+    "moving_sec": 1681.0,
+    "total_elevation_m": 65.8
   },
   "18080117180": {
     "name": "Afternoon Ride",
     "date": "Apr 12, 2026, 1:31:22 PM",
     "type": "Ride",
-    "distance_km": 0.0048,
-    "elapsed_sec": 506.0,
-    "moving_sec": 2412.6,
-    "elevation_gain_m": 44.2
+    "distance_km": 2.4126,
+    "elapsed_sec": 542.0,
+    "moving_sec": 506.0,
+    "total_elevation_m": 49.0
   },
   "18079170164": {
     "name": "Not today",
     "date": "Apr 12, 2026, 10:36:13 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 4675.0,
-    "moving_sec": 33638.6,
-    "elevation_gain_m": 10.6
+    "distance_km": 33.6386,
+    "elapsed_sec": 5128.0,
+    "moving_sec": 4675.0,
+    "total_elevation_m": 182.0
   },
   "18072034809": {
     "name": "Night Weight Training",
@@ -371238,17 +371240,17 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 2969.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 2969.0,
+    "total_elevation_m": 0.0
   },
   "18052337579": {
     "name": "We are cyclists",
     "date": "Apr 10, 2026, 9:39:58 AM",
     "type": "Run",
-    "distance_km": 0.0027,
-    "elapsed_sec": 6003.0,
-    "moving_sec": 16504.7,
-    "elevation_gain_m": 29.6
+    "distance_km": 16.5047,
+    "elapsed_sec": 6097.0,
+    "moving_sec": 6003.0,
+    "total_elevation_m": 161.6
   },
   "18045850251": {
     "name": "Evening Weight Training",
@@ -371256,71 +371258,71 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 6419.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 6419.0,
+    "total_elevation_m": 0.0
   },
   "18028533618": {
     "name": "Long time no wear my Ares",
     "date": "Apr 8, 2026, 12:28:59 PM",
     "type": "Ride",
-    "distance_km": 0.0059,
-    "elapsed_sec": 9808.0,
-    "moving_sec": 57952.2,
-    "elevation_gain_m": 49.8
+    "distance_km": 57.9522,
+    "elapsed_sec": 10986.0,
+    "moving_sec": 9808.0,
+    "total_elevation_m": 975.0
   },
   "18014919200": {
     "name": "Get lost 😅😅😅",
     "date": "Apr 7, 2026, 10:01:45 AM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 15074.0,
-    "moving_sec": 94645.2,
-    "elevation_gain_m": 11.2
+    "distance_km": 94.6452,
+    "elapsed_sec": 21525.0,
+    "moving_sec": 15074.0,
+    "total_elevation_m": 946.0
   },
   "17984911820": {
     "name": "Leeds Running Festival",
     "date": "Apr 5, 2026, 8:59:40 AM",
     "type": "Run",
-    "distance_km": 0.0031,
-    "elapsed_sec": 3268.0,
-    "moving_sec": 10106.2,
-    "elevation_gain_m": 80.0
+    "distance_km": 10.1062,
+    "elapsed_sec": 3308.0,
+    "moving_sec": 3268.0,
+    "total_elevation_m": 153.2
   },
   "17978010975": {
     "name": "Leg opener",
     "date": "Apr 4, 2026, 4:36:31 PM",
     "type": "Run",
-    "distance_km": 0.0026,
-    "elapsed_sec": 1322.0,
-    "moving_sec": 3479.9,
-    "elevation_gain_m": 66.2
+    "distance_km": 3.4799,
+    "elapsed_sec": 1353.0,
+    "moving_sec": 1322.0,
+    "total_elevation_m": 58.6
   },
   "17952495542": {
     "name": "Isle of Wight",
     "date": "Apr 2, 2026, 9:45:50 AM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 16925.0,
-    "moving_sec": 103954.2,
-    "elevation_gain_m": -3.4
+    "distance_km": 103.9542,
+    "elapsed_sec": 26255.0,
+    "moving_sec": 16925.0,
+    "total_elevation_m": 1482.0
   },
   "17930348397": {
     "name": "In debuff",
     "date": "Mar 31, 2026, 8:12:49 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.007,
+    "distance_km": 25.215,
     "elapsed_sec": 3627.0,
-    "moving_sec": 25215.0,
-    "elevation_gain_m": 60.2
+    "moving_sec": 3627.0,
+    "total_elevation_m": 159.0
   },
   "17899967944": {
     "name": "Lunch Run",
     "date": "Mar 29, 2026, 10:54:55 AM",
     "type": "Run",
-    "distance_km": 0.003,
-    "elapsed_sec": 3287.0,
-    "moving_sec": 10017.8,
-    "elevation_gain_m": 34.0
+    "distance_km": 10.0178,
+    "elapsed_sec": 3323.0,
+    "moving_sec": 3287.0,
+    "total_elevation_m": 138.2
   },
   "17889721975": {
     "name": "Lunch Weight Training",
@@ -371328,8 +371330,8 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 9476.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 9476.0,
+    "total_elevation_m": 0.0
   },
   "17879574047": {
     "name": "Afternoon Weight Training",
@@ -371337,458 +371339,458 @@ const ACTIVITY_METADATA = {
     "type": "Weight Training",
     "distance_km": 0.0,
     "elapsed_sec": 6076.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 6076.0,
+    "total_elevation_m": 0.0
   },
   "17875327379": {
     "name": "Morning Run",
     "date": "Mar 27, 2026, 10:38:32 AM",
     "type": "Run",
-    "distance_km": 0.0032,
-    "elapsed_sec": 1576.0,
-    "moving_sec": 5040.5,
-    "elevation_gain_m": 76.8
+    "distance_km": 5.0405,
+    "elapsed_sec": 1577.0,
+    "moving_sec": 1576.0,
+    "total_elevation_m": 34.6
   },
   "17855850554": {
     "name": "pick up my ⚡️",
     "date": "Mar 25, 2026, 5:27:45 PM",
     "type": "Ride",
-    "distance_km": 0.0037,
-    "elapsed_sec": 578.0,
-    "moving_sec": 2155.7,
-    "elevation_gain_m": 42.2
+    "distance_km": 2.1557,
+    "elapsed_sec": 614.0,
+    "moving_sec": 578.0,
+    "total_elevation_m": 50.0
   },
   "17851340068": {
     "name": "Morning Run",
     "date": "Mar 25, 2026, 9:41:12 AM",
     "type": "Run",
-    "distance_km": 0.0028,
-    "elapsed_sec": 367.0,
-    "moving_sec": 1015.6,
-    "elevation_gain_m": 77.4
+    "distance_km": 1.0156,
+    "elapsed_sec": 372.0,
+    "moving_sec": 367.0,
+    "total_elevation_m": 16.6
   },
   "17851334040": {
     "name": "Morning Run",
     "date": "Mar 25, 2026, 9:11:45 AM",
     "type": "Run",
-    "distance_km": 0.003,
-    "elapsed_sec": 1711.0,
-    "moving_sec": 5197.4,
-    "elevation_gain_m": 67.6
+    "distance_km": 5.1974,
+    "elapsed_sec": 1743.0,
+    "moving_sec": 1711.0,
+    "total_elevation_m": 60.6
   },
   "17851666297": {
     "name": "Zwift - recover",
     "date": "Mar 25, 2026, 10:41:54 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0066,
+    "distance_km": 8.2064,
     "elapsed_sec": 1245.0,
-    "moving_sec": 8206.4,
-    "elevation_gain_m": 60.2
+    "moving_sec": 1245.0,
+    "total_elevation_m": 44.0
   },
   "17829225724": {
     "name": "Afternoon Ride",
     "date": "Mar 23, 2026, 4:06:34 PM",
     "type": "Ride",
-    "distance_km": 0.0047,
-    "elapsed_sec": 593.0,
-    "moving_sec": 2757.6,
-    "elevation_gain_m": 39.6
+    "distance_km": 2.7576,
+    "elapsed_sec": 681.0,
+    "moving_sec": 593.0,
+    "total_elevation_m": 23.0
   },
   "17819024542": {
     "name": "I pulled 60%",
     "date": "Mar 22, 2026, 11:30:11 AM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 13826.0,
-    "moving_sec": 94456.6,
-    "elevation_gain_m": 14.8
+    "distance_km": 94.4566,
+    "elapsed_sec": 18441.0,
+    "moving_sec": 13826.0,
+    "total_elevation_m": 1003.0
   },
   "17851444755": {
     "name": "Lunch Run",
     "date": "Mar 21, 2026, 12:08:49 PM",
     "type": "Run",
-    "distance_km": 0.0028,
-    "elapsed_sec": 3549.0,
-    "moving_sec": 10025.0,
-    "elevation_gain_m": 30.4
+    "distance_km": 10.025,
+    "elapsed_sec": 3616.0,
+    "moving_sec": 3549.0,
+    "total_elevation_m": 50.6
   },
   "17802718052": {
     "name": "Lunch Run",
     "date": "Mar 21, 2026, 12:08:46 PM",
     "type": "Run",
-    "distance_km": 0.0029,
-    "elapsed_sec": 3332.0,
-    "moving_sec": 9658.6,
-    "elevation_gain_m": 30.1
+    "distance_km": 9.6586,
+    "elapsed_sec": 3496.0,
+    "moving_sec": 3332.0,
+    "total_elevation_m": 32.0
   },
   "17805082624": {
     "name": "Zwift - recover",
     "date": "Mar 21, 2026, 3:34:57 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0057,
+    "distance_km": 7.0023,
     "elapsed_sec": 1218.0,
-    "moving_sec": 7002.3,
-    "elevation_gain_m": 279.4
+    "moving_sec": 1218.0,
+    "total_elevation_m": 68.0
   },
   "17768727816": {
     "name": "Thank you everyone😭😭",
     "date": "Mar 18, 2026, 1:58:20 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 9046.0,
-    "moving_sec": 57970.6,
-    "elevation_gain_m": 48.0
+    "distance_km": 57.9706,
+    "elapsed_sec": 10298.0,
+    "moving_sec": 9046.0,
+    "total_elevation_m": 887.0
   },
   "17747844301": {
     "name": "Evening Ride",
     "date": "Mar 16, 2026, 8:32:49 PM",
     "type": "Ride",
-    "distance_km": 0.0047,
-    "elapsed_sec": 838.0,
-    "moving_sec": 3933.5,
-    "elevation_gain_m": 30.2
+    "distance_km": 3.9335,
+    "elapsed_sec": 8587.0,
+    "moving_sec": 838.0,
+    "total_elevation_m": 79.2
   },
   "17745885484": {
     "name": "Evening Run",
     "date": "Mar 16, 2026, 6:56:08 PM",
     "type": "Run",
-    "distance_km": 0.0024,
-    "elapsed_sec": 1818.0,
-    "moving_sec": 4357.6,
-    "elevation_gain_m": 54.8
+    "distance_km": 4.3576,
+    "elapsed_sec": 2057.0,
+    "moving_sec": 1818.0,
+    "total_elevation_m": 54.6
   },
   "17745883525": {
     "name": "Evening Run",
     "date": "Mar 16, 2026, 6:55:58 PM",
     "type": "Run",
-    "distance_km": 0.0025,
-    "elapsed_sec": 1787.0,
-    "moving_sec": 4488.5,
-    "elevation_gain_m": 54.8
+    "distance_km": 4.4885,
+    "elapsed_sec": 2058.0,
+    "moving_sec": 1787.0,
+    "total_elevation_m": 54.7
   },
   "17686920548": {
     "name": "Afternoon Ride",
     "date": "Mar 11, 2026, 2:01:41 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 8383.0,
-    "moving_sec": 53702.2,
-    "elevation_gain_m": 22.0
+    "distance_km": 53.7022,
+    "elapsed_sec": 9725.0,
+    "moving_sec": 8383.0,
+    "total_elevation_m": 726.0
   },
   "17649337160": {
     "name": "Morning Ride",
     "date": "Mar 8, 2026, 10:20:52 AM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 10610.0,
-    "moving_sec": 68429.6,
-    "elevation_gain_m": 49.2
+    "distance_km": 68.4296,
+    "elapsed_sec": 14106.0,
+    "moving_sec": 10610.0,
+    "total_elevation_m": 862.0
   },
   "17634694885": {
     "name": "No.1 Coach in WY",
     "date": "Mar 7, 2026, 10:33:33 AM",
     "type": "Run",
-    "distance_km": 0.0027,
-    "elapsed_sec": 4571.0,
-    "moving_sec": 12264.8,
-    "elevation_gain_m": 30.3
+    "distance_km": 12.2648,
+    "elapsed_sec": 4716.0,
+    "moving_sec": 4571.0,
+    "total_elevation_m": 23.3
   },
   "17636182734": {
     "name": "Zwift - recover",
     "date": "Mar 7, 2026, 1:18:43 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.006,
+    "distance_km": 11.1116,
     "elapsed_sec": 1840.0,
-    "moving_sec": 11111.6,
-    "elevation_gain_m": 60.2
+    "moving_sec": 1840.0,
+    "total_elevation_m": 75.0
   },
   "17617858651": {
     "name": "Recover",
     "date": "Mar 5, 2026, 8:12:05 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0072,
+    "distance_km": 19.823,
     "elapsed_sec": 2753.0,
-    "moving_sec": 19823.0,
-    "elevation_gain_m": 60.2
+    "moving_sec": 2753.0,
+    "total_elevation_m": 123.0
   },
   "17602532572": {
     "name": "Afternoon Ride",
     "date": "Mar 4, 2026, 2:11:05 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 7864.0,
-    "moving_sec": 51478.3,
-    "elevation_gain_m": 24.8
+    "distance_km": 51.4783,
+    "elapsed_sec": 8262.0,
+    "moving_sec": 7864.0,
+    "total_elevation_m": 654.0
   },
   "17593765445": {
     "name": "Recover from running",
     "date": "Mar 3, 2026, 9:10:15 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 2736.0,
-    "moving_sec": 17459.5,
-    "elevation_gain_m": 60.2
+    "distance_km": 17.4595,
+    "elapsed_sec": 2763.0,
+    "moving_sec": 2736.0,
+    "total_elevation_m": 116.0
   },
   "17579698828": {
     "name": "My 1st 5k",
     "date": "Mar 2, 2026, 6:56:28 PM",
     "type": "Run",
-    "distance_km": 0.0025,
-    "elapsed_sec": 1980.0,
-    "moving_sec": 4948.0,
-    "elevation_gain_m": 30.5
+    "distance_km": 4.948,
+    "elapsed_sec": 2126.0,
+    "moving_sec": 1980.0,
+    "total_elevation_m": 67.4
   },
   "17578896795": {
     "name": "Evening Run",
     "date": "Mar 2, 2026, 6:23:34 PM",
     "type": "Run",
-    "distance_km": 0.0021,
-    "elapsed_sec": 122.0,
-    "moving_sec": 251.3,
-    "elevation_gain_m": 71.7
+    "distance_km": 0.2513,
+    "elapsed_sec": 162.0,
+    "moving_sec": 122.0,
+    "total_elevation_m": 14.4
   },
   "17580994628": {
     "name": "Zwift - zone2",
     "date": "Mar 2, 2026, 8:24:34 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0071,
+    "distance_km": 35.0906,
     "elapsed_sec": 4950.0,
-    "moving_sec": 35090.6,
-    "elevation_gain_m": 60.2
+    "moving_sec": 4950.0,
+    "total_elevation_m": 230.0
   },
   "17519863754": {
     "name": "Crazy drivers！",
     "date": "Feb 25, 2026, 1:57:04 PM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 7936.0,
-    "moving_sec": 48112.1,
-    "elevation_gain_m": 34.8
+    "distance_km": 48.1121,
+    "elapsed_sec": 9084.0,
+    "moving_sec": 7936.0,
+    "total_elevation_m": 652.0
   },
   "17510922430": {
     "name": "Zwift - recover on Times Square Circuit in New York",
     "date": "Feb 24, 2026, 8:31:09 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0067,
+    "distance_km": 18.415,
     "elapsed_sec": 2739.0,
-    "moving_sec": 18415.0,
-    "elevation_gain_m": 69.2
+    "moving_sec": 2739.0,
+    "total_elevation_m": 112.0
   },
   "17484477797": {
     "name": "A lovely day",
     "date": "Feb 22, 2026, 9:51:09 AM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 11572.0,
-    "moving_sec": 73058.0,
-    "elevation_gain_m": 7.2
+    "distance_km": 73.058,
+    "elapsed_sec": 16509.0,
+    "moving_sec": 11572.0,
+    "total_elevation_m": 827.0
   },
   "17443761090": {
     "name": "Zwift - zone2 on Prospect Park Loop in New York",
     "date": "Feb 18, 2026, 8:21:32 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0068,
+    "distance_km": 19.3323,
     "elapsed_sec": 2858.0,
-    "moving_sec": 19332.3,
-    "elevation_gain_m": 60.2
+    "moving_sec": 2858.0,
+    "total_elevation_m": 131.0
   },
   "17443341496": {
     "name": "Zwift - FTP Ramp Test [Lite] on Prospect Park Loop in New York",
     "date": "Feb 18, 2026, 7:54:25 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0074,
+    "distance_km": 11.612,
     "elapsed_sec": 1572.0,
-    "moving_sec": 11612.0,
-    "elevation_gain_m": 60.2
+    "moving_sec": 1572.0,
+    "total_elevation_m": 80.0
   },
   "17443060168": {
     "name": "zone",
     "date": "Feb 18, 2026, 7:21:54 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0072,
+    "distance_km": 13.0368,
     "elapsed_sec": 1807.0,
-    "moving_sec": 13036.8,
-    "elevation_gain_m": 60.2
+    "moving_sec": 1807.0,
+    "total_elevation_m": 79.0
   },
   "17410979376": {
     "name": "Zwift - recover on Ocean Lava Cliffside Loop in Watopia",
     "date": "Feb 15, 2026, 10:17:05 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0064,
+    "distance_km": 8.7529,
     "elapsed_sec": 1360.0,
-    "moving_sec": 8752.9,
-    "elevation_gain_m": 0.4
+    "moving_sec": 1360.0,
+    "total_elevation_m": 39.0
   },
   "17410825902": {
     "name": "生锈身体",
     "date": "Feb 15, 2026, 9:51:22 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 1469.0,
-    "moving_sec": 10862.0,
-    "elevation_gain_m": 3.0
+    "distance_km": 10.862,
+    "elapsed_sec": 1492.0,
+    "moving_sec": 1469.0,
+    "total_elevation_m": 109.0
   },
   "17387536653": {
     "name": "看完了超时空辉夜姬",
     "date": "Feb 13, 2026, 7:26:58 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0085,
+    "distance_km": 30.6866,
     "elapsed_sec": 3624.0,
-    "moving_sec": 30686.6,
-    "elevation_gain_m": 60.2
+    "moving_sec": 3624.0,
+    "total_elevation_m": 197.0
   },
   "17363560631": {
     "name": "不中了",
     "date": "Feb 11, 2026, 2:36:27 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0074,
+    "distance_km": 31.9399,
     "elapsed_sec": 4288.0,
-    "moving_sec": 31939.9,
-    "elevation_gain_m": 60.2
+    "moving_sec": 4288.0,
+    "total_elevation_m": 223.0
   },
   "17355022778": {
     "name": "Zwift - zone2 on Prospect Park Loop in New York",
     "date": "Feb 10, 2026, 6:16:33 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0078,
+    "distance_km": 56.8443,
     "elapsed_sec": 7243.0,
-    "moving_sec": 56844.3,
-    "elevation_gain_m": 60.2
+    "moving_sec": 7243.0,
+    "total_elevation_m": 379.0
   },
   "17344590669": {
     "name": "Zwift - Joe Wang's Meetup on Big Flat 8 in Watopia",
     "date": "Feb 9, 2026, 9:24:51 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 4812.0,
-    "moving_sec": 42210.4,
-    "elevation_gain_m": -6.4
+    "distance_km": 42.2104,
+    "elapsed_sec": 5535.0,
+    "moving_sec": 4812.0,
+    "total_elevation_m": 152.0
   },
   "17322822583": {
     "name": "Zwift - 30min120 on Prospect Park Loop in New York",
     "date": "Feb 7, 2026, 11:31:57 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0085,
+    "distance_km": 15.32,
     "elapsed_sec": 1811.0,
-    "moving_sec": 15320.0,
-    "elevation_gain_m": 60.2
+    "moving_sec": 1811.0,
+    "total_elevation_m": 101.0
   },
   "17187298106": {
     "name": "Zwift - zone2 on Prospect Park Loop in New York",
     "date": "Jan 26, 2026, 8:46:57 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 4015.0,
-    "moving_sec": 31956.3,
-    "elevation_gain_m": 60.2
+    "distance_km": 31.9563,
+    "elapsed_sec": 4032.0,
+    "moving_sec": 4015.0,
+    "total_elevation_m": 223.0
   },
   "17109825981": {
     "name": "Blue Monday",
     "date": "Jan 19, 2026, 11:25:43 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0083,
+    "distance_km": 10.1669,
     "elapsed_sec": 1224.0,
-    "moving_sec": 10166.9,
-    "elevation_gain_m": 60.2
+    "moving_sec": 1224.0,
+    "total_elevation_m": 74.0
   },
   "17109631084": {
     "name": "Zwift - zone2 on Prospect Park Loop in New York",
     "date": "Jan 19, 2026, 10:40:32 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 706.0,
-    "moving_sec": 5221.7,
-    "elevation_gain_m": 60.2
+    "distance_km": 5.2217,
+    "elapsed_sec": 723.0,
+    "moving_sec": 706.0,
+    "total_elevation_m": 37.0
   },
   "17071753739": {
     "name": "Zwift - 新的鍛鍊課程 on Prospect Park Loop in New York",
     "date": "Jan 16, 2026, 4:47:13 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 1984.0,
-    "moving_sec": 16281.1,
-    "elevation_gain_m": 60.2
+    "distance_km": 16.2811,
+    "elapsed_sec": 2077.0,
+    "moving_sec": 1984.0,
+    "total_elevation_m": 112.0
   },
   "17053155699": {
     "name": "Chill before meeting",
     "date": "Jan 14, 2026, 11:27:15 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0083,
+    "distance_km": 15.6318,
     "elapsed_sec": 1874.0,
-    "moving_sec": 15631.8,
-    "elevation_gain_m": 60.2
+    "moving_sec": 1874.0,
+    "total_elevation_m": 111.0
   },
   "17027222529": {
     "name": "Zwift - zone2 on Prospect Park Loop in New York",
     "date": "Jan 12, 2026, 7:57:45 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 3994.0,
-    "moving_sec": 31928.5,
-    "elevation_gain_m": 60.2
+    "distance_km": 31.9285,
+    "elapsed_sec": 4038.0,
+    "moving_sec": 3994.0,
+    "total_elevation_m": 223.0
   },
   "16994141089": {
     "name": "我没有风扇md",
     "date": "Jan 9, 2026, 9:27:28 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 3675.0,
-    "moving_sec": 26197.5,
-    "elevation_gain_m": 1.2
+    "distance_km": 26.1975,
+    "elapsed_sec": 3692.0,
+    "moving_sec": 3675.0,
+    "total_elevation_m": 321.0
   },
   "16864212659": {
     "name": "别慌 有脚点",
     "date": "Dec 28, 2025, 11:22:23 AM",
     "type": "Hike",
-    "distance_km": 0.0008,
-    "elapsed_sec": 2932.0,
-    "moving_sec": 2456.6,
-    "elevation_gain_m": 38.2
+    "distance_km": 2.4566,
+    "elapsed_sec": 6549.0,
+    "moving_sec": 2932.0,
+    "total_elevation_m": 256.9
   },
   "16563293541": {
     "name": "Afternoon Ride",
     "date": "Nov 25, 2025, 2:56:37 PM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 4443.0,
-    "moving_sec": 27510.6,
-    "elevation_gain_m": 37.4
+    "distance_km": 27.5106,
+    "elapsed_sec": 4695.0,
+    "moving_sec": 4443.0,
+    "total_elevation_m": 325.0
   },
   "16552398577": {
     "name": "Lunch Ride",
     "date": "Nov 24, 2025, 12:03:01 PM",
     "type": "Ride",
-    "distance_km": 0.0027,
-    "elapsed_sec": 1659.0,
-    "moving_sec": 4448.9,
-    "elevation_gain_m": 52.8
+    "distance_km": 4.4489,
+    "elapsed_sec": 6595.0,
+    "moving_sec": 1659.0,
+    "total_elevation_m": 51.0
   },
   "16552406361": {
     "name": "Lunch Ride",
     "date": "Nov 21, 2025, 12:55:46 PM",
     "type": "Ride",
-    "distance_km": 0.0042,
-    "elapsed_sec": 1377.0,
-    "moving_sec": 5745.5,
-    "elevation_gain_m": 31.8
+    "distance_km": 5.7455,
+    "elapsed_sec": 1657.0,
+    "moving_sec": 1377.0,
+    "total_elevation_m": 52.0
   },
   "16476394850": {
     "name": "Bad legs😭",
     "date": "Nov 16, 2025, 10:10:55 AM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 11869.0,
-    "moving_sec": 73985.8,
-    "elevation_gain_m": 24.4
+    "distance_km": 73.9858,
+    "elapsed_sec": 15937.0,
+    "moving_sec": 11869.0,
+    "total_elevation_m": 1002.0
   },
   "16447578268": {
     "name": "A very unsafe one",
     "date": "Nov 13, 2025, 2:52:02 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 8077.0,
-    "moving_sec": 46211.4,
-    "elevation_gain_m": 41.6
+    "distance_km": 46.2114,
+    "elapsed_sec": 8402.0,
+    "moving_sec": 8077.0,
+    "total_elevation_m": 704.0
   },
   "16613808948": {
     "name": "What’s this",
@@ -371796,1133 +371798,1133 @@ const ACTIVITY_METADATA = {
     "type": "Swim",
     "distance_km": 0.0,
     "elapsed_sec": 1911727.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 1911727.0,
+    "total_elevation_m": 0.0
   },
   "16333414542": {
     "name": "Not yet winter",
     "date": "Nov 2, 2025, 1:26:31 PM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 7371.0,
-    "moving_sec": 44616.7,
-    "elevation_gain_m": 40.6
+    "distance_km": 44.6167,
+    "elapsed_sec": 7821.0,
+    "moving_sec": 7371.0,
+    "total_elevation_m": 593.0
   },
   "16260917452": {
     "name": "My back tire is gone",
     "date": "Oct 26, 2025, 10:11:11 AM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 2047.0,
-    "moving_sec": 14064.5,
-    "elevation_gain_m": 82.2
+    "distance_km": 14.0645,
+    "elapsed_sec": 2127.0,
+    "moving_sec": 2047.0,
+    "total_elevation_m": 183.6
   },
   "16162623937": {
     "name": "Who’s selling a kicker in Leeds?",
     "date": "Oct 16, 2025, 4:45:24 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 4653.0,
-    "moving_sec": 32740.8,
-    "elevation_gain_m": 66.0
+    "distance_km": 32.7408,
+    "elapsed_sec": 5435.0,
+    "moving_sec": 4653.0,
+    "total_elevation_m": 315.0
   },
   "16088385329": {
     "name": "Left turn my nightmare",
     "date": "Oct 9, 2025, 4:45:14 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 4156.0,
-    "moving_sec": 28970.6,
-    "elevation_gain_m": 75.2
+    "distance_km": 28.9706,
+    "elapsed_sec": 5780.0,
+    "moving_sec": 4156.0,
+    "total_elevation_m": 246.0
   },
   "16059660618": {
     "name": "Morning Ride",
     "date": "Oct 7, 2025, 5:41:29 AM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 4651.0,
-    "moving_sec": 27829.2,
-    "elevation_gain_m": 39.4
+    "distance_km": 27.8292,
+    "elapsed_sec": 4808.0,
+    "moving_sec": 4651.0,
+    "total_elevation_m": 332.0
   },
   "16041758492": {
     "name": "Windy AF",
     "date": "Oct 5, 2025, 9:08:26 AM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 10661.0,
-    "moving_sec": 66532.7,
-    "elevation_gain_m": 52.4
+    "distance_km": 66.5327,
+    "elapsed_sec": 14906.0,
+    "moving_sec": 10661.0,
+    "total_elevation_m": 897.0
   },
   "15986652184": {
     "name": "Afternoon Ride",
     "date": "Sep 30, 2025, 12:32:25 PM",
     "type": "Ride",
-    "distance_km": 0.0043,
-    "elapsed_sec": 1678.0,
-    "moving_sec": 7207.2,
-    "elevation_gain_m": 29.2
+    "distance_km": 7.2072,
+    "elapsed_sec": 3102.0,
+    "moving_sec": 1678.0,
+    "total_elevation_m": 114.0
   },
   "15964879458": {
     "name": "IELTS Ride",
     "date": "Sep 28, 2025, 9:08:23 AM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 10245.0,
-    "moving_sec": 62516.7,
-    "elevation_gain_m": 34.2
+    "distance_km": 62.5167,
+    "elapsed_sec": 14412.0,
+    "moving_sec": 10245.0,
+    "total_elevation_m": 842.0
   },
   "15955311875": {
     "name": "Evening Ride",
     "date": "Sep 25, 2025, 6:45:22 PM",
     "type": "Ride",
-    "distance_km": 0.005,
-    "elapsed_sec": 1408.0,
-    "moving_sec": 7048.0,
-    "elevation_gain_m": -87.4
+    "distance_km": 7.048,
+    "elapsed_sec": 1526.0,
+    "moving_sec": 1408.0,
+    "total_elevation_m": 51.0
   },
   "15935241514": {
     "name": "GIAG",
     "date": "Sep 25, 2025, 4:27:43 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 5514.0,
-    "moving_sec": 36223.1,
-    "elevation_gain_m": -75.4
+    "distance_km": 36.2231,
+    "elapsed_sec": 7811.0,
+    "moving_sec": 5514.0,
+    "total_elevation_m": 268.0
   },
   "15863198473": {
     "name": "Afternoon Ride",
     "date": "Sep 19, 2025, 8:53:57 AM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 3741.0,
-    "moving_sec": 24759.9,
-    "elevation_gain_m": 4.4
+    "distance_km": 24.7599,
+    "elapsed_sec": 5296.0,
+    "moving_sec": 3741.0,
+    "total_elevation_m": 152.0
   },
   "15683411458": {
     "name": "Evening Ride",
     "date": "Sep 3, 2025, 12:25:11 PM",
     "type": "Ride",
-    "distance_km": 0.0089,
-    "elapsed_sec": 5879.0,
-    "moving_sec": 52270.9,
-    "elevation_gain_m": 1.2
+    "distance_km": 52.2709,
+    "elapsed_sec": 6728.0,
+    "moving_sec": 5879.0,
+    "total_elevation_m": 230.0
   },
   "15683349295": {
     "name": "Afternoon Swim",
     "date": "Sep 3, 2025, 6:08:49 AM",
     "type": "Swim",
-    "distance_km": 0.0006,
-    "elapsed_sec": 2379.0,
-    "moving_sec": 1500.0,
-    "elevation_gain_m": 0.0
+    "distance_km": 1.5,
+    "elapsed_sec": 4358.0,
+    "moving_sec": 2379.0,
+    "total_elevation_m": 0.0
   },
   "15674666821": {
     "name": "I swim 2000 today!",
     "date": "Sep 2, 2025, 12:04:38 PM",
     "type": "Swim",
-    "distance_km": 0.0007,
-    "elapsed_sec": 2275.0,
-    "moving_sec": 1500.0,
-    "elevation_gain_m": 0.0
+    "distance_km": 1.5,
+    "elapsed_sec": 4413.0,
+    "moving_sec": 2275.0,
+    "total_elevation_m": 0.0
   },
   "15683367803": {
     "name": "Morning Ride",
     "date": "Sep 1, 2025, 1:22:48 AM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 5278.0,
-    "moving_sec": 33230.6,
-    "elevation_gain_m": 5.6
+    "distance_km": 33.2306,
+    "elapsed_sec": 7407.0,
+    "moving_sec": 5278.0,
+    "total_elevation_m": 187.0
   },
   "15626371736": {
     "name": "Evening Ride",
     "date": "Aug 29, 2025, 12:53:54 PM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 1189.0,
-    "moving_sec": 6939.5,
-    "elevation_gain_m": 1.6
+    "distance_km": 6.9395,
+    "elapsed_sec": 1253.0,
+    "moving_sec": 1189.0,
+    "total_elevation_m": 15.0
   },
   "15626173299": {
     "name": "Evening Ride",
     "date": "Aug 29, 2025, 10:48:09 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 5994.0,
-    "moving_sec": 52393.9,
-    "elevation_gain_m": 3.2
+    "distance_km": 52.3939,
+    "elapsed_sec": 7418.0,
+    "moving_sec": 5994.0,
+    "total_elevation_m": 250.0
   },
   "15613064176": {
     "name": "Afternoon Swim",
     "date": "Aug 28, 2025, 6:17:36 AM",
     "type": "Swim",
-    "distance_km": 0.0006,
-    "elapsed_sec": 1897.0,
-    "moving_sec": 1200.0,
-    "elevation_gain_m": 0.0
+    "distance_km": 1.2,
+    "elapsed_sec": 3903.0,
+    "moving_sec": 1897.0,
+    "total_elevation_m": 0.0
   },
   "15604527729": {
     "name": "这几天体感怎么回事",
     "date": "Aug 27, 2025, 10:50:44 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 7572.0,
-    "moving_sec": 66927.0,
-    "elevation_gain_m": 1.2
+    "distance_km": 66.927,
+    "elapsed_sec": 8501.0,
+    "moving_sec": 7572.0,
+    "total_elevation_m": 315.0
   },
   "15600332932": {
     "name": "Morning Swim",
     "date": "Aug 27, 2025, 2:52:20 AM",
     "type": "Swim",
-    "distance_km": 0.0006,
-    "elapsed_sec": 1965.0,
-    "moving_sec": 1200.0,
-    "elevation_gain_m": 0.0
+    "distance_km": 1.2,
+    "elapsed_sec": 3603.0,
+    "moving_sec": 1965.0,
+    "total_elevation_m": 0.0
   },
   "15593045641": {
     "name": "Evening Ride",
     "date": "Aug 26, 2025, 12:15:11 PM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 5975.0,
-    "moving_sec": 52302.5,
-    "elevation_gain_m": 2.6
+    "distance_km": 52.3025,
+    "elapsed_sec": 6852.0,
+    "moving_sec": 5975.0,
+    "total_elevation_m": 231.0
   },
   "15579092840": {
     "name": "Afternoon Swim",
     "date": "Aug 25, 2025, 6:12:18 AM",
     "type": "Swim",
-    "distance_km": 0.0007,
-    "elapsed_sec": 2220.0,
-    "moving_sec": 1550.0,
-    "elevation_gain_m": 0.0
+    "distance_km": 1.55,
+    "elapsed_sec": 4422.0,
+    "moving_sec": 2220.0,
+    "total_elevation_m": 0.0
   },
   "15536365572": {
     "name": "Night Ride",
     "date": "Aug 21, 2025, 1:45:02 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 1153.0,
-    "moving_sec": 7325.7,
-    "elevation_gain_m": 2.0
+    "distance_km": 7.3257,
+    "elapsed_sec": 1219.0,
+    "moving_sec": 1153.0,
+    "total_elevation_m": 16.0
   },
   "15536365898": {
     "name": "Lykos skin suit👍🏻",
     "date": "Aug 21, 2025, 11:14:38 AM",
     "type": "Ride",
-    "distance_km": 0.0092,
-    "elapsed_sec": 7315.0,
-    "moving_sec": 67174.1,
-    "elevation_gain_m": 4.2
+    "distance_km": 67.1741,
+    "elapsed_sec": 8975.0,
+    "moving_sec": 7315.0,
+    "total_elevation_m": 306.0
   },
   "15537231178": {
     "name": "Afternoon Swim",
     "date": "Aug 21, 2025, 5:55:06 AM",
     "type": "Swim",
-    "distance_km": 0.0007,
-    "elapsed_sec": 1459.0,
-    "moving_sec": 1050.0,
-    "elevation_gain_m": 0.0
+    "distance_km": 1.05,
+    "elapsed_sec": 6827.0,
+    "moving_sec": 1459.0,
+    "total_elevation_m": 0.0
   },
   "15536360699": {
     "name": "Evening Ride",
     "date": "Aug 19, 2025, 10:50:28 AM",
     "type": "Ride",
-    "distance_km": 0.0059,
-    "elapsed_sec": 3797.0,
-    "moving_sec": 22297.5,
-    "elevation_gain_m": 4.8
+    "distance_km": 22.2975,
+    "elapsed_sec": 4292.0,
+    "moving_sec": 3797.0,
+    "total_elevation_m": 27.0
   },
   "15500937466": {
     "name": "Night Ride",
     "date": "Aug 18, 2025, 1:44:54 PM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 1257.0,
-    "moving_sec": 7486.0,
-    "elevation_gain_m": 1.8
+    "distance_km": 7.486,
+    "elapsed_sec": 1358.0,
+    "moving_sec": 1257.0,
+    "total_elevation_m": 16.0
   },
   "15500937604": {
     "name": "游完泳竟然还骑得动",
     "date": "Aug 18, 2025, 11:12:24 AM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 6394.0,
-    "moving_sec": 52552.0,
-    "elevation_gain_m": 2.4
+    "distance_km": 52.552,
+    "elapsed_sec": 9100.0,
+    "moving_sec": 6394.0,
+    "total_elevation_m": 252.0
   },
   "15478668405": {
     "name": "Night Ride",
     "date": "Aug 16, 2025, 1:19:22 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 1267.0,
-    "moving_sec": 7174.4,
-    "elevation_gain_m": 1.6
+    "distance_km": 7.1744,
+    "elapsed_sec": 1410.0,
+    "moving_sec": 1267.0,
+    "total_elevation_m": 17.0
   },
   "15478660642": {
     "name": "带沪爷体验环马山",
     "date": "Aug 16, 2025, 10:43:31 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 7814.0,
-    "moving_sec": 66752.5,
-    "elevation_gain_m": 1.4
+    "distance_km": 66.7525,
+    "elapsed_sec": 9275.0,
+    "moving_sec": 7814.0,
+    "total_elevation_m": 329.0
   },
   "15456343913": {
     "name": "Night Ride",
     "date": "Aug 14, 2025, 1:10:11 PM",
     "type": "Ride",
-    "distance_km": 0.0046,
+    "distance_km": 1.6307,
     "elapsed_sec": 352.0,
-    "moving_sec": 1630.7,
-    "elevation_gain_m": 1.0
+    "moving_sec": 352.0,
+    "total_elevation_m": 3.0
   },
   "15456202012": {
     "name": "怎么这么累",
     "date": "Aug 14, 2025, 11:02:52 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 5363.0,
-    "moving_sec": 47098.2,
-    "elevation_gain_m": 3.0
+    "distance_km": 47.0982,
+    "elapsed_sec": 7545.0,
+    "moving_sec": 5363.0,
+    "total_elevation_m": 227.0
   },
   "15445678102": {
     "name": "Evening Ride",
     "date": "Aug 13, 2025, 12:21:17 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 7190.0,
-    "moving_sec": 52882.3,
-    "elevation_gain_m": 0.8
+    "distance_km": 52.8823,
+    "elapsed_sec": 8545.0,
+    "moving_sec": 7190.0,
+    "total_elevation_m": 257.0
   },
   "15400243634": {
     "name": "Evening Ride",
     "date": "Aug 9, 2025, 12:15:12 PM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 8961.0,
-    "moving_sec": 67795.3,
-    "elevation_gain_m": 0.2
+    "distance_km": 67.7953,
+    "elapsed_sec": 10243.0,
+    "moving_sec": 8961.0,
+    "total_elevation_m": 308.0
   },
   "15388884083": {
     "name": "Night Ride",
     "date": "Aug 8, 2025, 2:44:23 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 1304.0,
-    "moving_sec": 7392.9,
-    "elevation_gain_m": 3.2
+    "distance_km": 7.3929,
+    "elapsed_sec": 1403.0,
+    "moving_sec": 1304.0,
+    "total_elevation_m": 16.0
   },
   "15388692460": {
     "name": "Evening Ride",
     "date": "Aug 8, 2025, 12:19:28 PM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 7709.0,
-    "moving_sec": 67063.1,
-    "elevation_gain_m": 3.0
+    "distance_km": 67.0631,
+    "elapsed_sec": 8664.0,
+    "moving_sec": 7709.0,
+    "total_elevation_m": 301.0
   },
   "15352812716": {
     "name": "Hot Af",
     "date": "Aug 5, 2025, 11:07:14 AM",
     "type": "Ride",
-    "distance_km": 0.0086,
-    "elapsed_sec": 6732.0,
-    "moving_sec": 58024.1,
-    "elevation_gain_m": 4.0
+    "distance_km": 58.0241,
+    "elapsed_sec": 9640.0,
+    "moving_sec": 6732.0,
+    "total_elevation_m": 246.0
   },
   "15330587584": {
     "name": "Rest day",
     "date": "Aug 3, 2025, 10:50:49 AM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 8104.0,
-    "moving_sec": 60027.4,
-    "elevation_gain_m": 3.2
+    "distance_km": 60.0274,
+    "elapsed_sec": 9388.0,
+    "moving_sec": 8104.0,
+    "total_elevation_m": 251.0
   },
   "15318646261": {
     "name": "Evening Ride",
     "date": "Aug 2, 2025, 12:23:05 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 1299.0,
-    "moving_sec": 7339.3,
-    "elevation_gain_m": 2.4
+    "distance_km": 7.3393,
+    "elapsed_sec": 1387.0,
+    "moving_sec": 1299.0,
+    "total_elevation_m": 17.0
   },
   "15318646425": {
     "name": "手机骑进水了",
     "date": "Aug 2, 2025, 10:17:26 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 5536.0,
-    "moving_sec": 51906.6,
-    "elevation_gain_m": 3.4
+    "distance_km": 51.9066,
+    "elapsed_sec": 7479.0,
+    "moving_sec": 5536.0,
+    "total_elevation_m": 230.0
   },
   "15308478619": {
     "name": "Intensity before rain",
     "date": "Aug 1, 2025, 12:54:40 PM",
     "type": "Ride",
-    "distance_km": 0.0091,
+    "distance_km": 23.6601,
     "elapsed_sec": 2594.0,
-    "moving_sec": 23660.1,
-    "elevation_gain_m": 4.4
+    "moving_sec": 2594.0,
+    "total_elevation_m": 6.0
   },
   "15303935463": {
     "name": "Feel like 100F",
     "date": "Aug 1, 2025, 12:00:25 AM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 6270.0,
-    "moving_sec": 47945.2,
-    "elevation_gain_m": 2.4
+    "distance_km": 47.9452,
+    "elapsed_sec": 6588.0,
+    "moving_sec": 6270.0,
+    "total_elevation_m": 28.0
   },
   "15263137788": {
     "name": "🍊精品有氧大团",
     "date": "Jul 28, 2025, 10:45:18 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 6668.0,
-    "moving_sec": 58408.1,
-    "elevation_gain_m": -12.4
+    "distance_km": 58.4081,
+    "elapsed_sec": 8413.0,
+    "moving_sec": 6668.0,
+    "total_elevation_m": 196.0
   },
   "15242050961": {
     "name": "聪聪有氧精品小团",
     "date": "Jul 26, 2025, 11:16:26 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 6657.0,
-    "moving_sec": 58902.4,
-    "elevation_gain_m": 1.0
+    "distance_km": 58.9024,
+    "elapsed_sec": 7666.0,
+    "moving_sec": 6657.0,
+    "total_elevation_m": 277.0
   },
   "15231654272": {
     "name": "Evening Ride",
     "date": "Jul 25, 2025, 11:54:05 AM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 5420.0,
-    "moving_sec": 43776.1,
-    "elevation_gain_m": 2.4
+    "distance_km": 43.7761,
+    "elapsed_sec": 6130.0,
+    "moving_sec": 5420.0,
+    "total_elevation_m": 237.0
   },
   "15210548325": {
     "name": "Night Ride",
     "date": "Jul 23, 2025, 2:27:33 PM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 1177.0,
-    "moving_sec": 7088.0,
-    "elevation_gain_m": 3.4
+    "distance_km": 7.088,
+    "elapsed_sec": 1280.0,
+    "moving_sec": 1177.0,
+    "total_elevation_m": 16.0
   },
   "15210263515": {
     "name": "Evening Ride",
     "date": "Jul 23, 2025, 12:15:51 PM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 6502.0,
-    "moving_sec": 52527.4,
-    "elevation_gain_m": 1.6
+    "distance_km": 52.5274,
+    "elapsed_sec": 7398.0,
+    "moving_sec": 6502.0,
+    "total_elevation_m": 255.0
   },
   "15194085256": {
     "name": "已老实 求放过",
     "date": "Jul 22, 2025, 3:40:13 AM",
     "type": "Ride",
-    "distance_km": 0.0075,
-    "elapsed_sec": 7446.0,
-    "moving_sec": 55588.2,
-    "elevation_gain_m": 2.2
+    "distance_km": 55.5882,
+    "elapsed_sec": 8367.0,
+    "moving_sec": 7446.0,
+    "total_elevation_m": 116.0
   },
   "15159889598": {
     "name": "Morning Ride",
     "date": "Jul 18, 2025, 11:40:42 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 1038.0,
-    "moving_sec": 6892.9,
-    "elevation_gain_m": 0.4
+    "distance_km": 6.8929,
+    "elapsed_sec": 1080.0,
+    "moving_sec": 1038.0,
+    "total_elevation_m": 18.0
   },
   "15159926857": {
     "name": "hot af 2",
     "date": "Jul 18, 2025, 9:38:07 PM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 6074.0,
-    "moving_sec": 51345.5,
-    "elevation_gain_m": 3.8
+    "distance_km": 51.3455,
+    "elapsed_sec": 7291.0,
+    "moving_sec": 6074.0,
+    "total_elevation_m": 221.0
   },
   "15144475182": {
     "name": "和总裁骑车",
     "date": "Jul 17, 2025, 11:48:12 AM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 3994.0,
-    "moving_sec": 24931.4,
-    "elevation_gain_m": 5.2
+    "distance_km": 24.9314,
+    "elapsed_sec": 6107.0,
+    "moving_sec": 3994.0,
+    "total_elevation_m": 157.0
   },
   "15133583874": {
     "name": "Hot af",
     "date": "Jul 16, 2025, 11:32:51 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 5952.0,
-    "moving_sec": 56245.8,
-    "elevation_gain_m": 2.0
+    "distance_km": 56.2458,
+    "elapsed_sec": 5974.0,
+    "moving_sec": 5952.0,
+    "total_elevation_m": 20.0
   },
   "15122137600": {
     "name": "Back to Wuxi",
     "date": "Jul 15, 2025, 1:08:43 PM",
     "type": "Ride",
-    "distance_km": 0.0075,
-    "elapsed_sec": 2748.0,
-    "moving_sec": 20617.4,
-    "elevation_gain_m": 140.4
+    "distance_km": 20.6174,
+    "elapsed_sec": 3011.0,
+    "moving_sec": 2748.0,
+    "total_elevation_m": 13.0
   },
   "15102421893": {
     "name": "Last race in the US",
     "date": "Jul 13, 2025, 2:23:14 PM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 6020.0,
-    "moving_sec": 49039.8,
-    "elevation_gain_m": 187.6
+    "distance_km": 49.0398,
+    "elapsed_sec": 6068.0,
+    "moving_sec": 6020.0,
+    "total_elevation_m": 516.0
   },
   "15101089663": {
     "name": "Morning Ride",
     "date": "Jul 13, 2025, 1:55:22 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
+    "distance_km": 4.6781,
     "elapsed_sec": 734.0,
-    "moving_sec": 4678.1,
-    "elevation_gain_m": 234.8
+    "moving_sec": 734.0,
+    "total_elevation_m": 32.0
   },
   "15101083898": {
     "name": "Afternoon Ride",
     "date": "Jul 12, 2025, 5:01:14 PM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 4844.0,
-    "moving_sec": 28880.0,
-    "elevation_gain_m": -14.8
+    "distance_km": 28.88,
+    "elapsed_sec": 10028.0,
+    "moving_sec": 4844.0,
+    "total_elevation_m": 233.0
   },
   "15028526123": {
     "name": "Treasure the climbs",
     "date": "Jul 6, 2025, 1:10:19 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 14566.0,
-    "moving_sec": 93346.3,
-    "elevation_gain_m": 193.6
+    "distance_km": 93.3463,
+    "elapsed_sec": 19078.0,
+    "moving_sec": 14566.0,
+    "total_elevation_m": 1435.0
   },
   "15007541039": {
     "name": "吗的 傻逼老太差点被我创死",
     "date": "Jul 4, 2025, 5:43:07 PM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 2713.0,
-    "moving_sec": 16286.7,
-    "elevation_gain_m": 17.4
+    "distance_km": 16.2867,
+    "elapsed_sec": 2875.0,
+    "moving_sec": 2713.0,
+    "total_elevation_m": 117.0
   },
   "14954180806": {
     "name": "晒的我要晕了",
     "date": "Jun 29, 2025, 11:47:20 AM",
     "type": "Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 7062.0,
-    "moving_sec": 56284.5,
-    "elevation_gain_m": 5.0
+    "distance_km": 56.2845,
+    "elapsed_sec": 13001.0,
+    "moving_sec": 7062.0,
+    "total_elevation_m": 475.0
   },
   "14926245452": {
     "name": "Afternoon Ride",
     "date": "Jun 26, 2025, 7:35:37 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 6410.0,
-    "moving_sec": 45137.1,
-    "elevation_gain_m": 9.8
+    "distance_km": 45.1371,
+    "elapsed_sec": 6846.0,
+    "moving_sec": 6410.0,
+    "total_elevation_m": 329.0
   },
   "14900324678": {
     "name": "Pr in Alpine",
     "date": "Jun 24, 2025, 10:06:42 AM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 8115.0,
-    "moving_sec": 51606.3,
-    "elevation_gain_m": 7.6
+    "distance_km": 51.6063,
+    "elapsed_sec": 8974.0,
+    "moving_sec": 8115.0,
+    "total_elevation_m": 524.0
   },
   "14871218490": {
     "name": "Real zone2",
     "date": "Jun 21, 2025, 11:40:03 AM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 7226.0,
-    "moving_sec": 56214.4,
-    "elevation_gain_m": 5.0
+    "distance_km": 56.2144,
+    "elapsed_sec": 11219.0,
+    "moving_sec": 7226.0,
+    "total_elevation_m": 474.0
   },
   "14851818872": {
     "name": "Heat Adaption",
     "date": "Jun 19, 2025, 11:40:10 AM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 13915.0,
-    "moving_sec": 101363.2,
-    "elevation_gain_m": 13.6
+    "distance_km": 101.3632,
+    "elapsed_sec": 19625.0,
+    "moving_sec": 13915.0,
+    "total_elevation_m": 928.0
   },
   "14810291061": {
     "name": "NB Ride",
     "date": "Jun 15, 2025, 1:12:00 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 15194.0,
-    "moving_sec": 104634.1,
-    "elevation_gain_m": 191.6
+    "distance_km": 104.6341,
+    "elapsed_sec": 16259.0,
+    "moving_sec": 15194.0,
+    "total_elevation_m": 1352.0
   },
   "14808430266": {
     "name": "Afternoon Ride",
     "date": "Jun 13, 2025, 6:34:04 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 564.0,
-    "moving_sec": 3660.6,
-    "elevation_gain_m": 60.8
+    "distance_km": 3.6606,
+    "elapsed_sec": 588.0,
+    "moving_sec": 564.0,
+    "total_elevation_m": 17.0
   },
   "14789337703": {
     "name": "It took me forever to connect the new red power",
     "date": "Jun 13, 2025, 3:00:55 PM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 7988.0,
-    "moving_sec": 62550.7,
-    "elevation_gain_m": 4.2
+    "distance_km": 62.5507,
+    "elapsed_sec": 12182.0,
+    "moving_sec": 7988.0,
+    "total_elevation_m": 621.0
   },
   "14787258827": {
     "name": "Morning Ride",
     "date": "Jun 13, 2025, 1:22:29 PM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 3976.0,
-    "moving_sec": 24053.0,
-    "elevation_gain_m": 0.6
+    "distance_km": 24.053,
+    "elapsed_sec": 4240.0,
+    "moving_sec": 3976.0,
+    "total_elevation_m": 194.0
   },
   "14771778576": {
     "name": "🍉",
     "date": "Jun 11, 2025, 11:03:11 PM",
     "type": "Ride",
-    "distance_km": 0.005,
-    "elapsed_sec": 2949.0,
-    "moving_sec": 14642.3,
-    "elevation_gain_m": 8.0
+    "distance_km": 14.6423,
+    "elapsed_sec": 5096.0,
+    "moving_sec": 2949.0,
+    "total_elevation_m": 59.0
   },
   "14771106159": {
     "name": "Catch random",
     "date": "Jun 11, 2025, 8:43:47 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 5511.0,
-    "moving_sec": 39462.3,
-    "elevation_gain_m": 16.8
+    "distance_km": 39.4623,
+    "elapsed_sec": 6132.0,
+    "moving_sec": 5511.0,
+    "total_elevation_m": 260.0
   },
   "14760873436": {
     "name": "Evening Ride",
     "date": "Jun 10, 2025, 11:50:58 PM",
     "type": "Ride",
-    "distance_km": 0.0048,
-    "elapsed_sec": 1884.0,
-    "moving_sec": 9037.8,
-    "elevation_gain_m": 21.0
+    "distance_km": 9.0378,
+    "elapsed_sec": 2537.0,
+    "moving_sec": 1884.0,
+    "total_elevation_m": 42.0
   },
   "14717401901": {
     "name": "Ride at 2pm😵‍💫",
     "date": "Jun 6, 2025, 6:17:16 PM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 5692.0,
-    "moving_sec": 35179.5,
-    "elevation_gain_m": 9.4
+    "distance_km": 35.1795,
+    "elapsed_sec": 8519.0,
+    "moving_sec": 5692.0,
+    "total_elevation_m": 248.0
   },
   "14704362718": {
     "name": "Ning’s last dance",
     "date": "Jun 5, 2025, 10:49:56 AM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 5651.0,
-    "moving_sec": 41223.2,
-    "elevation_gain_m": 12.6
+    "distance_km": 41.2232,
+    "elapsed_sec": 9189.0,
+    "moving_sec": 5651.0,
+    "total_elevation_m": 285.0
   },
   "14682468639": {
     "name": "🦆🐑",
     "date": "Jun 3, 2025, 10:50:42 AM",
     "type": "Ride",
-    "distance_km": 0.0079,
-    "elapsed_sec": 4359.0,
-    "moving_sec": 34511.0,
-    "elevation_gain_m": 11.4
+    "distance_km": 34.511,
+    "elapsed_sec": 6222.0,
+    "moving_sec": 4359.0,
+    "total_elevation_m": 231.0
   },
   "14601297386": {
     "name": "Lunch Ride",
     "date": "May 26, 2025, 3:54:23 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
+    "distance_km": 0.6307,
     "elapsed_sec": 85.0,
-    "moving_sec": 630.7,
-    "elevation_gain_m": 5.8
+    "moving_sec": 85.0,
+    "total_elevation_m": 0.0
   },
   "14601290826": {
     "name": "somerville",
     "date": "May 26, 2025, 3:29:08 PM",
     "type": "Ride",
-    "distance_km": 0.0099,
-    "elapsed_sec": 1411.0,
-    "moving_sec": 13906.5,
-    "elevation_gain_m": 24.8
+    "distance_km": 13.9065,
+    "elapsed_sec": 1480.0,
+    "moving_sec": 1411.0,
+    "total_elevation_m": 39.0
   },
   "14594675639": {
     "name": "我一点都没有了",
     "date": "May 25, 2025, 6:22:40 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 7305.0,
-    "moving_sec": 50063.7,
-    "elevation_gain_m": 24.4
+    "distance_km": 50.0637,
+    "elapsed_sec": 7580.0,
+    "moving_sec": 7305.0,
+    "total_elevation_m": 514.0
   },
   "14591305909": {
     "name": "燃尽了",
     "date": "May 25, 2025, 2:09:25 PM",
     "type": "Ride",
-    "distance_km": 0.0084,
-    "elapsed_sec": 896.0,
-    "moving_sec": 7545.2,
-    "elevation_gain_m": 52.8
+    "distance_km": 7.5452,
+    "elapsed_sec": 943.0,
+    "moving_sec": 896.0,
+    "total_elevation_m": 53.0
   },
   "14583585616": {
     "name": "Afternoon Ride",
     "date": "May 24, 2025, 5:07:56 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 7791.0,
-    "moving_sec": 57435.8,
-    "elevation_gain_m": 39.4
+    "distance_km": 57.4358,
+    "elapsed_sec": 9421.0,
+    "moving_sec": 7791.0,
+    "total_elevation_m": 656.0
   },
   "14543073742": {
     "name": "Afternoon Ride",
     "date": "May 20, 2025, 5:40:52 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 3676.0,
-    "moving_sec": 23866.4,
-    "elevation_gain_m": 5.8
+    "distance_km": 23.8664,
+    "elapsed_sec": 4249.0,
+    "moving_sec": 3676.0,
+    "total_elevation_m": 129.0
   },
   "14541015750": {
     "name": "Morning Ride",
     "date": "May 20, 2025, 12:14:15 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 10858.0,
-    "moving_sec": 79963.2,
-    "elevation_gain_m": 2.4
+    "distance_km": 79.9632,
+    "elapsed_sec": 14542.0,
+    "moving_sec": 10858.0,
+    "total_elevation_m": 704.0
   },
   "14510932672": {
     "name": "Lunch Ride",
     "date": "May 17, 2025, 4:26:59 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 3370.0,
-    "moving_sec": 23533.5,
-    "elevation_gain_m": 9.4
+    "distance_km": 23.5335,
+    "elapsed_sec": 3454.0,
+    "moving_sec": 3370.0,
+    "total_elevation_m": 127.0
   },
   "14510317361": {
     "name": "我想拉屎",
     "date": "May 17, 2025, 11:44:20 AM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 10993.0,
-    "moving_sec": 85907.1,
-    "elevation_gain_m": 4.6
+    "distance_km": 85.9071,
+    "elapsed_sec": 16489.0,
+    "moving_sec": 10993.0,
+    "total_elevation_m": 817.0
   },
   "14506834420": {
     "name": "Lunch Ride",
     "date": "May 11, 2025, 3:28:05 PM",
     "type": "Ride",
-    "distance_km": 0.0062,
+    "distance_km": 3.6908,
     "elapsed_sec": 592.0,
-    "moving_sec": 3690.8,
-    "elevation_gain_m": 59.8
+    "moving_sec": 592.0,
+    "total_elevation_m": 17.0
   },
   "14447907709": {
     "name": "Starchild ride",
     "date": "May 11, 2025, 11:10:53 AM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 9830.0,
-    "moving_sec": 80140.0,
-    "elevation_gain_m": 6.0
+    "distance_km": 80.14,
+    "elapsed_sec": 14489.0,
+    "moving_sec": 9830.0,
+    "total_elevation_m": 677.0
   },
   "14417476158": {
     "name": "Lunch Ride",
     "date": "May 8, 2025, 4:33:37 PM",
     "type": "Ride",
-    "distance_km": 0.0059,
+    "distance_km": 3.7443,
     "elapsed_sec": 632.0,
-    "moving_sec": 3744.3,
-    "elevation_gain_m": 58.4
+    "moving_sec": 632.0,
+    "total_elevation_m": 16.0
   },
   "14417296703": {
     "name": "Morning Ride",
     "date": "May 8, 2025, 12:12:45 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 11881.0,
-    "moving_sec": 80148.8,
-    "elevation_gain_m": 4.4
+    "distance_km": 80.1488,
+    "elapsed_sec": 15180.0,
+    "moving_sec": 11881.0,
+    "total_elevation_m": 684.0
   },
   "14366993008": {
     "name": "Lunch Ride",
     "date": "May 3, 2025, 3:43:13 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 3502.0,
-    "moving_sec": 23478.6,
-    "elevation_gain_m": 3.4
+    "distance_km": 23.4786,
+    "elapsed_sec": 3639.0,
+    "moving_sec": 3502.0,
+    "total_elevation_m": 118.0
   },
   "14366168609": {
     "name": "Glad to meet u all",
     "date": "May 3, 2025, 11:06:48 AM",
     "type": "Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 9806.0,
-    "moving_sec": 78215.9,
-    "elevation_gain_m": 5.0
+    "distance_km": 78.2159,
+    "elapsed_sec": 15728.0,
+    "moving_sec": 9806.0,
+    "total_elevation_m": 657.0
   },
   "14363014518": {
     "name": "Morning Ride",
     "date": "May 2, 2025, 1:25:31 PM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 6107.0,
-    "moving_sec": 37203.1,
-    "elevation_gain_m": 7.0
+    "distance_km": 37.2031,
+    "elapsed_sec": 76734.0,
+    "moving_sec": 6107.0,
+    "total_elevation_m": 246.0
   },
   "14337914642": {
     "name": "Afternoon Ride",
     "date": "Apr 30, 2025, 8:45:49 PM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 6243.0,
-    "moving_sec": 42714.9,
-    "elevation_gain_m": 14.4
+    "distance_km": 42.7149,
+    "elapsed_sec": 10551.0,
+    "moving_sec": 6243.0,
+    "total_elevation_m": 302.0
   },
   "14337911020": {
     "name": "Afternoon Ride",
     "date": "Apr 27, 2025, 8:18:37 PM",
     "type": "Ride",
-    "distance_km": 0.0044,
-    "elapsed_sec": 1130.0,
-    "moving_sec": 4977.5,
-    "elevation_gain_m": 1.6
+    "distance_km": 4.9775,
+    "elapsed_sec": 261036.0,
+    "moving_sec": 1130.0,
+    "total_elevation_m": 59.0
   },
   "14303091676": {
     "name": "I went the wrong way",
     "date": "Apr 27, 2025, 1:29:57 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
+    "distance_km": 30.1334,
     "elapsed_sec": 4359.0,
-    "moving_sec": 30133.4,
-    "elevation_gain_m": 121.6
+    "moving_sec": 4359.0,
+    "total_elevation_m": 532.0
   },
   "14301948872": {
     "name": "Morning Ride",
     "date": "Apr 27, 2025, 12:55:12 PM",
     "type": "Ride",
-    "distance_km": 0.0041,
+    "distance_km": 3.4606,
     "elapsed_sec": 840.0,
-    "moving_sec": 3460.6,
-    "elevation_gain_m": 134.6
+    "moving_sec": 840.0,
+    "total_elevation_m": 97.0
   },
   "14300465647": {
     "name": "Morning Ride",
     "date": "Apr 27, 2025, 10:49:24 AM",
     "type": "Ride",
-    "distance_km": 0.0049,
-    "elapsed_sec": 1047.0,
-    "moving_sec": 5079.2,
-    "elevation_gain_m": 3.2
+    "distance_km": 5.0792,
+    "elapsed_sec": 1094.0,
+    "moving_sec": 1047.0,
+    "total_elevation_m": 43.0
   },
   "14294495115": {
     "name": "GSSR Day1",
     "date": "Apr 26, 2025, 3:11:17 PM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 6657.0,
-    "moving_sec": 51640.8,
-    "elevation_gain_m": 46.8
+    "distance_km": 51.6408,
+    "elapsed_sec": 6681.0,
+    "moving_sec": 6657.0,
+    "total_elevation_m": 420.0
   },
   "14267671233": {
     "name": "Evening Ride",
     "date": "Apr 23, 2025, 11:20:48 PM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 540.0,
-    "moving_sec": 3123.1,
-    "elevation_gain_m": 21.2
+    "distance_km": 3.1231,
+    "elapsed_sec": 637.0,
+    "moving_sec": 540.0,
+    "total_elevation_m": 13.0
   },
   "14267669661": {
     "name": "Good Weather",
     "date": "Apr 23, 2025, 9:27:45 PM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 5812.0,
-    "moving_sec": 47216.2,
-    "elevation_gain_m": 9.6
+    "distance_km": 47.2162,
+    "elapsed_sec": 6439.0,
+    "moving_sec": 5812.0,
+    "total_elevation_m": 349.0
   },
   "14257382845": {
     "name": "希望烦心事都消失",
     "date": "Apr 22, 2025, 9:13:21 PM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 6424.0,
-    "moving_sec": 49337.0,
-    "elevation_gain_m": 13.8
+    "distance_km": 49.337,
+    "elapsed_sec": 6767.0,
+    "moving_sec": 6424.0,
+    "total_elevation_m": 335.0
   },
   "14223879993": {
     "name": "Morning Ride",
     "date": "Apr 19, 2025, 11:05:25 AM",
     "type": "Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 10059.0,
-    "moving_sec": 79964.7,
-    "elevation_gain_m": 3.2
+    "distance_km": 79.9647,
+    "elapsed_sec": 13622.0,
+    "moving_sec": 10059.0,
+    "total_elevation_m": 683.0
   },
   "14223867548": {
     "name": "Morning Ride",
     "date": "Apr 18, 2025, 2:19:36 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 4376.0,
-    "moving_sec": 28102.0,
-    "elevation_gain_m": -5.4
+    "distance_km": 28.102,
+    "elapsed_sec": 74548.0,
+    "moving_sec": 4376.0,
+    "total_elevation_m": 225.0
   },
   "14186027616": {
     "name": "Noodle legs",
     "date": "Apr 15, 2025, 12:28:19 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 12103.0,
-    "moving_sec": 83911.8,
-    "elevation_gain_m": 8.8
+    "distance_km": 83.9118,
+    "elapsed_sec": 15617.0,
+    "moving_sec": 12103.0,
+    "total_elevation_m": 711.0
   },
   "14176864539": {
     "name": "Many Thanks",
     "date": "Apr 14, 2025, 2:03:32 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 9132.0,
-    "moving_sec": 64255.7,
-    "elevation_gain_m": 8.4
+    "distance_km": 64.2557,
+    "elapsed_sec": 13582.0,
+    "moving_sec": 9132.0,
+    "total_elevation_m": 533.0
   },
   "14080630557": {
     "name": "Spring",
     "date": "Apr 4, 2025, 5:35:05 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 4880.0,
-    "moving_sec": 36264.4,
-    "elevation_gain_m": 18.8
+    "distance_km": 36.2644,
+    "elapsed_sec": 5001.0,
+    "moving_sec": 4880.0,
+    "total_elevation_m": 246.0
   },
   "14079868563": {
     "name": "Bday Ride",
     "date": "Apr 3, 2025, 1:21:24 PM",
     "type": "Ride",
-    "distance_km": 0.0075,
-    "elapsed_sec": 3333.0,
-    "moving_sec": 24872.1,
-    "elevation_gain_m": 93.8
+    "distance_km": 24.8721,
+    "elapsed_sec": 3501.0,
+    "moving_sec": 3333.0,
+    "total_elevation_m": 119.0
   },
   "14052717153": {
     "name": "Spring with Canyon",
     "date": "Apr 1, 2025, 6:50:46 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 6509.0,
-    "moving_sec": 42827.9,
-    "elevation_gain_m": 18.4
+    "distance_km": 42.8279,
+    "elapsed_sec": 8309.0,
+    "moving_sec": 6509.0,
+    "total_elevation_m": 276.7
   },
   "13964659788": {
     "name": "Cursed",
     "date": "Mar 23, 2025, 12:28:28 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 5754.0,
-    "moving_sec": 37756.9,
-    "elevation_gain_m": 7.4
+    "distance_km": 37.7569,
+    "elapsed_sec": 6357.0,
+    "moving_sec": 5754.0,
+    "total_elevation_m": 358.0
   },
   "13871707980": {
     "name": "Morning Ride",
     "date": "Mar 13, 2025, 11:29:27 AM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 12120.0,
-    "moving_sec": 77144.0,
-    "elevation_gain_m": -0.8
+    "distance_km": 77.144,
+    "elapsed_sec": 15342.0,
+    "moving_sec": 12120.0,
+    "total_elevation_m": 702.0
   },
   "13853082010": {
     "name": "Warm Day",
     "date": "Mar 11, 2025, 11:53:31 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 10709.0,
-    "moving_sec": 77358.9,
-    "elevation_gain_m": 7.4
+    "distance_km": 77.3589,
+    "elapsed_sec": 14876.0,
+    "moving_sec": 10709.0,
+    "total_elevation_m": 678.0
   },
   "13761482489": {
     "name": "Feel like training for crit on greenway😅😅",
     "date": "Mar 1, 2025, 3:30:01 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 7000.0,
-    "moving_sec": 51879.8,
-    "elevation_gain_m": 11.4
+    "distance_km": 51.8798,
+    "elapsed_sec": 7511.0,
+    "moving_sec": 7000.0,
+    "total_elevation_m": 420.0
   },
   "13759626194": {
     "name": "Accidentally shut down my computer😑",
     "date": "Mar 1, 2025, 12:30:57 PM",
     "type": "Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 6501.0,
-    "moving_sec": 51931.0,
-    "elevation_gain_m": 8.2
+    "distance_km": 51.931,
+    "elapsed_sec": 7102.0,
+    "moving_sec": 6501.0,
+    "total_elevation_m": 426.0
   },
   "13744732910": {
     "name": "睡过头了只能骑1h",
     "date": "Feb 27, 2025, 7:15:47 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.008,
+    "distance_km": 28.778,
     "elapsed_sec": 3609.0,
-    "moving_sec": 28778.0,
-    "elevation_gain_m": -6.2
+    "moving_sec": 3609.0,
+    "total_elevation_m": 164.0
   },
   "13725977939": {
     "name": "Afternoon Ride",
     "date": "Feb 25, 2025, 6:31:35 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 3573.0,
-    "moving_sec": 23309.5,
-    "elevation_gain_m": 12.2
+    "distance_km": 23.3095,
+    "elapsed_sec": 3741.0,
+    "moving_sec": 3573.0,
+    "total_elevation_m": 122.0
   },
   "13724637232": {
     "name": "Morning Ride",
     "date": "Feb 25, 2025, 1:02:34 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 11242.0,
-    "moving_sec": 80607.7,
-    "elevation_gain_m": 0.8
+    "distance_km": 80.6077,
+    "elapsed_sec": 15692.0,
+    "moving_sec": 11242.0,
+    "total_elevation_m": 709.0
   },
   "13707665116": {
     "name": "Ning is local king",
     "date": "Feb 23, 2025, 4:18:23 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 3302.0,
-    "moving_sec": 23055.5,
-    "elevation_gain_m": -0.2
+    "distance_km": 23.0555,
+    "elapsed_sec": 3572.0,
+    "moving_sec": 3302.0,
+    "total_elevation_m": 134.0
   },
   "13707485877": {
     "name": "从没这么菜3",
     "date": "Feb 23, 2025, 12:34:46 PM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 10442.0,
-    "moving_sec": 80203.0,
-    "elevation_gain_m": -7.0
+    "distance_km": 80.203,
+    "elapsed_sec": 13342.0,
+    "moving_sec": 10442.0,
+    "total_elevation_m": 721.0
   },
   "13683867082": {
     "name": "snow again",
     "date": "Feb 21, 2025, 2:24:13 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 7239.0,
-    "moving_sec": 53293.8,
-    "elevation_gain_m": 2.2
+    "distance_km": 53.2938,
+    "elapsed_sec": 7548.0,
+    "moving_sec": 7239.0,
+    "total_elevation_m": 659.0
   },
   "13656772783": {
     "name": "I’m too full",
     "date": "Feb 18, 2025, 1:41:47 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0084,
+    "distance_km": 60.3709,
     "elapsed_sec": 7225.0,
-    "moving_sec": 60370.9,
-    "elevation_gain_m": -6.2
+    "moving_sec": 7225.0,
+    "total_elevation_m": 232.0
   },
   "13604886567": {
     "name": "RStudio is running",
     "date": "Feb 12, 2025, 12:37:50 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0087,
+    "distance_km": 62.5992,
     "elapsed_sec": 7228.0,
-    "moving_sec": 62599.2,
-    "elevation_gain_m": 12.6
+    "moving_sec": 7228.0,
+    "total_elevation_m": 95.0
   },
   "13587201331": {
     "name": "让代码跑一会",
     "date": "Feb 10, 2025, 12:19:58 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 3915.0,
-    "moving_sec": 25515.7,
-    "elevation_gain_m": 0.4
+    "distance_km": 25.5157,
+    "elapsed_sec": 3991.0,
+    "moving_sec": 3915.0,
+    "total_elevation_m": 260.0
   },
   "13578194989": {
     "name": "I wanna chicken nuggets",
     "date": "Feb 9, 2025, 2:09:51 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0074,
+    "distance_km": 53.9578,
     "elapsed_sec": 7246.0,
-    "moving_sec": 53957.8,
-    "elevation_gain_m": 2.2
+    "moving_sec": 7246.0,
+    "total_elevation_m": 609.0
   },
   "13568027872": {
     "name": "骑完吃穿山甲",
     "date": "Feb 7, 2025, 10:40:08 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0084,
-    "elapsed_sec": 3615.0,
-    "moving_sec": 30205.3,
-    "elevation_gain_m": 12.6
+    "distance_km": 30.2053,
+    "elapsed_sec": 3676.0,
+    "moving_sec": 3615.0,
+    "total_elevation_m": 47.0
   },
   "13561327272": {
     "name": "Zwift - recover in Watopia",
     "date": "Feb 7, 2025, 3:51:58 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0073,
+    "distance_km": 19.9776,
     "elapsed_sec": 2724.0,
-    "moving_sec": 19977.6,
-    "elevation_gain_m": -6.2
+    "moving_sec": 2724.0,
+    "total_elevation_m": 84.0
   },
   "13538962386": {
     "name": "Lunch Ride",
     "date": "Feb 4, 2025, 4:24:12 PM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 3809.0,
-    "moving_sec": 24135.1,
-    "elevation_gain_m": -3.0
+    "distance_km": 24.1351,
+    "elapsed_sec": 4069.0,
+    "moving_sec": 3809.0,
+    "total_elevation_m": 159.0
   },
   "13538264778": {
     "name": "Never been so slow 2",
     "date": "Feb 4, 2025, 12:14:24 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 12104.0,
-    "moving_sec": 80289.5,
-    "elevation_gain_m": -1.8
+    "distance_km": 80.2895,
+    "elapsed_sec": 13421.0,
+    "moving_sec": 12104.0,
+    "total_elevation_m": 745.0
   },
   "13504404656": {
     "name": "骑完吃铜锅涮肉",
     "date": "Jan 31, 2025, 8:38:02 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0084,
+    "distance_km": 31.0781,
     "elapsed_sec": 3698.0,
-    "moving_sec": 31078.1,
-    "elevation_gain_m": -6.2
+    "moving_sec": 3698.0,
+    "total_elevation_m": 123.0
   },
   "13503673003": {
     "name": "Afternoon Workout",
@@ -372930,44 +372932,44 @@ const ACTIVITY_METADATA = {
     "type": "Workout",
     "distance_km": 0.0,
     "elapsed_sec": 1534.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 1534.0,
+    "total_elevation_m": 0.0
   },
   "13495935905": {
     "name": "🐍 First Ride",
     "date": "Jan 30, 2025, 5:53:02 PM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 6496.0,
-    "moving_sec": 40318.6,
-    "elevation_gain_m": 8.0
+    "distance_km": 40.3186,
+    "elapsed_sec": 7503.0,
+    "moving_sec": 6496.0,
+    "total_elevation_m": 308.0
   },
   "13468738641": {
     "name": "Zwift - 新的訓練項目 in Watopia",
     "date": "Jan 27, 2025, 7:22:55 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0066,
+    "distance_km": 25.0498,
     "elapsed_sec": 3788.0,
-    "moving_sec": 25049.8,
-    "elevation_gain_m": 0.4
+    "moving_sec": 3788.0,
+    "total_elevation_m": 251.0
   },
   "13452123553": {
     "name": "Zwift - zone2 in Watopia",
     "date": "Jan 25, 2025, 7:44:49 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0072,
+    "distance_km": 52.381,
     "elapsed_sec": 7241.0,
-    "moving_sec": 52381.0,
-    "elevation_gain_m": 1.2
+    "moving_sec": 7241.0,
+    "total_elevation_m": 624.0
   },
   "13433082277": {
     "name": "Zwift - zone2 in Watopia",
     "date": "Jan 23, 2025, 3:55:36 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0081,
+    "distance_km": 43.7611,
     "elapsed_sec": 5422.0,
-    "moving_sec": 43761.1,
-    "elevation_gain_m": -6.2
+    "moving_sec": 5422.0,
+    "total_elevation_m": 249.0
   },
   "13418965134": {
     "name": "Evening Workout",
@@ -372975,143 +372977,143 @@ const ACTIVITY_METADATA = {
     "type": "Workout",
     "distance_km": 0.0,
     "elapsed_sec": 6205.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 6205.0,
+    "total_elevation_m": 0.0
   },
   "13417052647": {
     "name": "Zwift - zone2 in Watopia",
     "date": "Jan 21, 2025, 6:51:07 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0085,
+    "distance_km": 30.7155,
     "elapsed_sec": 3631.0,
-    "moving_sec": 30715.5,
-    "elevation_gain_m": 11.2
+    "moving_sec": 3631.0,
+    "total_elevation_m": 202.0
   },
   "13400114228": {
     "name": "No legs day",
     "date": "Jan 19, 2025, 1:02:38 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 11925.0,
-    "moving_sec": 80170.5,
-    "elevation_gain_m": -0.6
+    "distance_km": 80.1705,
+    "elapsed_sec": 12956.0,
+    "moving_sec": 11925.0,
+    "total_elevation_m": 723.0
   },
   "13400121889": {
     "name": "Zone 11111",
     "date": "Jan 17, 2025, 5:31:29 PM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 6946.0,
-    "moving_sec": 43259.0,
-    "elevation_gain_m": 7.2
+    "distance_km": 43.259,
+    "elapsed_sec": 14649.0,
+    "moving_sec": 6946.0,
+    "total_elevation_m": 301.0
   },
   "13304743571": {
     "name": "Zwift - zone2 in Watopia",
     "date": "Jan 9, 2025, 2:48:57 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0086,
+    "distance_km": 30.9591,
     "elapsed_sec": 3613.0,
-    "moving_sec": 30959.1,
-    "elevation_gain_m": -6.2
+    "moving_sec": 3613.0,
+    "total_elevation_m": 122.0
   },
   "13257778533": {
     "name": "Beach Cliff and Everything",
     "date": "Jan 3, 2025, 6:11:27 PM",
     "type": "Hike",
-    "distance_km": 0.0011,
-    "elapsed_sec": 3209.0,
-    "moving_sec": 3459.9,
-    "elevation_gain_m": 1.2
+    "distance_km": 3.4599,
+    "elapsed_sec": 5737.0,
+    "moving_sec": 3209.0,
+    "total_elevation_m": 27.3
   },
   "13219426725": {
     "name": "Warm winter",
     "date": "Dec 29, 2024, 8:05:12 PM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 5660.0,
-    "moving_sec": 40085.9,
-    "elevation_gain_m": 7.4
+    "distance_km": 40.0859,
+    "elapsed_sec": 5875.0,
+    "moving_sec": 5660.0,
+    "total_elevation_m": 281.0
   },
   "13211732876": {
     "name": "Zwift - zone2 in Watopia",
     "date": "Dec 28, 2024, 9:42:09 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0084,
+    "distance_km": 31.0336,
     "elapsed_sec": 3688.0,
-    "moving_sec": 31033.6,
-    "elevation_gain_m": -6.2
+    "moving_sec": 3688.0,
+    "total_elevation_m": 124.0
   },
   "13204134340": {
     "name": "Zwift - 新的訓練項目 in Watopia",
     "date": "Dec 27, 2024, 10:11:15 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0088,
+    "distance_km": 31.6632,
     "elapsed_sec": 3616.0,
-    "moving_sec": 31663.2,
-    "elevation_gain_m": 12.6
+    "moving_sec": 3616.0,
+    "total_elevation_m": 48.0
   },
   "13198056083": {
     "name": "Zwift - 新的訓練項目 in Watopia",
     "date": "Dec 27, 2024, 3:54:49 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0088,
+    "distance_km": 31.7415,
     "elapsed_sec": 3626.0,
-    "moving_sec": 31741.5,
-    "elevation_gain_m": 12.6
+    "moving_sec": 3626.0,
+    "total_elevation_m": 48.0
   },
   "15955409698": {
     "name": "Afternoon Ride",
     "date": "Dec 24, 2024, 6:42:49 PM",
     "type": "Ride",
-    "distance_km": 0.0042,
-    "elapsed_sec": 3217.0,
-    "moving_sec": 13435.2,
-    "elevation_gain_m": 7.6
+    "distance_km": 13.4352,
+    "elapsed_sec": 9481.0,
+    "moving_sec": 3217.0,
+    "total_elevation_m": 106.0
   },
   "13178318786": {
     "name": "YY Ride is back",
     "date": "Dec 23, 2024, 3:33:27 PM",
     "type": "Ride",
-    "distance_km": 0.0054,
-    "elapsed_sec": 5238.0,
-    "moving_sec": 28499.1,
-    "elevation_gain_m": -2.2
+    "distance_km": 28.4991,
+    "elapsed_sec": 10169.0,
+    "moving_sec": 5238.0,
+    "total_elevation_m": 253.0
   },
   "13158487722": {
     "name": "Zwift - zone2 in Watopia",
     "date": "Dec 21, 2024, 1:37:14 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 1821.0,
-    "moving_sec": 13340.2,
-    "elevation_gain_m": 2.2
+    "distance_km": 13.3402,
+    "elapsed_sec": 1909.0,
+    "moving_sec": 1821.0,
+    "total_elevation_m": 161.0
   },
   "12945864826": {
     "name": "急急急我要回学校meeting",
     "date": "Nov 20, 2024, 5:04:47 PM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 3424.0,
-    "moving_sec": 23435.4,
-    "elevation_gain_m": 10.8
+    "distance_km": 23.4354,
+    "elapsed_sec": 3481.0,
+    "moving_sec": 3424.0,
+    "total_elevation_m": 110.0
   },
   "12945865703": {
     "name": "骑进参鸡汤",
     "date": "Nov 20, 2024, 12:11:40 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 11060.0,
-    "moving_sec": 81603.7,
-    "elevation_gain_m": 3.6
+    "distance_km": 81.6037,
+    "elapsed_sec": 12032.0,
+    "moving_sec": 11060.0,
+    "total_elevation_m": 722.0
   },
   "12917758133": {
     "name": "Zwift - zone2 in Watopia",
     "date": "Nov 16, 2024, 11:26:34 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0078,
+    "distance_km": 28.5036,
     "elapsed_sec": 3634.0,
-    "moving_sec": 28503.6,
-    "elevation_gain_m": 1.2
+    "moving_sec": 3634.0,
+    "total_elevation_m": 327.0
   },
   "15955409626": {
     "name": "Evening Ride",
@@ -373119,8 +373121,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 3733.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 3733.0,
+    "total_elevation_m": 0.0
   },
   "15955409601": {
     "name": "Morning Ride",
@@ -373128,26 +373130,26 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 3605.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 3605.0,
+    "total_elevation_m": 0.0
   },
   "12838967956": {
     "name": "Lunch Ride",
     "date": "Nov 6, 2024, 5:33:41 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 3794.0,
-    "moving_sec": 24553.3,
-    "elevation_gain_m": 13.0
+    "distance_km": 24.5533,
+    "elapsed_sec": 4072.0,
+    "moving_sec": 3794.0,
+    "total_elevation_m": 122.0
   },
   "12838968413": {
     "name": "感谢kaito一带一路",
     "date": "Nov 6, 2024, 12:42:33 PM",
     "type": "Ride",
-    "distance_km": 0.0079,
-    "elapsed_sec": 10187.0,
-    "moving_sec": 80333.4,
-    "elevation_gain_m": 7.0
+    "distance_km": 80.3334,
+    "elapsed_sec": 11172.0,
+    "moving_sec": 10187.0,
+    "total_elevation_m": 696.0
   },
   "15955409633": {
     "name": "Afternoon Ride",
@@ -373155,17 +373157,17 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 5583.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 5583.0,
+    "total_elevation_m": 0.0
   },
   "12824882134": {
     "name": "Zwift - zone2 in France",
     "date": "Nov 4, 2024, 10:43:41 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 5662.0,
-    "moving_sec": 49405.0,
-    "elevation_gain_m": 10.4
+    "distance_km": 49.405,
+    "elapsed_sec": 5679.0,
+    "moving_sec": 5662.0,
+    "total_elevation_m": 266.0
   },
   "15955409611": {
     "name": "Lunch Ride",
@@ -373173,107 +373175,107 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 2706.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 2706.0,
+    "total_elevation_m": 0.0
   },
   "12815217984": {
     "name": "Zwift - zone2 in Watopia",
     "date": "Nov 3, 2024, 4:14:54 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0081,
+    "distance_km": 22.006,
     "elapsed_sec": 2706.0,
-    "moving_sec": 22006.0,
-    "elevation_gain_m": -6.2
+    "moving_sec": 2706.0,
+    "total_elevation_m": 165.0
   },
   "12806420100": {
     "name": "Lunch Ride",
     "date": "Nov 2, 2024, 3:33:58 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 3285.0,
-    "moving_sec": 23664.8,
-    "elevation_gain_m": 14.4
+    "distance_km": 23.6648,
+    "elapsed_sec": 3447.0,
+    "moving_sec": 3285.0,
+    "total_elevation_m": 120.0
   },
   "12806420385": {
     "name": "They are too fast",
     "date": "Nov 2, 2024, 11:43:30 AM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 9782.0,
-    "moving_sec": 79833.3,
-    "elevation_gain_m": 6.6
+    "distance_km": 79.8333,
+    "elapsed_sec": 10819.0,
+    "moving_sec": 9782.0,
+    "total_elevation_m": 706.0
   },
   "12783346269": {
     "name": "Lunch Ride",
     "date": "Oct 30, 2024, 4:46:56 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 3608.0,
-    "moving_sec": 23722.6,
-    "elevation_gain_m": 12.4
+    "distance_km": 23.7226,
+    "elapsed_sec": 3804.0,
+    "moving_sec": 3608.0,
+    "total_elevation_m": 113.0
   },
   "12783346303": {
     "name": "超绝的天气超萎的我",
     "date": "Oct 30, 2024, 12:57:51 PM",
     "type": "Ride",
-    "distance_km": 0.0086,
-    "elapsed_sec": 5232.0,
-    "moving_sec": 44814.8,
-    "elevation_gain_m": 11.8
+    "distance_km": 44.8148,
+    "elapsed_sec": 10019.0,
+    "moving_sec": 5232.0,
+    "total_elevation_m": 417.0
   },
   "12783346308": {
     "name": "I want to calibrate my power meter but it saved",
     "date": "Oct 30, 2024, 11:50:06 AM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 3446.0,
-    "moving_sec": 23930.3,
-    "elevation_gain_m": 8.0
+    "distance_km": 23.9303,
+    "elapsed_sec": 3575.0,
+    "moving_sec": 3446.0,
+    "total_elevation_m": 202.0
   },
   "12750664937": {
     "name": "Lunch Ride",
     "date": "Oct 26, 2024, 3:26:22 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 3595.0,
-    "moving_sec": 24141.0,
-    "elevation_gain_m": 7.4
+    "distance_km": 24.141,
+    "elapsed_sec": 3934.0,
+    "moving_sec": 3595.0,
+    "total_elevation_m": 204.0
   },
   "12750665197": {
     "name": "硬",
     "date": "Oct 26, 2024, 11:02:02 AM",
     "type": "Ride",
-    "distance_km": 0.0083,
-    "elapsed_sec": 9619.0,
-    "moving_sec": 79998.0,
-    "elevation_gain_m": 3.6
+    "distance_km": 79.998,
+    "elapsed_sec": 11099.0,
+    "moving_sec": 9619.0,
+    "total_elevation_m": 696.0
   },
   "12743097432": {
     "name": "🍁",
     "date": "Oct 25, 2024, 1:13:59 PM",
     "type": "Ride",
-    "distance_km": 0.0053,
-    "elapsed_sec": 4908.0,
-    "moving_sec": 26025.2,
-    "elevation_gain_m": 8.0
+    "distance_km": 26.0252,
+    "elapsed_sec": 14498.0,
+    "moving_sec": 4908.0,
+    "total_elevation_m": 198.0
   },
   "12727349331": {
     "name": "饿死我了",
     "date": "Oct 23, 2024, 4:05:59 PM",
     "type": "Ride",
-    "distance_km": 0.0059,
-    "elapsed_sec": 3955.0,
-    "moving_sec": 23303.6,
-    "elevation_gain_m": 14.8
+    "distance_km": 23.3036,
+    "elapsed_sec": 4182.0,
+    "moving_sec": 3955.0,
+    "total_elevation_m": 124.0
   },
   "12727349750": {
     "name": "ITT all the way back",
     "date": "Oct 23, 2024, 10:50:58 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 13826.0,
-    "moving_sec": 99493.4,
-    "elevation_gain_m": 4.0
+    "distance_km": 99.4934,
+    "elapsed_sec": 15842.0,
+    "moving_sec": 13826.0,
+    "total_elevation_m": 960.0
   },
   "15955402764": {
     "name": "Night Ride",
@@ -373281,17 +373283,17 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 1801.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 1801.0,
+    "total_elevation_m": 0.0
   },
   "12722129008": {
     "name": "Zwift - 明早要骑车 in Watopia",
     "date": "Oct 23, 2024, 1:28:16 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.007,
+    "distance_km": 12.7283,
     "elapsed_sec": 1821.0,
-    "moving_sec": 12728.3,
-    "elevation_gain_m": 0.4
+    "moving_sec": 1821.0,
+    "total_elevation_m": 141.0
   },
   "15955402908": {
     "name": "Evening Ride",
@@ -373299,44 +373301,44 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 3616.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 3616.0,
+    "total_elevation_m": 0.0
   },
   "12712983937": {
     "name": "Zwift - 新的鍛鍊課程 in Watopia",
     "date": "Oct 21, 2024, 11:03:02 PM",
     "type": "Virtual Ride",
-    "distance_km": 0.0087,
+    "distance_km": 31.6917,
     "elapsed_sec": 3650.0,
-    "moving_sec": 31691.7,
-    "elevation_gain_m": 12.6
+    "moving_sec": 3650.0,
+    "total_elevation_m": 48.0
   },
   "12712586869": {
     "name": "Evening Ride",
     "date": "Oct 21, 2024, 10:05:16 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 2539.0,
-    "moving_sec": 17431.9,
-    "elevation_gain_m": 9.4
+    "distance_km": 17.4319,
+    "elapsed_sec": 2777.0,
+    "moving_sec": 2539.0,
+    "total_elevation_m": 126.0
   },
   "12679281110": {
     "name": "Lunch Ride",
     "date": "Oct 17, 2024, 4:38:02 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 3447.0,
-    "moving_sec": 24044.8,
-    "elevation_gain_m": 3.4
+    "distance_km": 24.0448,
+    "elapsed_sec": 3673.0,
+    "moving_sec": 3447.0,
+    "total_elevation_m": 128.0
   },
   "12679281448": {
     "name": "So cold 🥶",
     "date": "Oct 17, 2024, 11:06:14 AM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 12211.0,
-    "moving_sec": 88705.7,
-    "elevation_gain_m": 0.8
+    "distance_km": 88.7057,
+    "elapsed_sec": 13413.0,
+    "moving_sec": 12211.0,
+    "total_elevation_m": 923.0
   },
   "15955402724": {
     "name": "Night Ride",
@@ -373344,17 +373346,17 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 1203.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 1203.0,
+    "total_elevation_m": 0.0
   },
   "12674427619": {
     "name": "Night Ride",
     "date": "Oct 17, 2024, 2:16:46 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0085,
+    "distance_km": 10.1948,
     "elapsed_sec": 1200.0,
-    "moving_sec": 10194.8,
-    "elevation_gain_m": 12.6
+    "moving_sec": 1200.0,
+    "total_elevation_m": 21.0
   },
   "15955396242": {
     "name": "Night Ride",
@@ -373362,953 +373364,953 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 5382.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 46.4
+    "moving_sec": 5382.0,
+    "total_elevation_m": 0.0
   },
   "12666312692": {
     "name": "Night Ride",
     "date": "Oct 16, 2024, 1:39:08 AM",
     "type": "Virtual Ride",
-    "distance_km": 0.0069,
+    "distance_km": 37.6218,
     "elapsed_sec": 5446.0,
-    "moving_sec": 37621.8,
-    "elevation_gain_m": 4.2
+    "moving_sec": 5446.0,
+    "total_elevation_m": 542.0
   },
   "12639426927": {
     "name": "Lunch Ride",
     "date": "Oct 12, 2024, 4:28:50 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 3626.0,
-    "moving_sec": 23794.7,
-    "elevation_gain_m": 3.8
+    "distance_km": 23.7947,
+    "elapsed_sec": 3938.0,
+    "moving_sec": 3626.0,
+    "total_elevation_m": 115.0
   },
   "12639427152": {
     "name": "NYU Group Rockland",
     "date": "Oct 12, 2024, 11:32:20 AM",
     "type": "Ride",
-    "distance_km": 0.0075,
-    "elapsed_sec": 12997.0,
-    "moving_sec": 97313.3,
-    "elevation_gain_m": -2.6
+    "distance_km": 97.3133,
+    "elapsed_sec": 14549.0,
+    "moving_sec": 12997.0,
+    "total_elevation_m": 1024.0
   },
   "12623676712": {
     "name": "Lunch Ride",
     "date": "Oct 10, 2024, 4:42:20 PM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 3786.0,
-    "moving_sec": 23872.8,
-    "elevation_gain_m": 8.0
+    "distance_km": 23.8728,
+    "elapsed_sec": 4275.0,
+    "moving_sec": 3786.0,
+    "total_elevation_m": 133.0
   },
   "12623676483": {
     "name": "Lunch Ride",
     "date": "Oct 10, 2024, 3:10:08 PM",
     "type": "Ride",
-    "distance_km": 0.0061,
+    "distance_km": 0.8338,
     "elapsed_sec": 136.0,
-    "moving_sec": 833.8,
-    "elevation_gain_m": 75.2
+    "moving_sec": 136.0,
+    "total_elevation_m": 12.0
   },
   "12623676598": {
     "name": "New wheels",
     "date": "Oct 10, 2024, 12:03:27 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 5865.0,
-    "moving_sec": 43431.8,
-    "elevation_gain_m": 63.4
+    "distance_km": 43.4318,
+    "elapsed_sec": 8162.0,
+    "moving_sec": 5865.0,
+    "total_elevation_m": 415.0
   },
   "12614587853": {
     "name": "腿好酸ride",
     "date": "Oct 9, 2024, 12:09:42 PM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 7668.0,
-    "moving_sec": 48217.5,
-    "elevation_gain_m": 14.8
+    "distance_km": 48.2175,
+    "elapsed_sec": 8970.0,
+    "moving_sec": 7668.0,
+    "total_elevation_m": 334.0
   },
   "12593729461": {
     "name": "Afternoon Ride",
     "date": "Oct 6, 2024, 9:03:33 PM",
     "type": "Ride",
-    "distance_km": 0.0049,
-    "elapsed_sec": 766.0,
-    "moving_sec": 3781.6,
-    "elevation_gain_m": 76.6
+    "distance_km": 3.7816,
+    "elapsed_sec": 810.0,
+    "moving_sec": 766.0,
+    "total_elevation_m": 14.0
   },
   "12593729994": {
     "name": "debuff叠满但我太硬",
     "date": "Oct 6, 2024, 11:26:10 AM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 24358.0,
-    "moving_sec": 185080.5,
-    "elevation_gain_m": 7.8
+    "distance_km": 185.0805,
+    "elapsed_sec": 28482.0,
+    "moving_sec": 24358.0,
+    "total_elevation_m": 2346.0
   },
   "12573205354": {
     "name": "Morning Ride",
     "date": "Oct 4, 2024, 11:57:47 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 6644.0,
-    "moving_sec": 47034.6,
-    "elevation_gain_m": 12.4
+    "distance_km": 47.0346,
+    "elapsed_sec": 9290.0,
+    "moving_sec": 6644.0,
+    "total_elevation_m": 348.0
   },
   "12558965455": {
     "name": "Afternoon Ride",
     "date": "Oct 2, 2024, 5:22:20 PM",
     "type": "Ride",
-    "distance_km": 0.0059,
-    "elapsed_sec": 4184.0,
-    "moving_sec": 24611.4,
-    "elevation_gain_m": 10.4
+    "distance_km": 24.6114,
+    "elapsed_sec": 4547.0,
+    "moving_sec": 4184.0,
+    "total_elevation_m": 127.0
   },
   "12558965613": {
     "name": "无敌shiv出发",
     "date": "Oct 2, 2024, 11:02:28 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 11305.0,
-    "moving_sec": 80465.1,
-    "elevation_gain_m": 4.4
+    "distance_km": 80.4651,
+    "elapsed_sec": 12934.0,
+    "moving_sec": 11305.0,
+    "total_elevation_m": 669.0
   },
   "12541098418": {
     "name": "carpe diem",
     "date": "Sep 30, 2024, 10:40:06 AM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 4510.0,
-    "moving_sec": 29323.4,
-    "elevation_gain_m": 4.4
+    "distance_km": 29.3234,
+    "elapsed_sec": 4748.0,
+    "moving_sec": 4510.0,
+    "total_elevation_m": 210.0
   },
   "12541098396": {
     "name": "Pick up 🍎",
     "date": "Sep 25, 2024, 1:00:22 AM",
     "type": "Ride",
-    "distance_km": 0.0053,
-    "elapsed_sec": 1288.0,
-    "moving_sec": 6831.8,
-    "elevation_gain_m": 10.6
+    "distance_km": 6.8318,
+    "elapsed_sec": 2017.0,
+    "moving_sec": 1288.0,
+    "total_elevation_m": 54.0
   },
   "12468789277": {
     "name": "Lunch Ride",
     "date": "Sep 21, 2024, 3:22:05 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 3550.0,
-    "moving_sec": 24341.9,
-    "elevation_gain_m": 14.0
+    "distance_km": 24.3419,
+    "elapsed_sec": 3762.0,
+    "moving_sec": 3550.0,
+    "total_elevation_m": 107.0
   },
   "12468789721": {
     "name": "Autumn Vibe",
     "date": "Sep 21, 2024, 11:11:35 AM",
     "type": "Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 9944.0,
-    "moving_sec": 79164.7,
-    "elevation_gain_m": 3.4
+    "distance_km": 79.1647,
+    "elapsed_sec": 13474.0,
+    "moving_sec": 9944.0,
+    "total_elevation_m": 638.0
   },
   "12460319353": {
     "name": "Lunch Ride",
     "date": "Sep 20, 2024, 4:17:33 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 551.0,
-    "moving_sec": 3633.1,
-    "elevation_gain_m": 76.4
+    "distance_km": 3.6331,
+    "elapsed_sec": 599.0,
+    "moving_sec": 551.0,
+    "total_elevation_m": 12.0
   },
   "12460319894": {
     "name": "2 sec progress",
     "date": "Sep 20, 2024, 11:08:33 AM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 11392.0,
-    "moving_sec": 80198.8,
-    "elevation_gain_m": 6.2
+    "distance_km": 80.1988,
+    "elapsed_sec": 16770.0,
+    "moving_sec": 11392.0,
+    "total_elevation_m": 640.0
   },
   "12434718454": {
     "name": "Lunch Ride",
     "date": "Sep 17, 2024, 4:18:23 PM",
     "type": "Ride",
-    "distance_km": 0.0058,
+    "distance_km": 3.8294,
     "elapsed_sec": 655.0,
-    "moving_sec": 3829.4,
-    "elevation_gain_m": 60.6
+    "moving_sec": 655.0,
+    "total_elevation_m": 17.0
   },
   "12434719360": {
     "name": "Pr day",
     "date": "Sep 17, 2024, 11:30:01 AM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 9278.0,
-    "moving_sec": 68086.4,
-    "elevation_gain_m": 0.8
+    "distance_km": 68.0864,
+    "elapsed_sec": 13253.0,
+    "moving_sec": 9278.0,
+    "total_elevation_m": 563.0
   },
   "12418412922": {
     "name": "真服了ride 2",
     "date": "Sep 15, 2024, 12:14:57 PM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 10961.0,
-    "moving_sec": 83770.1,
-    "elevation_gain_m": 5.0
+    "distance_km": 83.7701,
+    "elapsed_sec": 15293.0,
+    "moving_sec": 10961.0,
+    "total_elevation_m": 664.0
   },
   "12395506871": {
     "name": "Evening Ride",
     "date": "Sep 12, 2024, 9:37:23 PM",
     "type": "Ride",
-    "distance_km": 0.0042,
-    "elapsed_sec": 2168.0,
-    "moving_sec": 9118.1,
-    "elevation_gain_m": 5.5
+    "distance_km": 9.1181,
+    "elapsed_sec": 3556.0,
+    "moving_sec": 2168.0,
+    "total_elevation_m": 47.7
   },
   "12391316093": {
     "name": "Morning Ride",
     "date": "Sep 12, 2024, 10:30:07 AM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 5535.0,
-    "moving_sec": 40142.0,
-    "elevation_gain_m": 10.8
+    "distance_km": 40.142,
+    "elapsed_sec": 6176.0,
+    "moving_sec": 5535.0,
+    "total_elevation_m": 279.0
   },
   "12385670285": {
     "name": "Lunch Ride",
     "date": "Sep 11, 2024, 4:49:28 PM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 625.0,
-    "moving_sec": 3734.9,
-    "elevation_gain_m": 74.2
+    "distance_km": 3.7349,
+    "elapsed_sec": 655.0,
+    "moving_sec": 625.0,
+    "total_elevation_m": 7.0
   },
   "12385671248": {
     "name": "Exclusive YY ride",
     "date": "Sep 11, 2024, 12:18:49 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 11537.0,
-    "moving_sec": 77755.0,
-    "elevation_gain_m": 4.0
+    "distance_km": 77.755,
+    "elapsed_sec": 15706.0,
+    "moving_sec": 11537.0,
+    "total_elevation_m": 635.0
   },
   "12385939964": {
     "name": "Real zone 1 recover",
     "date": "Sep 9, 2024, 10:43:16 AM",
     "type": "Ride",
-    "distance_km": 0.0055,
-    "elapsed_sec": 3374.0,
-    "moving_sec": 18568.6,
-    "elevation_gain_m": 9.2
+    "distance_km": 18.5686,
+    "elapsed_sec": 3718.0,
+    "moving_sec": 3374.0,
+    "total_elevation_m": 135.0
   },
   "12360140611": {
     "name": "Morning Ride",
     "date": "Sep 8, 2024, 2:54:04 PM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 3528.0,
-    "moving_sec": 23979.5,
-    "elevation_gain_m": 12.6
+    "distance_km": 23.9795,
+    "elapsed_sec": 3701.0,
+    "moving_sec": 3528.0,
+    "total_elevation_m": 165.0
   },
   "12360141181": {
     "name": "真服了ride",
     "date": "Sep 8, 2024, 11:04:21 AM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 10412.0,
-    "moving_sec": 80539.2,
-    "elevation_gain_m": 6.6
+    "distance_km": 80.5392,
+    "elapsed_sec": 13427.0,
+    "moving_sec": 10412.0,
+    "total_elevation_m": 660.0
   },
   "12360140726": {
     "name": "Morning Ride",
     "date": "Sep 6, 2024, 12:13:23 PM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 4732.0,
-    "moving_sec": 29187.6,
-    "elevation_gain_m": 13.6
+    "distance_km": 29.1876,
+    "elapsed_sec": 5084.0,
+    "moving_sec": 4732.0,
+    "total_elevation_m": 207.0
   },
   "12302015289": {
     "name": "Afternoon Walk",
     "date": "Sep 1, 2024, 8:12:03 PM",
     "type": "Walk",
-    "distance_km": 0.0009,
-    "elapsed_sec": 2085.0,
-    "moving_sec": 1916.5,
-    "elevation_gain_m": 476.9
+    "distance_km": 1.9165,
+    "elapsed_sec": 2713.0,
+    "moving_sec": 2085.0,
+    "total_elevation_m": 21.2
   },
   "12302895507": {
     "name": "午后骑行",
     "date": "Sep 1, 2024, 5:43:24 PM",
     "type": "Ride",
-    "distance_km": 0.0091,
-    "elapsed_sec": 1151.0,
-    "moving_sec": 10417.8,
-    "elevation_gain_m": 240.0
+    "distance_km": 10.4178,
+    "elapsed_sec": 1654.0,
+    "moving_sec": 1151.0,
+    "total_elevation_m": 44.0
   },
   "12302895540": {
     "name": "晨间骑行",
     "date": "Sep 1, 2024, 2:15:53 PM",
     "type": "Ride",
-    "distance_km": 0.0036,
+    "distance_km": 10.7927,
     "elapsed_sec": 2964.0,
-    "moving_sec": 10792.7,
-    "elevation_gain_m": 237.6
+    "moving_sec": 2964.0,
+    "total_elevation_m": 497.0
   },
   "12284239482": {
     "name": "击碎我的骑车梦",
     "date": "Aug 30, 2024, 1:59:32 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 7670.0,
-    "moving_sec": 43945.8,
-    "elevation_gain_m": 215.2
+    "distance_km": 43.9458,
+    "elapsed_sec": 12165.0,
+    "moving_sec": 7670.0,
+    "total_elevation_m": 689.0
   },
   "12284239441": {
     "name": "午后骑行",
     "date": "Aug 29, 2024, 9:16:48 PM",
     "type": "Ride",
-    "distance_km": 0.0049,
-    "elapsed_sec": 4715.0,
-    "moving_sec": 22872.0,
-    "elevation_gain_m": 238.2
+    "distance_km": 22.872,
+    "elapsed_sec": 5207.0,
+    "moving_sec": 4715.0,
+    "total_elevation_m": 586.0
   },
   "12264544446": {
     "name": "Very good warm up before gsmr",
     "date": "Aug 28, 2024, 10:35:28 AM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 5320.0,
-    "moving_sec": 34814.6,
-    "elevation_gain_m": 8.4
+    "distance_km": 34.8146,
+    "elapsed_sec": 8425.0,
+    "moving_sec": 5320.0,
+    "total_elevation_m": 245.0
   },
   "12231895026": {
     "name": "平路被支配的恐惧",
     "date": "Aug 24, 2024, 12:23:10 PM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 11440.0,
-    "moving_sec": 100785.7,
-    "elevation_gain_m": -1.6
+    "distance_km": 100.7857,
+    "elapsed_sec": 15520.0,
+    "moving_sec": 11440.0,
+    "total_elevation_m": 97.0
   },
   "12207813194": {
     "name": "Very Windy",
     "date": "Aug 21, 2024, 1:53:21 PM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 10471.0,
-    "moving_sec": 70833.7,
-    "elevation_gain_m": 5.4
+    "distance_km": 70.8337,
+    "elapsed_sec": 18127.0,
+    "moving_sec": 10471.0,
+    "total_elevation_m": 644.0
   },
   "12197203043": {
     "name": "Autumn is coming",
     "date": "Aug 20, 2024, 11:57:56 AM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 9444.0,
-    "moving_sec": 64419.8,
-    "elevation_gain_m": 3.6
+    "distance_km": 64.4198,
+    "elapsed_sec": 15462.0,
+    "moving_sec": 9444.0,
+    "total_elevation_m": 627.0
   },
   "12182538447": {
     "name": "限时活动：找到镜腿套",
     "date": "Aug 18, 2024, 5:54:26 PM",
     "type": "Ride",
-    "distance_km": 0.0045,
-    "elapsed_sec": 4422.0,
-    "moving_sec": 20070.4,
-    "elevation_gain_m": 20.8
+    "distance_km": 20.0704,
+    "elapsed_sec": 5094.0,
+    "moving_sec": 4422.0,
+    "total_elevation_m": 184.0
   },
   "12173563987": {
     "name": "Afternoon Ride",
     "date": "Aug 17, 2024, 6:43:52 PM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 1439.0,
-    "moving_sec": 9096.7,
-    "elevation_gain_m": 34.6
+    "distance_km": 9.0967,
+    "elapsed_sec": 1459.0,
+    "moving_sec": 1439.0,
+    "total_elevation_m": 55.0
   },
   "12173564733": {
     "name": "I made my bear pr with a closed gate in middle",
     "date": "Aug 17, 2024, 10:50:40 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 20052.0,
-    "moving_sec": 144404.4,
-    "elevation_gain_m": 8.8
+    "distance_km": 144.4044,
+    "elapsed_sec": 26804.0,
+    "moving_sec": 20052.0,
+    "total_elevation_m": 1747.0
   },
   "12182538343": {
     "name": "Night Ride",
     "date": "Aug 16, 2024, 1:55:13 AM",
     "type": "Ride",
-    "distance_km": 0.0041,
-    "elapsed_sec": 667.0,
-    "moving_sec": 2738.8,
-    "elevation_gain_m": 25.2
+    "distance_km": 2.7388,
+    "elapsed_sec": 2253.0,
+    "moving_sec": 667.0,
+    "total_elevation_m": 37.0
   },
   "12138139283": {
     "name": "YY ride",
     "date": "Aug 13, 2024, 12:34:29 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 9105.0,
-    "moving_sec": 60709.5,
-    "elevation_gain_m": -3.0
+    "distance_km": 60.7095,
+    "elapsed_sec": 13974.0,
+    "moving_sec": 9105.0,
+    "total_elevation_m": 560.0
   },
   "12123175520": {
     "name": "firsr 🐻 2024",
     "date": "Aug 11, 2024, 10:49:21 AM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 21951.0,
-    "moving_sec": 152523.1,
-    "elevation_gain_m": 8.8
+    "distance_km": 152.5231,
+    "elapsed_sec": 31818.0,
+    "moving_sec": 21951.0,
+    "total_elevation_m": 1771.0
   },
   "12078912984": {
     "name": "Morning Ride",
     "date": "Aug 6, 2024, 12:15:16 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 10187.0,
-    "moving_sec": 75013.5,
-    "elevation_gain_m": 6.0
+    "distance_km": 75.0135,
+    "elapsed_sec": 15225.0,
+    "moving_sec": 10187.0,
+    "total_elevation_m": 630.0
   },
   "12078912584": {
     "name": "Afternoon Ride",
     "date": "Aug 5, 2024, 9:00:15 PM",
     "type": "Ride",
-    "distance_km": 0.0047,
-    "elapsed_sec": 3482.0,
-    "moving_sec": 16393.1,
-    "elevation_gain_m": 11.2
+    "distance_km": 16.3931,
+    "elapsed_sec": 4892.0,
+    "moving_sec": 3482.0,
+    "total_elevation_m": 128.0
   },
   "12064961353": {
     "name": "Evening Ride",
     "date": "Aug 5, 2024, 12:07:04 AM",
     "type": "Ride",
-    "distance_km": 0.0053,
-    "elapsed_sec": 3375.0,
-    "moving_sec": 17929.0,
-    "elevation_gain_m": -1.0
+    "distance_km": 17.929,
+    "elapsed_sec": 4710.0,
+    "moving_sec": 3375.0,
+    "total_elevation_m": 118.0
   },
   "12064961376": {
     "name": "Evening Ride",
     "date": "Jul 28, 2024, 10:23:20 PM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 3990.0,
-    "moving_sec": 24307.5,
-    "elevation_gain_m": 5.2
+    "distance_km": 24.3075,
+    "elapsed_sec": 4981.0,
+    "moving_sec": 3990.0,
+    "total_elevation_m": 253.0
   },
   "11998558527": {
     "name": "Afternoon Ride",
     "date": "Jul 27, 2024, 8:35:16 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 172.0,
-    "moving_sec": 978.4,
-    "elevation_gain_m": 42.6
+    "distance_km": 0.9784,
+    "elapsed_sec": 205.0,
+    "moving_sec": 172.0,
+    "total_elevation_m": 5.0
   },
   "11998557753": {
     "name": "Afternoon Ride",
     "date": "Jul 27, 2024, 8:13:36 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 1218.0,
-    "moving_sec": 7779.5,
-    "elevation_gain_m": 22.8
+    "distance_km": 7.7795,
+    "elapsed_sec": 1243.0,
+    "moving_sec": 1218.0,
+    "total_elevation_m": 43.0
   },
   "11998557768": {
     "name": "Team BBQ🥳",
     "date": "Jul 27, 2024, 11:58:53 AM",
     "type": "Ride",
-    "distance_km": 0.0075,
-    "elapsed_sec": 6852.0,
-    "moving_sec": 51407.3,
-    "elevation_gain_m": 16.2
+    "distance_km": 51.4073,
+    "elapsed_sec": 8313.0,
+    "moving_sec": 6852.0,
+    "total_elevation_m": 452.0
   },
   "11998557759": {
     "name": "Before Meeting Ride",
     "date": "Jul 26, 2024, 12:29:39 PM",
     "type": "Ride",
-    "distance_km": 0.0059,
-    "elapsed_sec": 4939.0,
-    "moving_sec": 29268.7,
-    "elevation_gain_m": 5.8
+    "distance_km": 29.2687,
+    "elapsed_sec": 5180.0,
+    "moving_sec": 4939.0,
+    "total_elevation_m": 212.0
   },
   "11973028004": {
     "name": "午后骑行",
     "date": "Jul 24, 2024, 7:26:08 PM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 6865.0,
-    "moving_sec": 52346.3,
-    "elevation_gain_m": 14.2
+    "distance_km": 52.3463,
+    "elapsed_sec": 6936.0,
+    "moving_sec": 6865.0,
+    "total_elevation_m": 373.0
   },
   "11948706243": {
     "name": "Morning Ride",
     "date": "Jul 21, 2024, 11:57:18 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 10879.0,
-    "moving_sec": 77463.2,
-    "elevation_gain_m": 7.6
+    "distance_km": 77.4632,
+    "elapsed_sec": 15305.0,
+    "moving_sec": 10879.0,
+    "total_elevation_m": 638.0
   },
   "11940109000": {
     "name": "Morning Ride",
     "date": "Jul 20, 2024, 11:37:54 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 8453.0,
-    "moving_sec": 61260.6,
-    "elevation_gain_m": 7.2
+    "distance_km": 61.2606,
+    "elapsed_sec": 9643.0,
+    "moving_sec": 8453.0,
+    "total_elevation_m": 460.0
   },
   "11920862286": {
     "name": "ride before rain",
     "date": "Jul 18, 2024, 12:09:24 AM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 3723.0,
-    "moving_sec": 24039.1,
-    "elevation_gain_m": 11.4
+    "distance_km": 24.0391,
+    "elapsed_sec": 4007.0,
+    "moving_sec": 3723.0,
+    "total_elevation_m": 161.0
   },
   "11905913211": {
     "name": "get burnt everywhere",
     "date": "Jul 16, 2024, 2:18:30 PM",
     "type": "Ride",
-    "distance_km": 0.0053,
-    "elapsed_sec": 9364.0,
-    "moving_sec": 49534.7,
-    "elevation_gain_m": 2.4
+    "distance_km": 49.5347,
+    "elapsed_sec": 22961.0,
+    "moving_sec": 9364.0,
+    "total_elevation_m": 233.0
   },
   "11888260148": {
     "name": "午间骑行",
     "date": "Jul 14, 2024, 3:50:08 PM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 589.0,
-    "moving_sec": 3562.8,
-    "elevation_gain_m": 66.0
+    "distance_km": 3.5628,
+    "elapsed_sec": 614.0,
+    "moving_sec": 589.0,
+    "total_elevation_m": 13.0
   },
   "11888260423": {
     "name": "Every social ride made my pr",
     "date": "Jul 14, 2024, 12:49:37 PM",
     "type": "Ride",
-    "distance_km": 0.0084,
-    "elapsed_sec": 6706.0,
-    "moving_sec": 56286.1,
-    "elevation_gain_m": 9.8
+    "distance_km": 56.2861,
+    "elapsed_sec": 9873.0,
+    "moving_sec": 6706.0,
+    "total_elevation_m": 439.0
   },
   "11864168682": {
     "name": "Morning Ride",
     "date": "Jul 11, 2024, 11:46:13 AM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 9698.0,
-    "moving_sec": 65329.7,
-    "elevation_gain_m": 3.8
+    "distance_km": 65.3297,
+    "elapsed_sec": 14890.0,
+    "moving_sec": 9698.0,
+    "total_elevation_m": 537.0
   },
   "11846551223": {
     "name": "Humid 😨",
     "date": "Jul 8, 2024, 10:59:38 PM",
     "type": "Ride",
-    "distance_km": 0.0079,
-    "elapsed_sec": 5221.0,
-    "moving_sec": 41447.0,
-    "elevation_gain_m": 8.4
+    "distance_km": 41.447,
+    "elapsed_sec": 5327.0,
+    "moving_sec": 5221.0,
+    "total_elevation_m": 297.0
   },
   "11846551264": {
     "name": "Purple ride",
     "date": "Jul 7, 2024, 12:29:02 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 5526.0,
-    "moving_sec": 35351.0,
-    "elevation_gain_m": 6.8
+    "distance_km": 35.351,
+    "elapsed_sec": 9086.0,
+    "moving_sec": 5526.0,
+    "total_elevation_m": 256.0
   },
   "11846551108": {
     "name": "傍晚骑行",
     "date": "Jul 6, 2024, 11:16:47 PM",
     "type": "Ride",
-    "distance_km": 0.0056,
-    "elapsed_sec": 3464.0,
-    "moving_sec": 19318.8,
-    "elevation_gain_m": 9.4
+    "distance_km": 19.3188,
+    "elapsed_sec": 8940.0,
+    "moving_sec": 3464.0,
+    "total_elevation_m": 138.0
   },
   "11808258152": {
     "name": "social ride",
     "date": "Jul 4, 2024, 11:29:03 AM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 11842.0,
-    "moving_sec": 86928.6,
-    "elevation_gain_m": 13.0
+    "distance_km": 86.9286,
+    "elapsed_sec": 14941.0,
+    "moving_sec": 11842.0,
+    "total_elevation_m": 810.0
   },
   "11808257772": {
     "name": "傍晚骑行",
     "date": "Jul 3, 2024, 12:11:39 AM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 4493.0,
-    "moving_sec": 28535.3,
-    "elevation_gain_m": 16.0
+    "distance_km": 28.5353,
+    "elapsed_sec": 4964.0,
+    "moving_sec": 4493.0,
+    "total_elevation_m": 202.0
   },
   "11745648169": {
     "name": "Evening Ride",
     "date": "Jun 25, 2024, 11:50:57 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 6298.0,
-    "moving_sec": 45425.3,
-    "elevation_gain_m": 9.2
+    "distance_km": 45.4253,
+    "elapsed_sec": 6463.0,
+    "moving_sec": 6298.0,
+    "total_elevation_m": 306.0
   },
   "11722530264": {
     "name": "Lunch Ride",
     "date": "Jun 23, 2024, 3:42:20 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 2036.0,
-    "moving_sec": 13116.0,
-    "elevation_gain_m": 23.0
+    "distance_km": 13.116,
+    "elapsed_sec": 2131.0,
+    "moving_sec": 2036.0,
+    "total_elevation_m": 65.0
   },
   "11722530708": {
     "name": "I’m cooked",
     "date": "Jun 23, 2024, 11:23:37 AM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 10413.0,
-    "moving_sec": 77514.0,
-    "elevation_gain_m": 9.4
+    "distance_km": 77.514,
+    "elapsed_sec": 14260.0,
+    "moving_sec": 10413.0,
+    "total_elevation_m": 623.0
   },
   "11722530413": {
     "name": "Marshal for GT",
     "date": "Jun 22, 2024, 2:44:52 PM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 5700.0,
-    "moving_sec": 36023.3,
-    "elevation_gain_m": 7.6
+    "distance_km": 36.0233,
+    "elapsed_sec": 8289.0,
+    "moving_sec": 5700.0,
+    "total_elevation_m": 457.0
   },
   "11694344674": {
     "name": "🌊",
     "date": "Jun 19, 2024, 9:33:24 PM",
     "type": "Ride",
-    "distance_km": 0.005,
-    "elapsed_sec": 10161.0,
-    "moving_sec": 51197.4,
-    "elevation_gain_m": 4.6
+    "distance_km": 51.1974,
+    "elapsed_sec": 16265.0,
+    "moving_sec": 10161.0,
+    "total_elevation_m": 211.0
   },
   "11694344618": {
     "name": "Evening Ride",
     "date": "Jun 18, 2024, 11:24:15 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 6510.0,
-    "moving_sec": 45048.9,
-    "elevation_gain_m": -5.0
+    "distance_km": 45.0489,
+    "elapsed_sec": 6868.0,
+    "moving_sec": 6510.0,
+    "total_elevation_m": 324.0
   },
   "11694344608": {
     "name": "Evening Ride",
     "date": "Jun 18, 2024, 12:19:17 AM",
     "type": "Ride",
-    "distance_km": 0.0052,
-    "elapsed_sec": 6610.0,
-    "moving_sec": 34624.0,
-    "elevation_gain_m": 10.8
+    "distance_km": 34.624,
+    "elapsed_sec": 7754.0,
+    "moving_sec": 6610.0,
+    "total_elevation_m": 254.0
   },
   "11669836126": {
     "name": "Evening Ride",
     "date": "Jun 16, 2024, 10:53:23 PM",
     "type": "Ride",
-    "distance_km": 0.0054,
-    "elapsed_sec": 3835.0,
-    "moving_sec": 20884.3,
-    "elevation_gain_m": 9.6
+    "distance_km": 20.8843,
+    "elapsed_sec": 4957.0,
+    "moving_sec": 3835.0,
+    "total_elevation_m": 144.0
   },
   "11669836196": {
     "name": "Stateline hill real pr",
     "date": "Jun 16, 2024, 7:11:30 PM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 9652.0,
-    "moving_sec": 68410.6,
-    "elevation_gain_m": -28.4
+    "distance_km": 68.4106,
+    "elapsed_sec": 13221.0,
+    "moving_sec": 9652.0,
+    "total_elevation_m": 768.0
   },
   "11669836166": {
     "name": "Evening Ride",
     "date": "Jun 15, 2024, 10:43:52 PM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 3791.0,
-    "moving_sec": 22117.0,
-    "elevation_gain_m": 5.8
+    "distance_km": 22.117,
+    "elapsed_sec": 4508.0,
+    "moving_sec": 3791.0,
+    "total_elevation_m": 153.0
   },
   "11644648168": {
     "name": "😪",
     "date": "Jun 13, 2024, 11:54:53 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 10745.0,
-    "moving_sec": 77879.3,
-    "elevation_gain_m": 2.4
+    "distance_km": 77.8793,
+    "elapsed_sec": 14212.0,
+    "moving_sec": 10745.0,
+    "total_elevation_m": 646.0
   },
   "11637785715": {
     "name": "🤤",
     "date": "Jun 12, 2024, 5:41:57 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 4049.0,
-    "moving_sec": 26028.2,
-    "elevation_gain_m": 8.4
+    "distance_km": 26.0282,
+    "elapsed_sec": 4359.0,
+    "moving_sec": 4049.0,
+    "total_elevation_m": 137.0
   },
   "11637786433": {
     "name": "👧🏻👧🏻🫶🏼",
     "date": "Jun 12, 2024, 12:28:09 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 10756.0,
-    "moving_sec": 75121.1,
-    "elevation_gain_m": 6.2
+    "distance_km": 75.1211,
+    "elapsed_sec": 15091.0,
+    "moving_sec": 10756.0,
+    "total_elevation_m": 630.0
   },
   "11623096486": {
     "name": "Pr day",
     "date": "Jun 10, 2024, 10:20:01 PM",
     "type": "Ride",
-    "distance_km": 0.0085,
+    "distance_km": 38.0404,
     "elapsed_sec": 4464.0,
-    "moving_sec": 38040.4,
-    "elevation_gain_m": 23.0
+    "moving_sec": 4464.0,
+    "total_elevation_m": 263.0
   },
   "11606690599": {
     "name": "Social Ride",
     "date": "Jun 8, 2024, 11:44:38 AM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 9003.0,
-    "moving_sec": 66901.6,
-    "elevation_gain_m": 6.6
+    "distance_km": 66.9016,
+    "elapsed_sec": 11316.0,
+    "moving_sec": 9003.0,
+    "total_elevation_m": 598.0
   },
   "11596863206": {
     "name": "happy 100",
     "date": "Jun 7, 2024, 10:46:03 AM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 13103.0,
-    "moving_sec": 101450.9,
-    "elevation_gain_m": 7.6
+    "distance_km": 101.4509,
+    "elapsed_sec": 20093.0,
+    "moving_sec": 13103.0,
+    "total_elevation_m": 711.0
   },
   "11584500388": {
     "name": "热坏了",
     "date": "Jun 5, 2024, 4:19:27 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 7070.0,
-    "moving_sec": 49348.9,
-    "elevation_gain_m": 18.6
+    "distance_km": 49.3489,
+    "elapsed_sec": 9514.0,
+    "moving_sec": 7070.0,
+    "total_elevation_m": 428.0
   },
   "11575949440": {
     "name": "back to NY",
     "date": "Jun 4, 2024, 9:38:25 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 5887.0,
-    "moving_sec": 39133.0,
-    "elevation_gain_m": 3.8
+    "distance_km": 39.133,
+    "elapsed_sec": 7113.0,
+    "moving_sec": 5887.0,
+    "total_elevation_m": 476.0
   },
   "11498300105": {
     "name": "东山*2",
     "date": "May 25, 2024, 11:04:21 PM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 9059.0,
-    "moving_sec": 84933.7,
-    "elevation_gain_m": 2.2
+    "distance_km": 84.9337,
+    "elapsed_sec": 10630.0,
+    "moving_sec": 9059.0,
+    "total_elevation_m": 198.0
   },
   "11490001453": {
     "name": "晨间骑行",
     "date": "May 25, 2024, 12:34:48 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
+    "distance_km": 9.6908,
     "elapsed_sec": 1372.0,
-    "moving_sec": 9690.8,
-    "elevation_gain_m": 11.2
+    "moving_sec": 1372.0,
+    "total_elevation_m": 104.0
   },
   "11490001430": {
     "name": "晨间骑行",
     "date": "May 24, 2024, 11:11:59 PM",
     "type": "Ride",
-    "distance_km": 0.0097,
+    "distance_km": 10.8338,
     "elapsed_sec": 1120.0,
-    "moving_sec": 10833.8,
-    "elevation_gain_m": 10.6
+    "moving_sec": 1120.0,
+    "total_elevation_m": 107.0
   },
   "11486376671": {
     "name": "我宣布电动车表速差很多",
     "date": "May 24, 2024, 12:29:17 PM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 2314.0,
-    "moving_sec": 20325.2,
-    "elevation_gain_m": 1.2
+    "distance_km": 20.3252,
+    "elapsed_sec": 2650.0,
+    "moving_sec": 2314.0,
+    "total_elevation_m": 114.0
   },
   "11475952140": {
     "name": "午间骑行",
     "date": "May 23, 2024, 3:20:19 AM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 958.0,
-    "moving_sec": 6646.6,
-    "elevation_gain_m": 4.4
+    "distance_km": 6.6466,
+    "elapsed_sec": 995.0,
+    "moving_sec": 958.0,
+    "total_elevation_m": 17.0
   },
   "11475783350": {
     "name": "晨间骑行",
     "date": "May 23, 2024, 12:16:07 AM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 5162.0,
-    "moving_sec": 40201.9,
-    "elevation_gain_m": 3.0
+    "distance_km": 40.2019,
+    "elapsed_sec": 7210.0,
+    "moving_sec": 5162.0,
+    "total_elevation_m": 276.0
   },
   "11470796241": {
     "name": "屁股痛死了😡",
     "date": "May 22, 2024, 3:54:04 AM",
     "type": "Ride",
-    "distance_km": 0.0055,
-    "elapsed_sec": 7917.0,
-    "moving_sec": 43163.1,
-    "elevation_gain_m": 348.2
+    "distance_km": 43.1631,
+    "elapsed_sec": 9789.0,
+    "moving_sec": 7917.0,
+    "total_elevation_m": 1043.0
   },
   "11460414020": {
     "name": "🥵热死我了",
     "date": "May 21, 2024, 2:14:49 AM",
     "type": "Ride",
-    "distance_km": 0.0099,
-    "elapsed_sec": 4781.0,
-    "moving_sec": 47388.6,
-    "elevation_gain_m": 1.6
+    "distance_km": 47.3886,
+    "elapsed_sec": 6519.0,
+    "moving_sec": 4781.0,
+    "total_elevation_m": 246.0
   },
   "11409160660": {
     "name": "Morning Ride",
     "date": "May 13, 2024, 1:57:09 PM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 8486.0,
-    "moving_sec": 64437.9,
-    "elevation_gain_m": -106.2
+    "distance_km": 64.4379,
+    "elapsed_sec": 15446.0,
+    "moving_sec": 8486.0,
+    "total_elevation_m": 588.0
   },
   "11373507491": {
     "name": "hh repeats",
     "date": "May 9, 2024, 10:46:24 PM",
     "type": "Ride",
-    "distance_km": 0.0068,
+    "distance_km": 25.1483,
     "elapsed_sec": 3683.0,
-    "moving_sec": 25148.3,
-    "elevation_gain_m": 8.4
+    "moving_sec": 3683.0,
+    "total_elevation_m": 274.0
   },
   "11334098761": {
     "name": "骑得我要碎了",
     "date": "May 4, 2024, 5:32:20 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 10375.0,
-    "moving_sec": 71543.2,
-    "elevation_gain_m": 7.0
+    "distance_km": 71.5432,
+    "elapsed_sec": 12671.0,
+    "moving_sec": 10375.0,
+    "total_elevation_m": 767.0
   },
   "11326558952": {
     "name": "I wanna sleep",
     "date": "May 3, 2024, 3:16:36 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 14428.0,
-    "moving_sec": 94116.1,
-    "elevation_gain_m": 3.0
+    "distance_km": 94.1161,
+    "elapsed_sec": 21773.0,
+    "moving_sec": 14428.0,
+    "total_elevation_m": 1146.0
   },
   "11302687901": {
     "name": "下课随便骑骑并拍骑媛照",
     "date": "Apr 30, 2024, 9:42:03 PM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 3472.0,
-    "moving_sec": 25390.5,
-    "elevation_gain_m": 13.2
+    "distance_km": 25.3905,
+    "elapsed_sec": 3636.0,
+    "moving_sec": 3472.0,
+    "total_elevation_m": 196.0
   },
   "11287913151": {
     "name": "crit",
     "date": "Apr 28, 2024, 3:07:00 PM",
     "type": "Ride",
-    "distance_km": 0.0082,
+    "distance_km": 10.4072,
     "elapsed_sec": 1267.0,
-    "moving_sec": 10407.2,
-    "elevation_gain_m": 128.0
+    "moving_sec": 1267.0,
+    "total_elevation_m": 64.0
   },
   "11278042219": {
     "name": "rr",
     "date": "Apr 27, 2024, 2:58:53 PM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 4553.0,
-    "moving_sec": 31146.9,
-    "elevation_gain_m": 72.2
+    "distance_km": 31.1469,
+    "elapsed_sec": 4621.0,
+    "moving_sec": 4553.0,
+    "total_elevation_m": 503.0
   },
   "11278042153": {
     "name": "itt",
     "date": "Apr 27, 2024, 1:21:16 PM",
     "type": "Ride",
-    "distance_km": 0.0045,
-    "elapsed_sec": 1344.0,
-    "moving_sec": 6096.0,
-    "elevation_gain_m": 96.8
+    "distance_km": 6.096,
+    "elapsed_sec": 1514.0,
+    "moving_sec": 1344.0,
+    "total_elevation_m": 241.0
   },
   "11241946316": {
     "name": "👧🏻🍲🎂",
     "date": "Apr 22, 2024, 2:41:37 PM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 7527.0,
-    "moving_sec": 46293.5,
-    "elevation_gain_m": 9.8
+    "distance_km": 46.2935,
+    "elapsed_sec": 20855.0,
+    "moving_sec": 7527.0,
+    "total_elevation_m": 427.0
   },
   "11234634232": {
     "name": "GSSR Crit CD",
     "date": "Apr 21, 2024, 3:57:47 PM",
     "type": "Ride",
-    "distance_km": 0.0083,
-    "elapsed_sec": 733.0,
-    "moving_sec": 6050.9,
-    "elevation_gain_m": 26.0
+    "distance_km": 6.0509,
+    "elapsed_sec": 943.0,
+    "moving_sec": 733.0,
+    "total_elevation_m": 45.0
   },
   "11234634256": {
     "name": "GSSR Clinic and Intro Crit",
     "date": "Apr 21, 2024, 1:28:01 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 1509.0,
-    "moving_sec": 9680.4,
-    "elevation_gain_m": 21.4
+    "distance_km": 9.6804,
+    "elapsed_sec": 1615.0,
+    "moving_sec": 1509.0,
+    "total_elevation_m": 73.0
   },
   "11234634185": {
     "name": "Morning Ride",
     "date": "Apr 21, 2024, 12:19:57 PM",
     "type": "Ride",
-    "distance_km": 0.0059,
+    "distance_km": 2.3939,
     "elapsed_sec": 406.0,
-    "moving_sec": 2393.9,
-    "elevation_gain_m": 25.8
+    "moving_sec": 406.0,
+    "total_elevation_m": 62.0
   },
   "11226802176": {
     "name": "GSSR Road Race Collegiate",
     "date": "Apr 20, 2024, 2:44:23 PM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 6617.0,
-    "moving_sec": 48167.0,
-    "elevation_gain_m": 54.8
+    "distance_km": 48.167,
+    "elapsed_sec": 6677.0,
+    "moving_sec": 6617.0,
+    "total_elevation_m": 724.0
   },
   "11226802069": {
     "name": "TTT",
     "date": "Apr 20, 2024, 12:15:39 PM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 1313.0,
-    "moving_sec": 10278.4,
-    "elevation_gain_m": 61.2
+    "distance_km": 10.2784,
+    "elapsed_sec": 1338.0,
+    "moving_sec": 1313.0,
+    "total_elevation_m": 107.0
   },
   "11226802032": {
     "name": "傍晚骑行",
@@ -374316,233 +374318,233 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 2088.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 2088.0,
+    "total_elevation_m": 0.0
   },
   "11214087310": {
     "name": "Ride for project",
     "date": "Apr 18, 2024, 6:24:35 PM",
     "type": "Ride",
-    "distance_km": 0.0043,
-    "elapsed_sec": 9510.0,
-    "moving_sec": 41230.0,
-    "elevation_gain_m": -1.0
+    "distance_km": 41.23,
+    "elapsed_sec": 19678.0,
+    "moving_sec": 9510.0,
+    "total_elevation_m": 271.0
   },
   "11204616917": {
     "name": "I'm hungry",
     "date": "Apr 17, 2024, 12:13:05 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 11575.0,
-    "moving_sec": 79987.2,
-    "elevation_gain_m": 6.0
+    "distance_km": 79.9872,
+    "elapsed_sec": 16010.0,
+    "moving_sec": 11575.0,
+    "total_elevation_m": 699.0
   },
   "11191766430": {
     "name": "Heartrate explored",
     "date": "Apr 15, 2024, 6:26:57 PM",
     "type": "Ride",
-    "distance_km": 0.0056,
-    "elapsed_sec": 4840.0,
-    "moving_sec": 26912.2,
-    "elevation_gain_m": 9.8
+    "distance_km": 26.9122,
+    "elapsed_sec": 5711.0,
+    "moving_sec": 4840.0,
+    "total_elevation_m": 196.0
   },
   "11180811886": {
     "name": "CRCA",
     "date": "Apr 14, 2024, 10:19:54 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 2868.0,
-    "moving_sec": 24509.2,
-    "elevation_gain_m": 15.6
+    "distance_km": 24.5092,
+    "elapsed_sec": 2923.0,
+    "moving_sec": 2868.0,
+    "total_elevation_m": 232.0
   },
   "11143721374": {
     "name": "Sunny Training Day",
     "date": "Apr 9, 2024, 12:13:53 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 11075.0,
-    "moving_sec": 77473.0,
-    "elevation_gain_m": 6.2
+    "distance_km": 77.473,
+    "elapsed_sec": 16304.0,
+    "moving_sec": 11075.0,
+    "total_elevation_m": 658.0
   },
   "11136532706": {
     "name": "喜欢春天",
     "date": "Apr 8, 2024, 2:24:36 PM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 4354.0,
-    "moving_sec": 25264.3,
-    "elevation_gain_m": -2.4
+    "distance_km": 25.2643,
+    "elapsed_sec": 5612.0,
+    "moving_sec": 4354.0,
+    "total_elevation_m": 206.0
   },
   "11127465819": {
     "name": "I crashed",
     "date": "Apr 7, 2024, 12:47:24 PM",
     "type": "Ride",
-    "distance_km": 0.0096,
-    "elapsed_sec": 196.0,
-    "moving_sec": 1878.9,
-    "elevation_gain_m": 17.2
+    "distance_km": 1.8789,
+    "elapsed_sec": 245.0,
+    "moving_sec": 196.0,
+    "total_elevation_m": 7.0
   },
   "11122548193": {
     "name": "ACC",
     "date": "Apr 6, 2024, 12:36:41 PM",
     "type": "Ride",
-    "distance_km": 0.0077,
+    "distance_km": 34.9076,
     "elapsed_sec": 4517.0,
-    "moving_sec": 34907.6,
-    "elevation_gain_m": 12.0
+    "moving_sec": 4517.0,
+    "total_elevation_m": 383.0
   },
   "11112378025": {
     "name": "困困ride",
     "date": "Apr 5, 2024, 12:43:16 PM",
     "type": "Ride",
-    "distance_km": 0.0059,
-    "elapsed_sec": 3447.0,
-    "moving_sec": 20252.1,
-    "elevation_gain_m": 8.8
+    "distance_km": 20.2521,
+    "elapsed_sec": 3962.0,
+    "moving_sec": 3447.0,
+    "total_elevation_m": 150.0
   },
   "11108464160": {
     "name": "Before race",
     "date": "Apr 4, 2024, 8:55:57 PM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 6151.0,
-    "moving_sec": 40834.0,
-    "elevation_gain_m": 8.0
+    "distance_km": 40.834,
+    "elapsed_sec": 8137.0,
+    "moving_sec": 6151.0,
+    "total_elevation_m": 302.0
   },
   "11079210004": {
     "name": "No climbing😅",
     "date": "Mar 31, 2024, 4:31:45 PM",
     "type": "Ride",
-    "distance_km": 0.0055,
-    "elapsed_sec": 7645.0,
-    "moving_sec": 42376.7,
-    "elevation_gain_m": 6.8
+    "distance_km": 42.3767,
+    "elapsed_sec": 8271.0,
+    "moving_sec": 7645.0,
+    "total_elevation_m": 758.0
   },
   "11079163290": {
     "name": "No climbing😅",
     "date": "Mar 31, 2024, 4:12:24 PM",
     "type": "Ride",
-    "distance_km": 0.0053,
-    "elapsed_sec": 1110.0,
-    "moving_sec": 5887.0,
-    "elevation_gain_m": 19.4
+    "distance_km": 5.887,
+    "elapsed_sec": 1161.0,
+    "moving_sec": 1110.0,
+    "total_elevation_m": 758.0
   },
   "11072407314": {
     "name": "Happy",
     "date": "Mar 30, 2024, 1:40:36 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 10350.0,
-    "moving_sec": 71123.2,
-    "elevation_gain_m": 8.8
+    "distance_km": 71.1232,
+    "elapsed_sec": 14221.0,
+    "moving_sec": 10350.0,
+    "total_elevation_m": 673.0
   },
   "11049664575": {
     "name": "写完两个ddl奖励自己",
     "date": "Mar 27, 2024, 12:32:19 PM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 11900.0,
-    "moving_sec": 85058.9,
-    "elevation_gain_m": 3.8
+    "distance_km": 85.0589,
+    "elapsed_sec": 15005.0,
+    "moving_sec": 11900.0,
+    "total_elevation_m": 658.0
   },
   "11011565149": {
     "name": "Safe Back",
     "date": "Mar 21, 2024, 6:48:42 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 13102.0,
-    "moving_sec": 85264.3,
-    "elevation_gain_m": 19.0
+    "distance_km": 85.2643,
+    "elapsed_sec": 18685.0,
+    "moving_sec": 13102.0,
+    "total_elevation_m": 821.0
   },
   "11004995692": {
     "name": "Afternoon Ride",
     "date": "Mar 20, 2024, 6:15:43 PM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 8632.0,
-    "moving_sec": 49705.8,
-    "elevation_gain_m": -3.0
+    "distance_km": 49.7058,
+    "elapsed_sec": 16986.0,
+    "moving_sec": 8632.0,
+    "total_elevation_m": 425.0
   },
   "10983163716": {
     "name": "Pics",
     "date": "Mar 17, 2024, 6:56:16 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 2951.0,
-    "moving_sec": 16864.4,
-    "elevation_gain_m": 2.2
+    "distance_km": 16.8644,
+    "elapsed_sec": 6584.0,
+    "moving_sec": 2951.0,
+    "total_elevation_m": 119.0
   },
   "10981290323": {
     "name": "2 flats day",
     "date": "Mar 17, 2024, 1:05:00 PM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 8668.0,
-    "moving_sec": 67127.9,
-    "elevation_gain_m": 7.0
+    "distance_km": 67.1279,
+    "elapsed_sec": 13356.0,
+    "moving_sec": 8668.0,
+    "total_elevation_m": 547.0
   },
   "10966225529": {
     "name": "午间骑行",
     "date": "Mar 15, 2024, 4:24:12 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
+    "distance_km": 3.7246,
     "elapsed_sec": 580.0,
-    "moving_sec": 3724.6,
-    "elevation_gain_m": 68.8
+    "moving_sec": 580.0,
+    "total_elevation_m": 15.0
   },
   "10966225831": {
     "name": "New bike!",
     "date": "Mar 15, 2024, 1:18:02 PM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 6858.0,
-    "moving_sec": 56236.0,
-    "elevation_gain_m": 9.2
+    "distance_km": 56.236,
+    "elapsed_sec": 10349.0,
+    "moving_sec": 6858.0,
+    "total_elevation_m": 486.0
   },
   "10959938609": {
     "name": "Girls’ Ride",
     "date": "Mar 14, 2024, 1:27:25 PM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 10272.0,
-    "moving_sec": 64139.3,
-    "elevation_gain_m": 8.8
+    "distance_km": 64.1393,
+    "elapsed_sec": 15031.0,
+    "moving_sec": 10272.0,
+    "total_elevation_m": 716.0
   },
   "10960058567": {
     "name": "To find my legs",
     "date": "Mar 12, 2024, 9:35:34 PM",
     "type": "Ride",
-    "distance_km": 0.0073,
+    "distance_km": 21.3384,
     "elapsed_sec": 2932.0,
-    "moving_sec": 21338.4,
-    "elevation_gain_m": 137.0
+    "moving_sec": 2932.0,
+    "total_elevation_m": 155.0
   },
   "10917873504": {
     "name": "Coach Session First&Women’s Day",
     "date": "Mar 8, 2024, 2:06:32 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 8804.0,
-    "moving_sec": 63412.3,
-    "elevation_gain_m": 6.2
+    "distance_km": 63.4123,
+    "elapsed_sec": 11191.0,
+    "moving_sec": 8804.0,
+    "total_elevation_m": 610.0
   },
   "10900220115": {
     "name": "晨间骑行",
     "date": "Mar 4, 2024, 2:46:16 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 6557.0,
-    "moving_sec": 42284.9,
-    "elevation_gain_m": 16.6
+    "distance_km": 42.2849,
+    "elapsed_sec": 7467.0,
+    "moving_sec": 6557.0,
+    "total_elevation_m": 432.0
   },
   "10885373809": {
     "name": "有人换新车但不是我",
     "date": "Mar 3, 2024, 7:05:46 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 9595.0,
-    "moving_sec": 64572.0,
-    "elevation_gain_m": 3.6
+    "distance_km": 64.572,
+    "elapsed_sec": 14821.0,
+    "moving_sec": 9595.0,
+    "total_elevation_m": 625.0
   },
   "10757988490": {
     "name": "Night Workout",
@@ -374550,548 +374552,548 @@ const ACTIVITY_METADATA = {
     "type": "Workout",
     "distance_km": 0.0,
     "elapsed_sec": 2130.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 2130.0,
+    "total_elevation_m": 0.0
   },
   "10734076807": {
     "name": "掉队水平的race😅",
     "date": "Feb 10, 2024, 11:52:02 AM",
     "type": "Ride",
-    "distance_km": 0.0076,
+    "distance_km": 41.4902,
     "elapsed_sec": 5430.0,
-    "moving_sec": 41490.2,
-    "elevation_gain_m": 16.8
+    "moving_sec": 5430.0,
+    "total_elevation_m": 362.0
   },
   "10728499018": {
     "name": "NYU CP Loop",
     "date": "Feb 9, 2024, 1:48:22 PM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 7767.0,
-    "moving_sec": 52814.0,
-    "elevation_gain_m": 5.0
+    "distance_km": 52.814,
+    "elapsed_sec": 9596.0,
+    "moving_sec": 7767.0,
+    "total_elevation_m": 405.0
   },
   "10489284750": {
     "name": "午后骑行",
     "date": "Jan 3, 2024, 6:58:52 PM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 8391.0,
-    "moving_sec": 61023.3,
-    "elevation_gain_m": 0.2
+    "distance_km": 61.0233,
+    "elapsed_sec": 10689.0,
+    "moving_sec": 8391.0,
+    "total_elevation_m": 560.0
   },
   "10458810547": {
     "name": "午后骑行",
     "date": "Dec 29, 2023, 10:02:27 PM",
     "type": "Ride",
-    "distance_km": 0.0048,
+    "distance_km": 0.1058,
     "elapsed_sec": 22.0,
-    "moving_sec": 105.8,
-    "elevation_gain_m": 60.8
+    "moving_sec": 22.0,
+    "total_elevation_m": 4.0
   },
   "10458813344": {
     "name": "🌇",
     "date": "Dec 29, 2023, 6:50:55 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 8530.0,
-    "moving_sec": 62828.9,
-    "elevation_gain_m": 2.0
+    "distance_km": 62.8289,
+    "elapsed_sec": 10644.0,
+    "moving_sec": 8530.0,
+    "total_elevation_m": 566.0
   },
   "10435770537": {
     "name": "Merry Xmas",
     "date": "Dec 25, 2023, 5:11:05 PM",
     "type": "Ride",
-    "distance_km": 0.0061,
+    "distance_km": 3.2613,
     "elapsed_sec": 534.0,
-    "moving_sec": 3261.3,
-    "elevation_gain_m": 58.0
+    "moving_sec": 534.0,
+    "total_elevation_m": 17.0
   },
   "10435772457": {
     "name": "Merry Xmas",
     "date": "Dec 25, 2023, 2:19:53 PM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 8251.0,
-    "moving_sec": 64325.9,
-    "elevation_gain_m": 2.8
+    "distance_km": 64.3259,
+    "elapsed_sec": 9949.0,
+    "moving_sec": 8251.0,
+    "total_elevation_m": 649.0
   },
   "10427402517": {
     "name": "Enze: This is zone 1",
     "date": "Dec 23, 2023, 1:05:20 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 12836.0,
-    "moving_sec": 88795.1,
-    "elevation_gain_m": 6.4
+    "distance_km": 88.7951,
+    "elapsed_sec": 17561.0,
+    "moving_sec": 12836.0,
+    "total_elevation_m": 853.0
   },
   "10354459196": {
     "name": "My knees hurt😅",
     "date": "Dec 9, 2023, 12:39:25 PM",
     "type": "Ride",
-    "distance_km": 0.0079,
-    "elapsed_sec": 10196.0,
-    "moving_sec": 80639.0,
-    "elevation_gain_m": -65.6
+    "distance_km": 80.639,
+    "elapsed_sec": 13883.0,
+    "moving_sec": 10196.0,
+    "total_elevation_m": 803.0
   },
   "10265362528": {
     "name": "瞎骑",
     "date": "Nov 22, 2023, 9:27:25 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 4081.0,
-    "moving_sec": 29193.6,
-    "elevation_gain_m": 5.8
+    "distance_km": 29.1936,
+    "elapsed_sec": 4340.0,
+    "moving_sec": 4081.0,
+    "total_elevation_m": 204.0
   },
   "10241420469": {
     "name": "HBD Daniel!",
     "date": "Nov 18, 2023, 12:05:55 PM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 10812.0,
-    "moving_sec": 79563.8,
-    "elevation_gain_m": 2.4
+    "distance_km": 79.5638,
+    "elapsed_sec": 14655.0,
+    "moving_sec": 10812.0,
+    "total_elevation_m": 722.0
   },
   "10236159594": {
     "name": "奇怪的garmin 奇怪的pc8",
     "date": "Nov 17, 2023, 1:19:25 PM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 6147.0,
-    "moving_sec": 53431.0,
-    "elevation_gain_m": 0.0
+    "distance_km": 53.431,
+    "elapsed_sec": 9046.0,
+    "moving_sec": 6147.0,
+    "total_elevation_m": 424.0
   },
   "10235078661": {
     "name": "谢谢大家🥹🥹🥹",
     "date": "Nov 17, 2023, 11:58:25 AM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 13676.0,
-    "moving_sec": 101073.0,
-    "elevation_gain_m": 4.6
+    "distance_km": 101.073,
+    "elapsed_sec": 18238.0,
+    "moving_sec": 13676.0,
+    "total_elevation_m": 801.0
   },
   "10223069392": {
     "name": "谢谢助力每一个pr",
     "date": "Nov 15, 2023, 11:48:25 AM",
     "type": "Ride",
-    "distance_km": 0.0066,
-    "elapsed_sec": 8943.0,
-    "moving_sec": 59018.1,
-    "elevation_gain_m": 2.8
+    "distance_km": 59.0181,
+    "elapsed_sec": 9175.0,
+    "moving_sec": 8943.0,
+    "total_elevation_m": 528.0
   },
   "10207359415": {
     "name": "zero gas & HBD to Charles",
     "date": "Nov 12, 2023, 12:30:47 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 9491.0,
-    "moving_sec": 68458.9,
-    "elevation_gain_m": 4.0
+    "distance_km": 68.4589,
+    "elapsed_sec": 13434.0,
+    "moving_sec": 9491.0,
+    "total_elevation_m": 640.0
   },
   "10201580695": {
     "name": "从未如此想回家+中途丢失数据",
     "date": "Nov 11, 2023, 12:05:25 PM",
     "type": "Ride",
-    "distance_km": 0.0075,
-    "elapsed_sec": 13695.0,
-    "moving_sec": 102127.9,
-    "elevation_gain_m": 4.0
+    "distance_km": 102.1279,
+    "elapsed_sec": 23256.0,
+    "moving_sec": 13695.0,
+    "total_elevation_m": 1016.0
   },
   "10195277899": {
     "name": "因为上一个数据表连错了所以update一个新的",
     "date": "Nov 10, 2023, 1:17:07 PM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 11119.0,
-    "moving_sec": 85591.0,
-    "elevation_gain_m": -36.0
+    "distance_km": 85.591,
+    "elapsed_sec": 15545.0,
+    "moving_sec": 11119.0,
+    "total_elevation_m": 698.0
   },
   "10194939828": {
     "name": "爬了tweedy",
     "date": "Nov 10, 2023, 12:00:12 PM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 15100.0,
-    "moving_sec": 110562.1,
-    "elevation_gain_m": 5.0
+    "distance_km": 110.5621,
+    "elapsed_sec": 20199.0,
+    "moving_sec": 15100.0,
+    "total_elevation_m": 988.0
   },
   "10182590881": {
     "name": "Harlem Hill Challenge with NYU",
     "date": "Nov 8, 2023, 10:44:22 AM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 8830.0,
-    "moving_sec": 61226.9,
-    "elevation_gain_m": 1.4
+    "distance_km": 61.2269,
+    "elapsed_sec": 9561.0,
+    "moving_sec": 8830.0,
+    "total_elevation_m": 548.0
   },
   "10182590743": {
     "name": "午后骑行",
     "date": "Nov 7, 2023, 6:44:52 PM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 3813.0,
-    "moving_sec": 23906.7,
-    "elevation_gain_m": 9.6
+    "distance_km": 23.9067,
+    "elapsed_sec": 4054.0,
+    "moving_sec": 3813.0,
+    "total_elevation_m": 167.0
   },
   "10167008113": {
     "name": "午后骑行",
     "date": "Nov 5, 2023, 6:10:21 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 3405.0,
-    "moving_sec": 23474.7,
-    "elevation_gain_m": 17.0
+    "distance_km": 23.4747,
+    "elapsed_sec": 3618.0,
+    "moving_sec": 3405.0,
+    "total_elevation_m": 117.0
   },
   "10167008270": {
     "name": "Marathon",
     "date": "Nov 5, 2023, 11:59:27 AM",
     "type": "Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 10927.0,
-    "moving_sec": 87181.3,
-    "elevation_gain_m": 6.2
+    "distance_km": 87.1813,
+    "elapsed_sec": 15876.0,
+    "moving_sec": 10927.0,
+    "total_elevation_m": 751.0
   },
   "10155047584": {
     "name": "阳康首🐻",
     "date": "Nov 3, 2023, 11:09:44 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 18940.0,
-    "moving_sec": 134309.4,
-    "elevation_gain_m": -109.4
+    "distance_km": 134.3094,
+    "elapsed_sec": 26928.0,
+    "moving_sec": 18940.0,
+    "total_elevation_m": 1838.0
   },
   "10155750853": {
     "name": "failure ride with covid",
     "date": "Oct 31, 2023, 9:54:39 AM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 3616.0,
-    "moving_sec": 21937.2,
-    "elevation_gain_m": 0.6
+    "distance_km": 21.9372,
+    "elapsed_sec": 5315.0,
+    "moving_sec": 3616.0,
+    "total_elevation_m": 124.0
   },
   "10114666578": {
     "name": "Who turned off my watch😡",
     "date": "Oct 27, 2023, 1:59:44 PM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 6974.0,
-    "moving_sec": 49172.0,
-    "elevation_gain_m": 7.2
+    "distance_km": 49.172,
+    "elapsed_sec": 12883.0,
+    "moving_sec": 6974.0,
+    "total_elevation_m": 344.0
   },
   "10113820939": {
     "name": "Morning Ride",
     "date": "Oct 27, 2023, 1:58:04 PM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 3673.0,
-    "moving_sec": 26917.8,
-    "elevation_gain_m": -0.2
+    "distance_km": 26.9178,
+    "elapsed_sec": 4520.0,
+    "moving_sec": 3673.0,
+    "total_elevation_m": 225.0
   },
   "10114666591": {
     "name": "欣赏🍁",
     "date": "Oct 27, 2023, 11:02:20 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 6987.0,
-    "moving_sec": 50021.8,
-    "elevation_gain_m": 4.8
+    "distance_km": 50.0218,
+    "elapsed_sec": 9130.0,
+    "moving_sec": 6987.0,
+    "total_elevation_m": 462.0
   },
   "10101687418": {
     "name": "With NYU",
     "date": "Oct 25, 2023, 9:41:57 AM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 7591.0,
-    "moving_sec": 53464.9,
-    "elevation_gain_m": -132.4
+    "distance_km": 53.4649,
+    "elapsed_sec": 8928.0,
+    "moving_sec": 7591.0,
+    "total_elevation_m": 567.0
   },
   "10086629400": {
     "name": "They said they would be zone2",
     "date": "Oct 22, 2023, 9:49:05 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 22148.0,
-    "moving_sec": 158606.4,
-    "elevation_gain_m": -0.8
+    "distance_km": 158.6064,
+    "elapsed_sec": 28451.0,
+    "moving_sec": 22148.0,
+    "total_elevation_m": 2057.0
   },
   "10070417928": {
     "name": "They are so fast🤡",
     "date": "Oct 19, 2023, 11:59:43 PM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 4763.0,
-    "moving_sec": 36346.0,
-    "elevation_gain_m": 7.0
+    "distance_km": 36.346,
+    "elapsed_sec": 5419.0,
+    "moving_sec": 4763.0,
+    "total_elevation_m": 278.0
   },
   "10070417933": {
     "name": "傍晚骑行",
     "date": "Oct 19, 2023, 12:52:29 AM",
     "type": "Ride",
-    "distance_km": 0.0055,
-    "elapsed_sec": 6385.0,
-    "moving_sec": 34941.9,
-    "elevation_gain_m": 10.6
+    "distance_km": 34.9419,
+    "elapsed_sec": 6843.0,
+    "moving_sec": 6385.0,
+    "total_elevation_m": 252.0
   },
   "10052497151": {
     "name": "傍晚骑行",
     "date": "Oct 16, 2023, 11:18:51 PM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 5540.0,
-    "moving_sec": 41863.2,
-    "elevation_gain_m": 6.0
+    "distance_km": 41.8632,
+    "elapsed_sec": 5673.0,
+    "moving_sec": 5540.0,
+    "total_elevation_m": 316.0
   },
   "10031747055": {
     "name": "谢谢大哥们今天的诚信",
     "date": "Oct 13, 2023, 10:27:18 AM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 10272.0,
-    "moving_sec": 80085.5,
-    "elevation_gain_m": 5.6
+    "distance_km": 80.0855,
+    "elapsed_sec": 15303.0,
+    "moving_sec": 10272.0,
+    "total_elevation_m": 657.0
   },
   "10018754206": {
     "name": "‘Recovery’ from crash",
     "date": "Oct 11, 2023, 9:26:02 AM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 8927.0,
-    "moving_sec": 62268.2,
-    "elevation_gain_m": 2.8
+    "distance_km": 62.2682,
+    "elapsed_sec": 11311.0,
+    "moving_sec": 8927.0,
+    "total_elevation_m": 528.0
   },
   "9959182010": {
     "name": "摔得最惨的一次没有之一",
     "date": "Oct 1, 2023, 11:01:31 AM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 7901.0,
-    "moving_sec": 60016.9,
-    "elevation_gain_m": 5.2
+    "distance_km": 60.0169,
+    "elapsed_sec": 11158.0,
+    "moving_sec": 7901.0,
+    "total_elevation_m": 679.0
   },
   "9900691874": {
     "name": "勇敢的人先享受bear mountain",
     "date": "Sep 22, 2023, 10:53:13 AM",
     "type": "Ride",
-    "distance_km": 0.0075,
-    "elapsed_sec": 18503.0,
-    "moving_sec": 138561.4,
-    "elevation_gain_m": 3.0
+    "distance_km": 138.5614,
+    "elapsed_sec": 27976.0,
+    "moving_sec": 18503.0,
+    "total_elevation_m": 1780.0
   },
   "9900691575": {
     "name": "傍晚骑行",
     "date": "Sep 21, 2023, 12:53:40 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 4921.0,
-    "moving_sec": 41955.3,
-    "elevation_gain_m": 19.8
+    "distance_km": 41.9553,
+    "elapsed_sec": 4943.0,
+    "moving_sec": 4921.0,
+    "total_elevation_m": 269.0
   },
   "9900691617": {
     "name": "傍晚骑行",
     "date": "Sep 19, 2023, 11:36:20 PM",
     "type": "Ride",
-    "distance_km": 0.0075,
-    "elapsed_sec": 4809.0,
-    "moving_sec": 35885.6,
-    "elevation_gain_m": 9.2
+    "distance_km": 35.8856,
+    "elapsed_sec": 4913.0,
+    "moving_sec": 4809.0,
+    "total_elevation_m": 260.0
   },
   "9900691580": {
     "name": "傍晚骑行",
     "date": "Sep 13, 2023, 12:09:56 AM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 4074.0,
-    "moving_sec": 25425.2,
-    "elevation_gain_m": 12.4
+    "distance_km": 25.4252,
+    "elapsed_sec": 4144.0,
+    "moving_sec": 4074.0,
+    "total_elevation_m": 199.0
   },
   "9815626092": {
     "name": "晨间骑行",
     "date": "Sep 9, 2023, 10:22:02 AM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 13606.0,
-    "moving_sec": 104193.0,
-    "elevation_gain_m": -26.4
+    "distance_km": 104.193,
+    "elapsed_sec": 17824.0,
+    "moving_sec": 13606.0,
+    "total_elevation_m": 806.0
   },
   "9815625626": {
     "name": "傍晚骑行",
     "date": "Sep 8, 2023, 12:35:43 AM",
     "type": "Ride",
-    "distance_km": 0.009,
-    "elapsed_sec": 3613.0,
-    "moving_sec": 32429.6,
-    "elevation_gain_m": 19.4
+    "distance_km": 32.4296,
+    "elapsed_sec": 4435.0,
+    "moving_sec": 3613.0,
+    "total_elevation_m": 241.0
   },
   "9815625637": {
     "name": "傍晚骑行",
     "date": "Sep 5, 2023, 11:09:08 PM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 3168.0,
-    "moving_sec": 24289.5,
-    "elevation_gain_m": 19.0
+    "distance_km": 24.2895,
+    "elapsed_sec": 4271.0,
+    "moving_sec": 3168.0,
+    "total_elevation_m": 184.0
   },
   "9815625645": {
     "name": "午后骑行",
     "date": "Sep 4, 2023, 5:16:37 PM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 4192.0,
-    "moving_sec": 24131.2,
-    "elevation_gain_m": 7.8
+    "distance_km": 24.1312,
+    "elapsed_sec": 4372.0,
+    "moving_sec": 4192.0,
+    "total_elevation_m": 172.0
   },
   "9771406131": {
     "name": "晨间骑行",
     "date": "Sep 2, 2023, 12:06:26 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 14727.0,
-    "moving_sec": 105639.4,
-    "elevation_gain_m": 4.0
+    "distance_km": 105.6394,
+    "elapsed_sec": 23633.0,
+    "moving_sec": 14727.0,
+    "total_elevation_m": 979.0
   },
   "9761971671": {
     "name": "晨间骑行",
     "date": "Sep 1, 2023, 10:10:51 AM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 6419.0,
-    "moving_sec": 52888.5,
-    "elevation_gain_m": 18.6
+    "distance_km": 52.8885,
+    "elapsed_sec": 6926.0,
+    "moving_sec": 6419.0,
+    "total_elevation_m": 390.0
   },
   "9758442389": {
     "name": "午后骑行",
     "date": "Aug 31, 2023, 5:43:40 PM",
     "type": "Ride",
-    "distance_km": 0.0076,
+    "distance_km": 27.2225,
     "elapsed_sec": 3602.0,
-    "moving_sec": 27222.5,
-    "elevation_gain_m": 23.6
+    "moving_sec": 3602.0,
+    "total_elevation_m": 193.0
   },
   "9758442409": {
     "name": "午间骑行",
     "date": "Aug 29, 2023, 3:19:29 PM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 4438.0,
-    "moving_sec": 30885.1,
-    "elevation_gain_m": 11.8
+    "distance_km": 30.8851,
+    "elapsed_sec": 4545.0,
+    "moving_sec": 4438.0,
+    "total_elevation_m": 245.0
   },
   "9758442440": {
     "name": "午后骑行",
     "date": "Aug 27, 2023, 5:42:32 PM",
     "type": "Ride",
-    "distance_km": 0.0053,
-    "elapsed_sec": 5673.0,
-    "moving_sec": 30294.5,
-    "elevation_gain_m": 8.6
+    "distance_km": 30.2945,
+    "elapsed_sec": 6093.0,
+    "moving_sec": 5673.0,
+    "total_elevation_m": 226.0
   },
   "9727393689": {
     "name": "午间骑行",
     "date": "Aug 26, 2023, 3:31:56 PM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 13656.0,
-    "moving_sec": 100371.5,
-    "elevation_gain_m": 4.4
+    "distance_km": 100.3715,
+    "elapsed_sec": 18437.0,
+    "moving_sec": 13656.0,
+    "total_elevation_m": 776.0
   },
   "9700668225": {
     "name": "晨间骑行",
     "date": "Aug 22, 2023, 10:42:30 AM",
     "type": "Ride",
-    "distance_km": 0.0075,
-    "elapsed_sec": 5446.0,
-    "moving_sec": 40670.7,
-    "elevation_gain_m": 18.2
+    "distance_km": 40.6707,
+    "elapsed_sec": 6307.0,
+    "moving_sec": 5446.0,
+    "total_elevation_m": 314.0
   },
   "9694486652": {
     "name": "晨间骑行",
     "date": "Aug 20, 2023, 11:37:36 AM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 14815.0,
-    "moving_sec": 103349.4,
-    "elevation_gain_m": 4.8
+    "distance_km": 103.3494,
+    "elapsed_sec": 21510.0,
+    "moving_sec": 14815.0,
+    "total_elevation_m": 690.0
   },
   "9694486407": {
     "name": "傍晚骑行",
     "date": "Aug 15, 2023, 10:34:05 AM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 6535.0,
-    "moving_sec": 50904.9,
-    "elevation_gain_m": 2.2
+    "distance_km": 50.9049,
+    "elapsed_sec": 7099.0,
+    "moving_sec": 6535.0,
+    "total_elevation_m": 279.0
   },
   "9612361487": {
     "name": "傍晚骑行",
     "date": "Aug 8, 2023, 11:42:46 AM",
     "type": "Ride",
-    "distance_km": 0.01,
-    "elapsed_sec": 5112.0,
-    "moving_sec": 51126.1,
-    "elevation_gain_m": 2.4
+    "distance_km": 51.1261,
+    "elapsed_sec": 5409.0,
+    "moving_sec": 5112.0,
+    "total_elevation_m": 44.0
   },
   "9612361573": {
     "name": "傍晚骑行",
     "date": "Aug 5, 2023, 11:32:55 AM",
     "type": "Ride",
-    "distance_km": 0.01,
-    "elapsed_sec": 4850.0,
-    "moving_sec": 48390.5,
-    "elevation_gain_m": 0.2
+    "distance_km": 48.3905,
+    "elapsed_sec": 5861.0,
+    "moving_sec": 4850.0,
+    "total_elevation_m": 260.0
   },
   "9612361438": {
     "name": "傍晚骑行",
     "date": "Aug 3, 2023, 11:35:09 AM",
     "type": "Ride",
-    "distance_km": 0.0097,
-    "elapsed_sec": 4924.0,
-    "moving_sec": 47718.1,
-    "elevation_gain_m": -0.4
+    "distance_km": 47.7181,
+    "elapsed_sec": 5509.0,
+    "moving_sec": 4924.0,
+    "total_elevation_m": 272.0
   },
   "9561641544": {
     "name": "傍晚骑行",
     "date": "Jul 31, 2023, 11:35:54 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 5019.0,
-    "moving_sec": 47760.1,
-    "elevation_gain_m": -0.2
+    "distance_km": 47.7601,
+    "elapsed_sec": 5891.0,
+    "moving_sec": 5019.0,
+    "total_elevation_m": 263.0
   },
   "9531489856": {
     "name": "傍晚骑行",
     "date": "Jul 27, 2023, 11:33:36 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 5020.0,
-    "moving_sec": 47480.9,
-    "elevation_gain_m": 1.0
+    "distance_km": 47.4809,
+    "elapsed_sec": 5626.0,
+    "moving_sec": 5020.0,
+    "total_elevation_m": 293.0
   },
   "9525675636": {
     "name": "傍晚骑行",
     "date": "Jul 26, 2023, 12:14:04 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 7047.0,
-    "moving_sec": 48653.2,
-    "elevation_gain_m": 0.6
+    "distance_km": 48.6532,
+    "elapsed_sec": 8249.0,
+    "moving_sec": 7047.0,
+    "total_elevation_m": 305.0
   },
   "9525675477": {
     "name": "傍晚骑行",
     "date": "Jul 25, 2023, 12:50:33 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 3985.0,
-    "moving_sec": 25551.2,
-    "elevation_gain_m": 3.8
+    "distance_km": 25.5512,
+    "elapsed_sec": 5684.0,
+    "moving_sec": 3985.0,
+    "total_elevation_m": 217.0
   },
   "9525675572": {
     "name": "晨间骑行",
     "date": "Jul 23, 2023, 1:49:42 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
+    "distance_km": 51.2711,
     "elapsed_sec": 5371.0,
-    "moving_sec": 51271.1,
-    "elevation_gain_m": 21.2
+    "moving_sec": 5371.0,
+    "total_elevation_m": 79.0
   },
   "9525675422": {
     "name": "傍晚骑行",
@@ -375099,683 +375101,683 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 5248.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 0.0
+    "moving_sec": 5248.0,
+    "total_elevation_m": 0.0
   },
   "9525675424": {
     "name": "傍晚骑行",
     "date": "Jul 20, 2023, 11:55:46 AM",
     "type": "Ride",
-    "distance_km": 0.0084,
+    "distance_km": 32.4515,
     "elapsed_sec": 3855.0,
-    "moving_sec": 32451.5,
-    "elevation_gain_m": 0.0
+    "moving_sec": 3855.0,
+    "total_elevation_m": 0.0
   },
   "9485115456": {
     "name": "傍晚骑行",
     "date": "Jul 18, 2023, 11:03:59 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 5280.0,
-    "moving_sec": 45890.1,
-    "elevation_gain_m": 4.2
+    "distance_km": 45.8901,
+    "elapsed_sec": 5851.0,
+    "moving_sec": 5280.0,
+    "total_elevation_m": 15.0
   },
   "9485115446": {
     "name": "午后骑行",
     "date": "Jul 17, 2023, 9:48:53 AM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 3580.0,
-    "moving_sec": 27744.0,
-    "elevation_gain_m": 14.2
+    "distance_km": 27.744,
+    "elapsed_sec": 3688.0,
+    "moving_sec": 3580.0,
+    "total_elevation_m": 219.0
   },
   "9428033500": {
     "name": "傍晚骑行",
     "date": "Jul 10, 2023, 11:20:39 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
-    "elapsed_sec": 4717.0,
-    "moving_sec": 43061.8,
-    "elevation_gain_m": 4.2
+    "distance_km": 43.0618,
+    "elapsed_sec": 5426.0,
+    "moving_sec": 4717.0,
+    "total_elevation_m": 222.0
   },
   "9428033456": {
     "name": "傍晚骑行",
     "date": "Jul 5, 2023, 11:07:58 AM",
     "type": "Ride",
-    "distance_km": 0.0098,
-    "elapsed_sec": 8394.0,
-    "moving_sec": 82318.3,
-    "elevation_gain_m": -7.6
+    "distance_km": 82.3183,
+    "elapsed_sec": 10031.0,
+    "moving_sec": 8394.0,
+    "total_elevation_m": 35.0
   },
   "9428033429": {
     "name": "傍晚骑行",
     "date": "Jul 3, 2023, 11:17:26 AM",
     "type": "Ride",
-    "distance_km": 0.0098,
-    "elapsed_sec": 5726.0,
-    "moving_sec": 55920.3,
-    "elevation_gain_m": -1.4
+    "distance_km": 55.9203,
+    "elapsed_sec": 6891.0,
+    "moving_sec": 5726.0,
+    "total_elevation_m": 255.0
   },
   "9428033414": {
     "name": "晨间骑行",
     "date": "Jul 2, 2023, 1:41:55 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 6896.0,
-    "moving_sec": 58843.4,
-    "elevation_gain_m": -18.4
+    "distance_km": 58.8434,
+    "elapsed_sec": 10725.0,
+    "moving_sec": 6896.0,
+    "total_elevation_m": 34.0
   },
   "9360118277": {
     "name": "傍晚骑行",
     "date": "Jun 29, 2023, 11:31:20 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 4988.0,
-    "moving_sec": 46937.9,
-    "elevation_gain_m": 6.4
+    "distance_km": 46.9379,
+    "elapsed_sec": 5690.0,
+    "moving_sec": 4988.0,
+    "total_elevation_m": 224.0
   },
   "9360118218": {
     "name": "晚间骑行",
     "date": "Jun 28, 2023, 1:17:18 PM",
     "type": "Ride",
-    "distance_km": 0.0079,
+    "distance_km": 2.5418,
     "elapsed_sec": 320.0,
-    "moving_sec": 2541.8,
-    "elevation_gain_m": 4.6
+    "moving_sec": 320.0,
+    "total_elevation_m": 1.0
   },
   "9360118241": {
     "name": "傍晚骑行",
     "date": "Jun 28, 2023, 11:09:20 AM",
     "type": "Ride",
-    "distance_km": 0.01,
-    "elapsed_sec": 6197.0,
-    "moving_sec": 61988.8,
-    "elevation_gain_m": 8.8
+    "distance_km": 61.9888,
+    "elapsed_sec": 7147.0,
+    "moving_sec": 6197.0,
+    "total_elevation_m": 75.0
   },
   "9360118243": {
     "name": "傍晚骑行",
     "date": "Jun 27, 2023, 11:17:22 AM",
     "type": "Ride",
-    "distance_km": 0.0098,
-    "elapsed_sec": 4048.0,
-    "moving_sec": 39720.9,
-    "elevation_gain_m": 38.0
+    "distance_km": 39.7209,
+    "elapsed_sec": 4266.0,
+    "moving_sec": 4048.0,
+    "total_elevation_m": 163.0
   },
   "9341664346": {
     "name": "傍晚骑行",
     "date": "Jun 26, 2023, 11:20:58 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 5090.0,
-    "moving_sec": 48159.5,
-    "elevation_gain_m": -4.6
+    "distance_km": 48.1595,
+    "elapsed_sec": 5794.0,
+    "moving_sec": 5090.0,
+    "total_elevation_m": 229.0
   },
   "9341664364": {
     "name": "晨间骑行",
     "date": "Jun 19, 2023, 12:16:50 AM",
     "type": "Ride",
-    "distance_km": 0.0049,
-    "elapsed_sec": 5381.0,
-    "moving_sec": 26513.8,
-    "elevation_gain_m": 1509.2
+    "distance_km": 26.5138,
+    "elapsed_sec": 7450.0,
+    "moving_sec": 5381.0,
+    "total_elevation_m": 572.0
   },
   "9341664335": {
     "name": "傍晚骑行",
     "date": "Jun 18, 2023, 11:26:46 AM",
     "type": "Ride",
-    "distance_km": 0.0045,
-    "elapsed_sec": 3942.0,
-    "moving_sec": 17890.9,
-    "elevation_gain_m": 1525.4
+    "distance_km": 17.8909,
+    "elapsed_sec": 5438.0,
+    "moving_sec": 3942.0,
+    "total_elevation_m": 417.0
   },
   "9276532887": {
     "name": "傍晚骑行",
     "date": "Jun 16, 2023, 11:55:53 AM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 1946.0,
-    "moving_sec": 11243.0,
-    "elevation_gain_m": 1211.0
+    "distance_km": 11.243,
+    "elapsed_sec": 5268.0,
+    "moving_sec": 1946.0,
+    "total_elevation_m": 38.0
   },
   "9276532901": {
     "name": "午后骑行",
     "date": "Jun 16, 2023, 9:32:03 AM",
     "type": "Ride",
-    "distance_km": 0.0039,
-    "elapsed_sec": 3122.0,
-    "moving_sec": 12044.1,
-    "elevation_gain_m": 1547.0
+    "distance_km": 12.0441,
+    "elapsed_sec": 4395.0,
+    "moving_sec": 3122.0,
+    "total_elevation_m": 448.0
   },
   "9265161019": {
     "name": "傍晚骑行",
     "date": "Jun 14, 2023, 12:19:04 PM",
     "type": "Ride",
-    "distance_km": 0.0046,
-    "elapsed_sec": 5627.0,
-    "moving_sec": 26089.7,
-    "elevation_gain_m": 1539.4
+    "distance_km": 26.0897,
+    "elapsed_sec": 7902.0,
+    "moving_sec": 5627.0,
+    "total_elevation_m": 554.0
   },
   "9257970820": {
     "name": "傍晚骑行",
     "date": "Jun 12, 2023, 12:28:45 PM",
     "type": "Ride",
-    "distance_km": 0.0034,
-    "elapsed_sec": 3624.0,
-    "moving_sec": 12397.4,
-    "elevation_gain_m": 1540.6
+    "distance_km": 12.3974,
+    "elapsed_sec": 6141.0,
+    "moving_sec": 3624.0,
+    "total_elevation_m": 452.0
   },
   "9472932078": {
     "name": "Evening Mountain Bike Ride",
     "date": "Jun 12, 2023, 12:02:55 PM",
     "type": "Ride",
-    "distance_km": 0.0043,
-    "elapsed_sec": 6673.0,
-    "moving_sec": 28777.5,
-    "elevation_gain_m": 1520.8
+    "distance_km": 28.7775,
+    "elapsed_sec": 18484.0,
+    "moving_sec": 6673.0,
+    "total_elevation_m": 554.0
   },
   "9239533538": {
     "name": "山地自行车骑行（夜间）",
     "date": "Jun 10, 2023, 1:33:34 PM",
     "type": "Ride",
-    "distance_km": 0.004,
-    "elapsed_sec": 2992.0,
-    "moving_sec": 11863.8,
-    "elevation_gain_m": 1530.2
+    "distance_km": 11.8638,
+    "elapsed_sec": 3912.0,
+    "moving_sec": 2992.0,
+    "total_elevation_m": 23.0
   },
   "9239533450": {
     "name": "晚间骑行",
     "date": "Jun 10, 2023, 11:51:50 AM",
     "type": "Ride",
-    "distance_km": 0.004,
-    "elapsed_sec": 1745.0,
-    "moving_sec": 7042.2,
-    "elevation_gain_m": 1516.6
+    "distance_km": 7.0422,
+    "elapsed_sec": 3076.0,
+    "moving_sec": 1745.0,
+    "total_elevation_m": 230.0
   },
   "9226244320": {
     "name": "傍晚骑行",
     "date": "Jun 8, 2023, 11:32:50 AM",
     "type": "Ride",
-    "distance_km": 0.0101,
-    "elapsed_sec": 4548.0,
-    "moving_sec": 46104.8,
-    "elevation_gain_m": 0.4
+    "distance_km": 46.1048,
+    "elapsed_sec": 5384.0,
+    "moving_sec": 4548.0,
+    "total_elevation_m": 246.0
   },
   "9219584090": {
     "name": "Evening Ride",
     "date": "Jun 7, 2023, 11:28:27 AM",
     "type": "Ride",
-    "distance_km": 0.0103,
-    "elapsed_sec": 3439.0,
-    "moving_sec": 35308.0,
-    "elevation_gain_m": 5.6
+    "distance_km": 35.308,
+    "elapsed_sec": 3581.0,
+    "moving_sec": 3439.0,
+    "total_elevation_m": 71.0
   },
   "9260930541": {
     "name": "傍晚骑行",
     "date": "Jun 6, 2023, 12:27:19 PM",
     "type": "Ride",
-    "distance_km": 0.0044,
-    "elapsed_sec": 843.0,
-    "moving_sec": 3687.0,
-    "elevation_gain_m": 19.0
+    "distance_km": 3.687,
+    "elapsed_sec": 1116.0,
+    "moving_sec": 843.0,
+    "total_elevation_m": 106.0
   },
   "9260930594": {
     "name": "傍晚骑行",
     "date": "Jun 6, 2023, 11:32:17 AM",
     "type": "Ride",
-    "distance_km": 0.0097,
+    "distance_km": 23.8007,
     "elapsed_sec": 2448.0,
-    "moving_sec": 23800.7,
-    "elevation_gain_m": 7.2
+    "moving_sec": 2448.0,
+    "total_elevation_m": 98.0
   },
   "9207417041": {
     "name": "晚间骑行",
     "date": "Jun 5, 2023, 1:06:01 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 2027.0,
-    "moving_sec": 14691.0,
-    "elevation_gain_m": 6.0
+    "distance_km": 14.691,
+    "elapsed_sec": 2495.0,
+    "moving_sec": 2027.0,
+    "total_elevation_m": 20.0
   },
   "9207417244": {
     "name": "晨间骑行",
     "date": "Jun 4, 2023, 1:23:04 AM",
     "type": "Ride",
-    "distance_km": 0.0093,
-    "elapsed_sec": 8682.0,
-    "moving_sec": 80520.1,
-    "elevation_gain_m": 1.8
+    "distance_km": 80.5201,
+    "elapsed_sec": 10050.0,
+    "moving_sec": 8682.0,
+    "total_elevation_m": 193.0
   },
   "9191628552": {
     "name": "晨间骑行",
     "date": "Jun 3, 2023, 12:02:32 AM",
     "type": "Ride",
-    "distance_km": 0.0097,
-    "elapsed_sec": 5489.0,
-    "moving_sec": 53066.4,
-    "elevation_gain_m": 2.2
+    "distance_km": 53.0664,
+    "elapsed_sec": 6262.0,
+    "moving_sec": 5489.0,
+    "total_elevation_m": 69.0
   },
   "9191628541": {
     "name": "傍晚骑行",
     "date": "Jun 1, 2023, 11:33:27 AM",
     "type": "Ride",
-    "distance_km": 0.0096,
-    "elapsed_sec": 4649.0,
-    "moving_sec": 44805.5,
-    "elevation_gain_m": -7.4
+    "distance_km": 44.8055,
+    "elapsed_sec": 5361.0,
+    "moving_sec": 4649.0,
+    "total_elevation_m": 215.0
   },
   "9191628519": {
     "name": "傍晚骑行",
     "date": "May 31, 2023, 11:38:06 AM",
     "type": "Ride",
-    "distance_km": 0.01,
+    "distance_km": 27.293,
     "elapsed_sec": 2738.0,
-    "moving_sec": 27293.0,
-    "elevation_gain_m": -9.8
+    "moving_sec": 2738.0,
+    "total_elevation_m": 54.0
   },
   "9191628546": {
     "name": "傍晚骑行",
     "date": "May 30, 2023, 10:18:53 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
-    "elapsed_sec": 5592.0,
-    "moving_sec": 51064.5,
-    "elevation_gain_m": 9.4
+    "distance_km": 51.0645,
+    "elapsed_sec": 7332.0,
+    "moving_sec": 5592.0,
+    "total_elevation_m": 75.0
   },
   "9081452377": {
     "name": "午后骑行",
     "date": "May 16, 2023, 9:44:10 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 6198.0,
-    "moving_sec": 53742.2,
-    "elevation_gain_m": 8.4
+    "distance_km": 53.7422,
+    "elapsed_sec": 7486.0,
+    "moving_sec": 6198.0,
+    "total_elevation_m": 75.0
   },
   "9045779381": {
     "name": "傍晚骑行",
     "date": "May 10, 2023, 11:31:55 AM",
     "type": "Ride",
-    "distance_km": 0.0109,
+    "distance_km": 27.3461,
     "elapsed_sec": 2516.0,
-    "moving_sec": 27346.1,
-    "elevation_gain_m": -6.2
+    "moving_sec": 2516.0,
+    "total_elevation_m": 53.0
   },
   "9039641670": {
     "name": "傍晚骑行",
     "date": "May 9, 2023, 11:06:28 AM",
     "type": "Ride",
-    "distance_km": 0.0096,
-    "elapsed_sec": 5474.0,
-    "moving_sec": 52529.2,
-    "elevation_gain_m": -3.2
+    "distance_km": 52.5292,
+    "elapsed_sec": 6515.0,
+    "moving_sec": 5474.0,
+    "total_elevation_m": 78.0
   },
   "9039639263": {
     "name": "晨间骑行",
     "date": "Apr 30, 2023, 11:52:05 PM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 11839.0,
-    "moving_sec": 104765.1,
-    "elevation_gain_m": -6.0
+    "distance_km": 104.7651,
+    "elapsed_sec": 22924.0,
+    "moving_sec": 11839.0,
+    "total_elevation_m": 126.0
   },
   "8983806716": {
     "name": "晨间骑行",
     "date": "Apr 30, 2023, 2:06:15 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 5337.0,
-    "moving_sec": 49992.5,
-    "elevation_gain_m": -0.8
+    "distance_km": 49.9925,
+    "elapsed_sec": 7907.0,
+    "moving_sec": 5337.0,
+    "total_elevation_m": 2.0
   },
   "8960435022": {
     "name": "傍晚骑行",
     "date": "Apr 26, 2023, 11:32:41 AM",
     "type": "Ride",
-    "distance_km": 0.0101,
+    "distance_km": 31.4409,
     "elapsed_sec": 3122.0,
-    "moving_sec": 31440.9,
-    "elevation_gain_m": 4.8
+    "moving_sec": 3122.0,
+    "total_elevation_m": 61.0
   },
   "8954227040": {
     "name": "傍晚骑行",
     "date": "Apr 25, 2023, 10:39:25 AM",
     "type": "Ride",
-    "distance_km": 0.0097,
-    "elapsed_sec": 5441.0,
-    "moving_sec": 52559.7,
-    "elevation_gain_m": -9.8
+    "distance_km": 52.5597,
+    "elapsed_sec": 6372.0,
+    "moving_sec": 5441.0,
+    "total_elevation_m": 79.0
   },
   "8933960718": {
     "name": "晨间骑行",
     "date": "Apr 22, 2023, 1:11:46 AM",
     "type": "Ride",
-    "distance_km": 0.0097,
+    "distance_km": 24.7105,
     "elapsed_sec": 2546.0,
-    "moving_sec": 24710.5,
-    "elevation_gain_m": -12.8
+    "moving_sec": 2546.0,
+    "total_elevation_m": 78.0
   },
   "8933960729": {
     "name": "傍晚骑行",
     "date": "Apr 19, 2023, 11:31:36 AM",
     "type": "Ride",
-    "distance_km": 0.0089,
+    "distance_km": 31.4678,
     "elapsed_sec": 3539.0,
-    "moving_sec": 31467.8,
-    "elevation_gain_m": -2.8
+    "moving_sec": 3539.0,
+    "total_elevation_m": 61.0
   },
   "8933960690": {
     "name": "晨间骑行",
     "date": "Apr 15, 2023, 2:11:21 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
+    "distance_km": 9.3881,
     "elapsed_sec": 1061.0,
-    "moving_sec": 9388.1,
-    "elevation_gain_m": 20.8
+    "moving_sec": 1061.0,
+    "total_elevation_m": 46.0
   },
   "8878015638": {
     "name": "傍晚骑行",
     "date": "Apr 12, 2023, 11:00:47 AM",
     "type": "Ride",
-    "distance_km": 0.0089,
-    "elapsed_sec": 3645.0,
-    "moving_sec": 32572.5,
-    "elevation_gain_m": 65.6
+    "distance_km": 32.5725,
+    "elapsed_sec": 4791.0,
+    "moving_sec": 3645.0,
+    "total_elevation_m": 4.0
   },
   "8859898572": {
     "name": "晨间骑行",
     "date": "Apr 9, 2023, 1:52:13 AM",
     "type": "Ride",
-    "distance_km": 0.0092,
-    "elapsed_sec": 6991.0,
-    "moving_sec": 64306.5,
-    "elevation_gain_m": -5.8
+    "distance_km": 64.3065,
+    "elapsed_sec": 9296.0,
+    "moving_sec": 6991.0,
+    "total_elevation_m": 145.0
   },
   "8853860226": {
     "name": "午后骑行",
     "date": "Apr 8, 2023, 5:58:16 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 5421.0,
-    "moving_sec": 46102.0,
-    "elevation_gain_m": 1.4
+    "distance_km": 46.102,
+    "elapsed_sec": 6480.0,
+    "moving_sec": 5421.0,
+    "total_elevation_m": 224.0
   },
   "8837062719": {
     "name": "晨间骑行",
     "date": "Apr 5, 2023, 12:03:18 AM",
     "type": "Ride",
-    "distance_km": 0.0083,
-    "elapsed_sec": 7902.0,
-    "moving_sec": 65465.8,
-    "elevation_gain_m": -5.8
+    "distance_km": 65.4658,
+    "elapsed_sec": 10291.0,
+    "moving_sec": 7902.0,
+    "total_elevation_m": 177.0
   },
   "8825209008": {
     "name": "晨间骑行",
     "date": "Apr 1, 2023, 2:32:38 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
+    "distance_km": 30.2137,
     "elapsed_sec": 3305.0,
-    "moving_sec": 30213.7,
-    "elevation_gain_m": 29.6
+    "moving_sec": 3305.0,
+    "total_elevation_m": 25.0
   },
   "8797637873": {
     "name": "傍晚骑行",
     "date": "Mar 29, 2023, 11:30:34 AM",
     "type": "Ride",
-    "distance_km": 0.01,
+    "distance_km": 35.3851,
     "elapsed_sec": 3531.0,
-    "moving_sec": 35385.1,
-    "elevation_gain_m": 7.6
+    "moving_sec": 3531.0,
+    "total_elevation_m": 63.0
   },
   "8781445746": {
     "name": "晨间骑行",
     "date": "Mar 26, 2023, 12:45:07 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 17048.0,
-    "moving_sec": 122632.5,
-    "elevation_gain_m": 174.6
+    "distance_km": 122.6325,
+    "elapsed_sec": 21727.0,
+    "moving_sec": 17048.0,
+    "total_elevation_m": 1431.0
   },
   "8781445062": {
     "name": "午后骑行",
     "date": "Mar 25, 2023, 7:18:24 AM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 1929.0,
-    "moving_sec": 11097.7,
-    "elevation_gain_m": 185.2
+    "distance_km": 11.0977,
+    "elapsed_sec": 2133.0,
+    "moving_sec": 1929.0,
+    "total_elevation_m": 273.0
   },
   "8744976311": {
     "name": "晨间骑行",
     "date": "Mar 20, 2023, 2:54:21 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
-    "elapsed_sec": 8628.0,
-    "moving_sec": 78079.5,
-    "elevation_gain_m": 22.8
+    "distance_km": 78.0795,
+    "elapsed_sec": 11112.0,
+    "moving_sec": 8628.0,
+    "total_elevation_m": 178.0
   },
   "8732630169": {
     "name": "晨间骑行",
     "date": "Mar 18, 2023, 2:07:54 AM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 4011.0,
-    "moving_sec": 25372.0,
-    "elevation_gain_m": 1.2
+    "distance_km": 25.372,
+    "elapsed_sec": 5480.0,
+    "moving_sec": 4011.0,
+    "total_elevation_m": 187.0
   },
   "8718392399": {
     "name": "傍晚骑行",
     "date": "Mar 15, 2023, 11:30:46 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
+    "distance_km": 31.3628,
     "elapsed_sec": 3440.0,
-    "moving_sec": 31362.8,
-    "elevation_gain_m": -7.6
+    "moving_sec": 3440.0,
+    "total_elevation_m": 73.0
   },
   "8701622322": {
     "name": "午后骑行",
     "date": "Mar 12, 2023, 6:23:43 AM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 4989.0,
-    "moving_sec": 40328.1,
-    "elevation_gain_m": 75.8
+    "distance_km": 40.3281,
+    "elapsed_sec": 6157.0,
+    "moving_sec": 4989.0,
+    "total_elevation_m": 176.0
   },
   "8695192716": {
     "name": "晨间骑行",
     "date": "Mar 11, 2023, 12:36:26 AM",
     "type": "Ride",
-    "distance_km": 0.0092,
-    "elapsed_sec": 4871.0,
-    "moving_sec": 44697.9,
-    "elevation_gain_m": 7.6
+    "distance_km": 44.6979,
+    "elapsed_sec": 6474.0,
+    "moving_sec": 4871.0,
+    "total_elevation_m": 65.0
   },
   "8681262581": {
     "name": "傍晚骑行",
     "date": "Mar 8, 2023, 11:29:26 AM",
     "type": "Ride",
-    "distance_km": 0.01,
+    "distance_km": 31.7482,
     "elapsed_sec": 3162.0,
-    "moving_sec": 31748.2,
-    "elevation_gain_m": 30.0
+    "moving_sec": 3162.0,
+    "total_elevation_m": 61.0
   },
   "8675287957": {
     "name": "傍晚骑行",
     "date": "Mar 7, 2023, 10:28:31 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 5572.0,
-    "moving_sec": 52808.5,
-    "elevation_gain_m": 2.0
+    "distance_km": 52.8085,
+    "elapsed_sec": 6449.0,
+    "moving_sec": 5572.0,
+    "total_elevation_m": 75.0
   },
   "8675288837": {
     "name": "午后骑行",
     "date": "Mar 7, 2023, 8:30:12 AM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 1353.0,
-    "moving_sec": 8518.3,
-    "elevation_gain_m": 22.2
+    "distance_km": 8.5183,
+    "elapsed_sec": 1532.0,
+    "moving_sec": 1353.0,
+    "total_elevation_m": 6.0
   },
   "8665183963": {
     "name": "午后骑行",
     "date": "Mar 5, 2023, 5:47:27 AM",
     "type": "Ride",
-    "distance_km": 0.009,
-    "elapsed_sec": 6661.0,
-    "moving_sec": 60176.5,
-    "elevation_gain_m": 11.8
+    "distance_km": 60.1765,
+    "elapsed_sec": 7956.0,
+    "moving_sec": 6661.0,
+    "total_elevation_m": 285.0
   },
   "8657165714": {
     "name": "午间骑行",
     "date": "Mar 4, 2023, 4:39:52 AM",
     "type": "Ride",
-    "distance_km": 0.0051,
-    "elapsed_sec": 10551.0,
-    "moving_sec": 53381.0,
-    "elevation_gain_m": 357.2
+    "distance_km": 53.381,
+    "elapsed_sec": 12333.0,
+    "moving_sec": 10551.0,
+    "total_elevation_m": 1346.0
   },
   "8641560143": {
     "name": "傍晚骑行",
     "date": "Mar 1, 2023, 10:10:33 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 5976.0,
-    "moving_sec": 52416.1,
-    "elevation_gain_m": 47.0
+    "distance_km": 52.4161,
+    "elapsed_sec": 6857.0,
+    "moving_sec": 5976.0,
+    "total_elevation_m": 74.0
   },
   "8625597950": {
     "name": "晨间骑行",
     "date": "Feb 26, 2023, 1:07:12 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
-    "elapsed_sec": 11122.0,
-    "moving_sec": 101130.0,
-    "elevation_gain_m": 4.8
+    "distance_km": 101.13,
+    "elapsed_sec": 12215.0,
+    "moving_sec": 11122.0,
+    "total_elevation_m": 215.0
   },
   "8618119052": {
     "name": "晨间骑行",
     "date": "Feb 25, 2023, 1:40:28 AM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 8164.0,
-    "moving_sec": 63172.4,
-    "elevation_gain_m": -195.0
+    "distance_km": 63.1724,
+    "elapsed_sec": 10467.0,
+    "moving_sec": 8164.0,
+    "total_elevation_m": 114.0
   },
   "8604246995": {
     "name": "午后骑行",
     "date": "Feb 22, 2023, 6:39:41 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 6286.0,
-    "moving_sec": 53651.8,
-    "elevation_gain_m": 4.4
+    "distance_km": 53.6518,
+    "elapsed_sec": 7269.0,
+    "moving_sec": 6286.0,
+    "total_elevation_m": 91.0
   },
   "8587482088": {
     "name": "晨间骑行",
     "date": "Feb 18, 2023, 1:04:35 AM",
     "type": "Ride",
-    "distance_km": 0.0084,
-    "elapsed_sec": 4448.0,
-    "moving_sec": 37471.4,
-    "elevation_gain_m": -27.0
+    "distance_km": 37.4714,
+    "elapsed_sec": 5857.0,
+    "moving_sec": 4448.0,
+    "total_elevation_m": 13.0
   },
   "8576388327": {
     "name": "晨间骑行",
     "date": "Feb 17, 2023, 12:37:29 AM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 9994.0,
-    "moving_sec": 80741.9,
-    "elevation_gain_m": 165.4
+    "distance_km": 80.7419,
+    "elapsed_sec": 10822.0,
+    "moving_sec": 9994.0,
+    "total_elevation_m": 103.0
   },
   "8576388231": {
     "name": "晨间骑行",
     "date": "Feb 16, 2023, 1:34:36 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 6045.0,
-    "moving_sec": 42866.1,
-    "elevation_gain_m": 45.4
+    "distance_km": 42.8661,
+    "elapsed_sec": 6576.0,
+    "moving_sec": 6045.0,
+    "total_elevation_m": 102.0
   },
   "8576388220": {
     "name": "晨间骑行",
     "date": "Feb 15, 2023, 12:47:52 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
-    "elapsed_sec": 5850.0,
-    "moving_sec": 53305.4,
-    "elevation_gain_m": -2.2
+    "distance_km": 53.3054,
+    "elapsed_sec": 6498.0,
+    "moving_sec": 5850.0,
+    "total_elevation_m": 80.0
   },
   "8576388234": {
     "name": "晨间骑行",
     "date": "Jan 19, 2023, 1:11:25 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
-    "elapsed_sec": 7312.0,
-    "moving_sec": 66507.2,
-    "elevation_gain_m": -4.0
+    "distance_km": 66.5072,
+    "elapsed_sec": 8247.0,
+    "moving_sec": 7312.0,
+    "total_elevation_m": 75.0
   },
   "8400433150": {
     "name": "Morning Ride",
     "date": "Jan 16, 2023, 12:42:20 AM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 14836.0,
-    "moving_sec": 122085.0,
-    "elevation_gain_m": 11.6
+    "distance_km": 122.085,
+    "elapsed_sec": 16844.0,
+    "moving_sec": 14836.0,
+    "total_elevation_m": 155.0
   },
   "8401248197": {
     "name": "晨间骑行",
     "date": "Jan 12, 2023, 1:20:41 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 10118.0,
-    "moving_sec": 94831.3,
-    "elevation_gain_m": -15.6
+    "distance_km": 94.8313,
+    "elapsed_sec": 14276.0,
+    "moving_sec": 10118.0,
+    "total_elevation_m": 35.0
   },
   "8401248155": {
     "name": "晨间骑行",
     "date": "Jan 11, 2023, 1:37:37 AM",
     "type": "Ride",
-    "distance_km": 0.0086,
-    "elapsed_sec": 8290.0,
-    "moving_sec": 71406.5,
-    "elevation_gain_m": -8.2
+    "distance_km": 71.4065,
+    "elapsed_sec": 9834.0,
+    "moving_sec": 8290.0,
+    "total_elevation_m": 141.0
   },
   "8356279267": {
     "name": "午后骑行",
     "date": "Jan 8, 2023, 5:06:29 AM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 6506.0,
-    "moving_sec": 52495.4,
-    "elevation_gain_m": -1.8
+    "distance_km": 52.4954,
+    "elapsed_sec": 8766.0,
+    "moving_sec": 6506.0,
+    "total_elevation_m": 248.0
   },
   "8347431318": {
     "name": "午后骑行",
     "date": "Jan 1, 2023, 5:09:49 AM",
     "type": "Ride",
-    "distance_km": 0.0086,
-    "elapsed_sec": 6184.0,
-    "moving_sec": 53380.6,
-    "elevation_gain_m": -7.4
+    "distance_km": 53.3806,
+    "elapsed_sec": 6853.0,
+    "moving_sec": 6184.0,
+    "total_elevation_m": 85.0
   },
   "8347431154": {
     "name": "午间骑行",
     "date": "Dec 11, 2022, 4:32:28 AM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 1721.0,
-    "moving_sec": 9730.4,
-    "elevation_gain_m": 6.4
+    "distance_km": 9.7304,
+    "elapsed_sec": 2495.0,
+    "moving_sec": 1721.0,
+    "total_elevation_m": 64.0
   },
   "8347431222": {
     "name": "晨间骑行",
     "date": "Dec 11, 2022, 2:22:48 AM",
     "type": "Ride",
-    "distance_km": 0.0086,
-    "elapsed_sec": 6608.0,
-    "moving_sec": 57113.7,
-    "elevation_gain_m": -10.8
+    "distance_km": 57.1137,
+    "elapsed_sec": 7425.0,
+    "moving_sec": 6608.0,
+    "total_elevation_m": 203.0
   },
   "8347431051": {
     "name": "午后骑行",
@@ -375783,8 +375785,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 3204.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -19.6
+    "moving_sec": 3204.0,
+    "total_elevation_m": 0.0
   },
   "8347431048": {
     "name": "午后骑行",
@@ -375792,8 +375794,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 4450.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -46.4
+    "moving_sec": 4450.0,
+    "total_elevation_m": 0.0
   },
   "8347431047": {
     "name": "晚间骑行",
@@ -375801,44 +375803,44 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 3744.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -134.2
+    "moving_sec": 3744.0,
+    "total_elevation_m": 0.0
   },
   "8197571362": {
     "name": "午后骑行",
     "date": "Nov 26, 2022, 5:15:36 AM",
     "type": "Ride",
-    "distance_km": 0.009,
-    "elapsed_sec": 6346.0,
-    "moving_sec": 57009.8,
-    "elevation_gain_m": -46.8
+    "distance_km": 57.0098,
+    "elapsed_sec": 8048.0,
+    "moving_sec": 6346.0,
+    "total_elevation_m": 273.0
   },
   "8197571614": {
     "name": "傍晚骑行",
     "date": "Nov 24, 2022, 11:33:47 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 3546.0,
-    "moving_sec": 33330.1,
-    "elevation_gain_m": 2.6
+    "distance_km": 33.3301,
+    "elapsed_sec": 4068.0,
+    "moving_sec": 3546.0,
+    "total_elevation_m": 64.0
   },
   "8197571370": {
     "name": "傍晚骑行",
     "date": "Nov 23, 2022, 12:00:20 PM",
     "type": "Ride",
-    "distance_km": 0.0089,
+    "distance_km": 26.1678,
     "elapsed_sec": 2935.0,
-    "moving_sec": 26167.8,
-    "elevation_gain_m": -4.6
+    "moving_sec": 2935.0,
+    "total_elevation_m": 37.0
   },
   "8197571662": {
     "name": "晨间骑行",
     "date": "Nov 20, 2022, 1:27:30 AM",
     "type": "Ride",
-    "distance_km": 0.0093,
+    "distance_km": 39.2096,
     "elapsed_sec": 4211.0,
-    "moving_sec": 39209.6,
-    "elevation_gain_m": 12.0
+    "moving_sec": 4211.0,
+    "total_elevation_m": 31.0
   },
   "8197571625": {
     "name": "傍晚骑行",
@@ -375846,8 +375848,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 2821.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -26.6
+    "moving_sec": 2821.0,
+    "total_elevation_m": 0.0
   },
   "8197571340": {
     "name": "晚间骑行",
@@ -375855,125 +375857,125 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 3662.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -20.6
+    "moving_sec": 3662.0,
+    "total_elevation_m": 0.0
   },
   "8116376221": {
     "name": "雪浪绕圈之第一圈没掉队",
     "date": "Nov 8, 2022, 11:18:21 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 3066.0,
-    "moving_sec": 29248.5,
-    "elevation_gain_m": 13.6
+    "distance_km": 29.2485,
+    "elapsed_sec": 3296.0,
+    "moving_sec": 3066.0,
+    "total_elevation_m": 108.0
   },
   "8116376305": {
     "name": "晨间骑行",
     "date": "Nov 6, 2022, 1:54:56 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 8279.0,
-    "moving_sec": 78000.8,
-    "elevation_gain_m": 2.2
+    "distance_km": 78.0008,
+    "elapsed_sec": 9592.0,
+    "moving_sec": 8279.0,
+    "total_elevation_m": 188.0
   },
   "8057577820": {
     "name": "傍晚骑行",
     "date": "Nov 2, 2022, 12:01:07 PM",
     "type": "Ride",
-    "distance_km": 0.009,
+    "distance_km": 19.7485,
     "elapsed_sec": 2196.0,
-    "moving_sec": 19748.5,
-    "elevation_gain_m": 11.0
+    "moving_sec": 2196.0,
+    "total_elevation_m": 26.0
   },
   "8057576002": {
     "name": "傍晚骑行",
     "date": "Nov 1, 2022, 10:36:47 AM",
     "type": "Ride",
-    "distance_km": 0.0097,
-    "elapsed_sec": 5272.0,
-    "moving_sec": 51307.6,
-    "elevation_gain_m": -1.4
+    "distance_km": 51.3076,
+    "elapsed_sec": 6198.0,
+    "moving_sec": 5272.0,
+    "total_elevation_m": 85.0
   },
   "8040462564": {
     "name": "晨间骑行",
     "date": "Oct 30, 2022, 12:04:49 AM",
     "type": "Ride",
-    "distance_km": 0.0096,
-    "elapsed_sec": 11423.0,
-    "moving_sec": 109383.2,
-    "elevation_gain_m": 3.4
+    "distance_km": 109.3832,
+    "elapsed_sec": 14795.0,
+    "moving_sec": 11423.0,
+    "total_elevation_m": 206.0
   },
   "8017357185": {
     "name": "傍晚骑行",
     "date": "Oct 25, 2022, 11:11:41 AM",
     "type": "Ride",
-    "distance_km": 0.01,
-    "elapsed_sec": 2870.0,
-    "moving_sec": 28692.7,
-    "elevation_gain_m": -1.6
+    "distance_km": 28.6927,
+    "elapsed_sec": 3486.0,
+    "moving_sec": 2870.0,
+    "total_elevation_m": 113.0
   },
   "8007505024": {
     "name": "晨间骑行",
     "date": "Oct 23, 2022, 12:04:01 AM",
     "type": "Ride",
-    "distance_km": 0.0097,
-    "elapsed_sec": 11817.0,
-    "moving_sec": 115064.7,
-    "elevation_gain_m": -47.8
+    "distance_km": 115.0647,
+    "elapsed_sec": 14786.0,
+    "moving_sec": 11817.0,
+    "total_elevation_m": 250.0
   },
   "8007508384": {
     "name": "晨间骑行",
     "date": "Oct 22, 2022, 12:28:00 AM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 6164.0,
-    "moving_sec": 47900.8,
-    "elevation_gain_m": 1.0
+    "distance_km": 47.9008,
+    "elapsed_sec": 8804.0,
+    "moving_sec": 6164.0,
+    "total_elevation_m": 202.0
   },
   "7987807650": {
     "name": "傍晚骑行",
     "date": "Oct 19, 2022, 12:01:27 PM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 2751.0,
-    "moving_sec": 25975.7,
-    "elevation_gain_m": -4.8
+    "distance_km": 25.9757,
+    "elapsed_sec": 2923.0,
+    "moving_sec": 2751.0,
+    "total_elevation_m": 32.0
   },
   "7982565708": {
     "name": "傍晚骑行",
     "date": "Oct 18, 2022, 11:18:56 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 2422.0,
-    "moving_sec": 22720.2,
-    "elevation_gain_m": 2.6
+    "distance_km": 22.7202,
+    "elapsed_sec": 3940.0,
+    "moving_sec": 2422.0,
+    "total_elevation_m": 46.0
   },
   "7982566012": {
     "name": "晨间骑行",
     "date": "Oct 15, 2022, 11:06:07 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 9812.0,
-    "moving_sec": 65470.6,
-    "elevation_gain_m": -32.4
+    "distance_km": 65.4706,
+    "elapsed_sec": 14893.0,
+    "moving_sec": 9812.0,
+    "total_elevation_m": 119.0
   },
   "7982565720": {
     "name": "午后骑行",
     "date": "Oct 15, 2022, 7:18:55 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
+    "distance_km": 24.6757,
     "elapsed_sec": 2603.0,
-    "moving_sec": 24675.7,
-    "elevation_gain_m": 6.4
+    "moving_sec": 2603.0,
+    "total_elevation_m": 55.0
   },
   "7982565863": {
     "name": "傍晚骑行",
     "date": "Oct 12, 2022, 11:16:24 AM",
     "type": "Ride",
-    "distance_km": 0.0079,
-    "elapsed_sec": 6862.0,
-    "moving_sec": 54384.9,
-    "elevation_gain_m": 89.2
+    "distance_km": 54.3849,
+    "elapsed_sec": 8621.0,
+    "moving_sec": 6862.0,
+    "total_elevation_m": 112.0
   },
   "7982565678": {
     "name": "傍晚骑行",
@@ -375981,1241 +375983,1241 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 2646.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -54.8
+    "moving_sec": 2646.0,
+    "total_elevation_m": 0.0
   },
   "7925109852": {
     "name": "午后骑行",
     "date": "Oct 7, 2022, 5:40:12 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 6344.0,
-    "moving_sec": 55441.2,
-    "elevation_gain_m": 1.0
+    "distance_km": 55.4412,
+    "elapsed_sec": 7437.0,
+    "moving_sec": 6344.0,
+    "total_elevation_m": 251.0
   },
   "7913455836": {
     "name": "晨间骑行",
     "date": "Oct 5, 2022, 12:07:01 AM",
     "type": "Ride",
-    "distance_km": 0.009,
-    "elapsed_sec": 6088.0,
-    "moving_sec": 54887.0,
-    "elevation_gain_m": -12.4
+    "distance_km": 54.887,
+    "elapsed_sec": 10232.0,
+    "moving_sec": 6088.0,
+    "total_elevation_m": 238.0
   },
   "7897979955": {
     "name": "晨间骑行",
     "date": "Oct 1, 2022, 10:18:28 PM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 14064.0,
-    "moving_sec": 132875.3,
-    "elevation_gain_m": -2.4
+    "distance_km": 132.8753,
+    "elapsed_sec": 25544.0,
+    "moving_sec": 14064.0,
+    "total_elevation_m": 194.0
   },
   "7892356119": {
     "name": "晨间骑行",
     "date": "Sep 30, 2022, 11:11:00 PM",
     "type": "Ride",
-    "distance_km": 0.0083,
-    "elapsed_sec": 6175.0,
-    "moving_sec": 51330.2,
-    "elevation_gain_m": 3.2
+    "distance_km": 51.3302,
+    "elapsed_sec": 10518.0,
+    "moving_sec": 6175.0,
+    "total_elevation_m": 223.0
   },
   "7862594749": {
     "name": "晨间骑行",
     "date": "Sep 24, 2022, 11:08:49 PM",
     "type": "Ride",
-    "distance_km": 0.0098,
-    "elapsed_sec": 13407.0,
-    "moving_sec": 130886.8,
-    "elevation_gain_m": -4.0
+    "distance_km": 130.8868,
+    "elapsed_sec": 15424.0,
+    "moving_sec": 13407.0,
+    "total_elevation_m": 239.0
   },
   "7862594670": {
     "name": "午后骑行",
     "date": "Sep 17, 2022, 5:20:30 AM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 4094.0,
-    "moving_sec": 25483.6,
-    "elevation_gain_m": 81.0
+    "distance_km": 25.4836,
+    "elapsed_sec": 4412.0,
+    "moving_sec": 4094.0,
+    "total_elevation_m": 97.0
   },
   "7800298220": {
     "name": "晨间骑行",
     "date": "Sep 11, 2022, 11:08:22 PM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 13715.0,
-    "moving_sec": 130272.9,
-    "elevation_gain_m": -11.0
+    "distance_km": 130.2729,
+    "elapsed_sec": 15964.0,
+    "moving_sec": 13715.0,
+    "total_elevation_m": 239.0
   },
   "7800298089": {
     "name": "晨间骑行",
     "date": "Sep 10, 2022, 11:12:35 PM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 6438.0,
-    "moving_sec": 53085.9,
-    "elevation_gain_m": -3.2
+    "distance_km": 53.0859,
+    "elapsed_sec": 9797.0,
+    "moving_sec": 6438.0,
+    "total_elevation_m": 44.0
   },
   "7769723492": {
     "name": "晚间骑行",
     "date": "Sep 7, 2022, 1:14:43 PM",
     "type": "Ride",
-    "distance_km": 0.0056,
-    "elapsed_sec": 3772.0,
-    "moving_sec": 20943.4,
-    "elevation_gain_m": -2.4
+    "distance_km": 20.9434,
+    "elapsed_sec": 4272.0,
+    "moving_sec": 3772.0,
+    "total_elevation_m": 44.0
   },
   "7769723368": {
     "name": "傍晚骑行",
     "date": "Sep 7, 2022, 11:59:56 AM",
     "type": "Ride",
-    "distance_km": 0.0097,
+    "distance_km": 21.2215,
     "elapsed_sec": 2191.0,
-    "moving_sec": 21221.5,
-    "elevation_gain_m": 2.0
+    "moving_sec": 2191.0,
+    "total_elevation_m": 28.0
   },
   "7769723397": {
     "name": "傍晚骑行",
     "date": "Sep 7, 2022, 10:57:22 AM",
     "type": "Ride",
-    "distance_km": 0.0062,
-    "elapsed_sec": 2250.0,
-    "moving_sec": 13876.3,
-    "elevation_gain_m": -2.6
+    "distance_km": 13.8763,
+    "elapsed_sec": 2724.0,
+    "moving_sec": 2250.0,
+    "total_elevation_m": 36.0
   },
   "7764899995": {
     "name": "傍晚骑行",
     "date": "Sep 6, 2022, 11:31:38 AM",
     "type": "Ride",
-    "distance_km": 0.0098,
+    "distance_km": 23.5276,
     "elapsed_sec": 2402.0,
-    "moving_sec": 23527.6,
-    "elevation_gain_m": -1.0
+    "moving_sec": 2402.0,
+    "total_elevation_m": 96.0
   },
   "7764899921": {
     "name": "傍晚骑行",
     "date": "Sep 6, 2022, 11:10:24 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
+    "distance_km": 5.4038,
     "elapsed_sec": 612.0,
-    "moving_sec": 5403.8,
-    "elevation_gain_m": 4.2
+    "moving_sec": 612.0,
+    "total_elevation_m": 10.0
   },
   "7753966936": {
     "name": "沛县比赛掉队Ride",
     "date": "Sep 4, 2022, 2:00:10 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
-    "elapsed_sec": 3346.0,
-    "moving_sec": 30289.5,
-    "elevation_gain_m": 36.8
+    "distance_km": 30.2895,
+    "elapsed_sec": 3388.0,
+    "moving_sec": 3346.0,
+    "total_elevation_m": 25.0
   },
   "7741947020": {
     "name": "傍晚骑行",
     "date": "Sep 1, 2022, 11:05:47 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 4994.0,
-    "moving_sec": 46981.1,
-    "elevation_gain_m": 5.4
+    "distance_km": 46.9811,
+    "elapsed_sec": 6968.0,
+    "moving_sec": 4994.0,
+    "total_elevation_m": 76.0
   },
   "7728889508": {
     "name": "晚间骑行",
     "date": "Aug 30, 2022, 1:41:32 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 2719.0,
-    "moving_sec": 18143.3,
-    "elevation_gain_m": -11.6
+    "distance_km": 18.1433,
+    "elapsed_sec": 3067.0,
+    "moving_sec": 2719.0,
+    "total_elevation_m": 38.0
   },
   "7728889517": {
     "name": "傍晚骑行",
     "date": "Aug 30, 2022, 11:48:26 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 3928.0,
-    "moving_sec": 36989.6,
-    "elevation_gain_m": 3.0
+    "distance_km": 36.9896,
+    "elapsed_sec": 5788.0,
+    "moving_sec": 3928.0,
+    "total_elevation_m": 56.0
   },
   "7728889505": {
     "name": "傍晚骑行",
     "date": "Aug 30, 2022, 10:49:12 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 2027.0,
-    "moving_sec": 14581.4,
-    "elevation_gain_m": -4.0
+    "distance_km": 14.5814,
+    "elapsed_sec": 2499.0,
+    "moving_sec": 2027.0,
+    "total_elevation_m": 28.0
   },
   "7728889487": {
     "name": "午后骑行",
     "date": "Aug 26, 2022, 9:19:04 AM",
     "type": "Ride",
-    "distance_km": 0.0041,
-    "elapsed_sec": 1652.0,
-    "moving_sec": 6794.0,
-    "elevation_gain_m": 338.6
+    "distance_km": 6.794,
+    "elapsed_sec": 3530.0,
+    "moving_sec": 1652.0,
+    "total_elevation_m": 262.0
   },
   "7690311032": {
     "name": "晚间骑行",
     "date": "Aug 22, 2022, 2:03:48 PM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 1826.0,
-    "moving_sec": 12963.6,
-    "elevation_gain_m": 5.4
+    "distance_km": 12.9636,
+    "elapsed_sec": 1875.0,
+    "moving_sec": 1826.0,
+    "total_elevation_m": 12.0
   },
   "7690311084": {
     "name": "傍晚骑行",
     "date": "Aug 22, 2022, 11:53:06 AM",
     "type": "Ride",
-    "distance_km": 0.0099,
-    "elapsed_sec": 5076.0,
-    "moving_sec": 50046.6,
-    "elevation_gain_m": -2.0
+    "distance_km": 50.0466,
+    "elapsed_sec": 5975.0,
+    "moving_sec": 5076.0,
+    "total_elevation_m": 1.0
   },
   "7690310977": {
     "name": "傍晚骑行",
     "date": "Aug 22, 2022, 11:26:15 AM",
     "type": "Ride",
-    "distance_km": 0.0084,
-    "elapsed_sec": 1420.0,
-    "moving_sec": 11858.7,
-    "elevation_gain_m": 3.6
+    "distance_km": 11.8587,
+    "elapsed_sec": 1456.0,
+    "moving_sec": 1420.0,
+    "total_elevation_m": 14.0
   },
   "7690311014": {
     "name": "傍晚骑行",
     "date": "Aug 18, 2022, 11:40:54 AM",
     "type": "Ride",
-    "distance_km": 0.0107,
-    "elapsed_sec": 3913.0,
-    "moving_sec": 41775.1,
-    "elevation_gain_m": 8.8
+    "distance_km": 41.7751,
+    "elapsed_sec": 5048.0,
+    "moving_sec": 3913.0,
+    "total_elevation_m": 0.0
   },
   "7690311021": {
     "name": "傍晚骑行",
     "date": "Aug 18, 2022, 10:21:33 AM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 3266.0,
-    "moving_sec": 22395.9,
-    "elevation_gain_m": -2.2
+    "distance_km": 22.3959,
+    "elapsed_sec": 4592.0,
+    "moving_sec": 3266.0,
+    "total_elevation_m": 18.0
   },
   "7690311029": {
     "name": "傍晚骑行",
     "date": "Aug 17, 2022, 11:35:21 AM",
     "type": "Ride",
-    "distance_km": 0.0103,
-    "elapsed_sec": 4724.0,
-    "moving_sec": 48562.3,
-    "elevation_gain_m": -1.6
+    "distance_km": 48.5623,
+    "elapsed_sec": 5717.0,
+    "moving_sec": 4724.0,
+    "total_elevation_m": 1.0
   },
   "7690310974": {
     "name": "傍晚骑行",
     "date": "Aug 17, 2022, 11:07:26 AM",
     "type": "Ride",
-    "distance_km": 0.009,
+    "distance_km": 10.7794,
     "elapsed_sec": 1194.0,
-    "moving_sec": 10779.4,
-    "elevation_gain_m": 30.8
+    "moving_sec": 1194.0,
+    "total_elevation_m": 11.0
   },
   "7642498384": {
     "name": "傍晚骑行",
     "date": "Aug 15, 2022, 11:38:30 AM",
     "type": "Ride",
-    "distance_km": 0.0105,
-    "elapsed_sec": 5094.0,
-    "moving_sec": 53364.2,
-    "elevation_gain_m": -3.0
+    "distance_km": 53.3642,
+    "elapsed_sec": 6105.0,
+    "moving_sec": 5094.0,
+    "total_elevation_m": 2.0
   },
   "7642498352": {
     "name": "午间骑行",
     "date": "Aug 14, 2022, 3:34:14 AM",
     "type": "Ride",
-    "distance_km": 0.0049,
-    "elapsed_sec": 3696.0,
-    "moving_sec": 17995.3,
-    "elevation_gain_m": 157.4
+    "distance_km": 17.9953,
+    "elapsed_sec": 5540.0,
+    "moving_sec": 3696.0,
+    "total_elevation_m": 294.0
   },
   "7642498269": {
     "name": "傍晚骑行",
     "date": "Aug 11, 2022, 11:18:54 AM",
     "type": "Ride",
-    "distance_km": 0.0083,
-    "elapsed_sec": 4251.0,
-    "moving_sec": 35094.9,
-    "elevation_gain_m": -71.8
+    "distance_km": 35.0949,
+    "elapsed_sec": 8224.0,
+    "moving_sec": 4251.0,
+    "total_elevation_m": 156.0
   },
   "7642498282": {
     "name": "晚间骑行",
     "date": "Aug 9, 2022, 1:06:54 PM",
     "type": "Ride",
-    "distance_km": 0.0061,
-    "elapsed_sec": 3262.0,
-    "moving_sec": 19915.7,
-    "elevation_gain_m": -2.0
+    "distance_km": 19.9157,
+    "elapsed_sec": 6078.0,
+    "moving_sec": 3262.0,
+    "total_elevation_m": 20.0
   },
   "7642498245": {
     "name": "傍晚骑行",
     "date": "Aug 9, 2022, 11:58:15 AM",
     "type": "Ride",
-    "distance_km": 0.0099,
-    "elapsed_sec": 2111.0,
-    "moving_sec": 20821.5,
-    "elevation_gain_m": 1.2
+    "distance_km": 20.8215,
+    "elapsed_sec": 2856.0,
+    "moving_sec": 2111.0,
+    "total_elevation_m": 0.0
   },
   "7642498199": {
     "name": "傍晚骑行",
     "date": "Aug 9, 2022, 11:27:31 AM",
     "type": "Ride",
-    "distance_km": 0.0077,
+    "distance_km": 7.4198,
     "elapsed_sec": 961.0,
-    "moving_sec": 7419.8,
-    "elevation_gain_m": 6.2
+    "moving_sec": 961.0,
+    "total_elevation_m": 11.0
   },
   "7642498239": {
     "name": "傍晚骑行",
     "date": "Aug 9, 2022, 10:16:40 AM",
     "type": "Ride",
-    "distance_km": 0.0059,
-    "elapsed_sec": 1320.0,
-    "moving_sec": 7764.1,
-    "elevation_gain_m": -8.0
+    "distance_km": 7.7641,
+    "elapsed_sec": 1550.0,
+    "moving_sec": 1320.0,
+    "total_elevation_m": 5.0
   },
   "7642498295": {
     "name": "傍晚骑行",
     "date": "Aug 8, 2022, 11:14:21 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 3989.0,
-    "moving_sec": 34914.4,
-    "elevation_gain_m": -9.0
+    "distance_km": 34.9144,
+    "elapsed_sec": 5228.0,
+    "moving_sec": 3989.0,
+    "total_elevation_m": 11.0
   },
   "7598346791": {
     "name": "傍晚骑行",
     "date": "Aug 7, 2022, 11:26:16 AM",
     "type": "Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 5233.0,
-    "moving_sec": 41710.5,
-    "elevation_gain_m": 4.6
+    "distance_km": 41.7105,
+    "elapsed_sec": 7201.0,
+    "moving_sec": 5233.0,
+    "total_elevation_m": 177.0
   },
   "7598346802": {
     "name": "傍晚骑行",
     "date": "Aug 4, 2022, 11:46:54 AM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 5410.0,
-    "moving_sec": 43945.7,
-    "elevation_gain_m": -9.0
+    "distance_km": 43.9457,
+    "elapsed_sec": 6581.0,
+    "moving_sec": 5410.0,
+    "total_elevation_m": 178.0
   },
   "7575958904": {
     "name": "傍晚骑行",
     "date": "Aug 3, 2022, 12:56:18 PM",
     "type": "Ride",
-    "distance_km": 0.0037,
+    "distance_km": 1.4731,
     "elapsed_sec": 393.0,
-    "moving_sec": 1473.1,
-    "elevation_gain_m": -5.6
+    "moving_sec": 393.0,
+    "total_elevation_m": 76.0
   },
   "7575958902": {
     "name": "傍晚骑行",
     "date": "Aug 3, 2022, 12:33:12 PM",
     "type": "Ride",
-    "distance_km": 0.0038,
+    "distance_km": 1.494,
     "elapsed_sec": 393.0,
-    "moving_sec": 1494.0,
-    "elevation_gain_m": -3.0
+    "moving_sec": 393.0,
+    "total_elevation_m": 78.0
   },
   "7575958945": {
     "name": "傍晚骑行",
     "date": "Aug 3, 2022, 11:01:00 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 2108.0,
-    "moving_sec": 17912.0,
-    "elevation_gain_m": 2.4
+    "distance_km": 17.912,
+    "elapsed_sec": 2411.0,
+    "moving_sec": 2108.0,
+    "total_elevation_m": 111.0
   },
   "7575958914": {
     "name": "晚间骑行",
     "date": "Aug 1, 2022, 1:37:45 PM",
     "type": "Ride",
-    "distance_km": 0.0077,
+    "distance_km": 7.9263,
     "elapsed_sec": 1027.0,
-    "moving_sec": 7926.3,
-    "elevation_gain_m": 5.2
+    "moving_sec": 1027.0,
+    "total_elevation_m": 9.0
   },
   "7575959059": {
     "name": "傍晚骑行",
     "date": "Aug 1, 2022, 11:13:33 AM",
     "type": "Ride",
-    "distance_km": 0.0099,
-    "elapsed_sec": 6567.0,
-    "moving_sec": 65263.3,
-    "elevation_gain_m": 1.4
+    "distance_km": 65.2633,
+    "elapsed_sec": 7156.0,
+    "moving_sec": 6567.0,
+    "total_elevation_m": 17.0
   },
   "7550453355": {
     "name": "晨间骑行",
     "date": "Jul 29, 2022, 9:08:00 PM",
     "type": "Ride",
-    "distance_km": 0.0044,
-    "elapsed_sec": 2558.0,
-    "moving_sec": 11212.7,
-    "elevation_gain_m": -13.0
+    "distance_km": 11.2127,
+    "elapsed_sec": 4144.0,
+    "moving_sec": 2558.0,
+    "total_elevation_m": 307.0
   },
   "7537171288": {
     "name": "晨间骑行",
     "date": "Jul 26, 2022, 11:23:18 PM",
     "type": "Ride",
-    "distance_km": 0.0032,
+    "distance_km": 5.6062,
     "elapsed_sec": 1775.0,
-    "moving_sec": 5606.2,
-    "elevation_gain_m": -16.2
+    "moving_sec": 1775.0,
+    "total_elevation_m": 273.0
   },
   "7537171279": {
     "name": "晨间骑行",
     "date": "Jul 26, 2022, 10:36:36 PM",
     "type": "Ride",
-    "distance_km": 0.0035,
+    "distance_km": 4.8692,
     "elapsed_sec": 1392.0,
-    "moving_sec": 4869.2,
-    "elevation_gain_m": 35.6
+    "moving_sec": 1392.0,
+    "total_elevation_m": 245.0
   },
   "7526149726": {
     "name": "傍晚骑行",
     "date": "Jul 25, 2022, 11:37:11 AM",
     "type": "Ride",
-    "distance_km": 0.0092,
-    "elapsed_sec": 4452.0,
-    "moving_sec": 40792.7,
-    "elevation_gain_m": -16.6
+    "distance_km": 40.7927,
+    "elapsed_sec": 5788.0,
+    "moving_sec": 4452.0,
+    "total_elevation_m": 161.0
   },
   "7526149647": {
     "name": "晚间骑行",
     "date": "Jul 24, 2022, 1:27:39 PM",
     "type": "Ride",
-    "distance_km": 0.0063,
+    "distance_km": 0.272,
     "elapsed_sec": 43.0,
-    "moving_sec": 272.0,
-    "elevation_gain_m": -0.4
+    "moving_sec": 43.0,
+    "total_elevation_m": 0.0
   },
   "7526149727": {
     "name": "傍晚骑行",
     "date": "Jul 24, 2022, 11:04:29 AM",
     "type": "Ride",
-    "distance_km": 0.009,
-    "elapsed_sec": 4599.0,
-    "moving_sec": 41434.2,
-    "elevation_gain_m": 3.8
+    "distance_km": 41.4342,
+    "elapsed_sec": 8045.0,
+    "moving_sec": 4599.0,
+    "total_elevation_m": 169.0
   },
   "7526149749": {
     "name": "傍晚骑行",
     "date": "Jul 22, 2022, 11:24:05 AM",
     "type": "Ride",
-    "distance_km": 0.0092,
-    "elapsed_sec": 4615.0,
-    "moving_sec": 42367.8,
-    "elevation_gain_m": -3.0
+    "distance_km": 42.3678,
+    "elapsed_sec": 6144.0,
+    "moving_sec": 4615.0,
+    "total_elevation_m": 165.0
   },
   "7504974391": {
     "name": "傍晚骑行",
     "date": "Jul 21, 2022, 11:36:48 AM",
     "type": "Ride",
-    "distance_km": 0.0092,
-    "elapsed_sec": 4632.0,
-    "moving_sec": 42754.2,
-    "elevation_gain_m": 6.8
+    "distance_km": 42.7542,
+    "elapsed_sec": 6114.0,
+    "moving_sec": 4632.0,
+    "total_elevation_m": 166.0
   },
   "7504974283": {
     "name": "傍晚骑行",
     "date": "Jul 18, 2022, 12:44:22 PM",
     "type": "Ride",
-    "distance_km": 0.0079,
+    "distance_km": 8.1877,
     "elapsed_sec": 1033.0,
-    "moving_sec": 8187.7,
-    "elevation_gain_m": 0.2
+    "moving_sec": 1033.0,
+    "total_elevation_m": 33.0
   },
   "7504974364": {
     "name": "傍晚骑行",
     "date": "Jul 18, 2022, 11:22:28 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 3564.0,
-    "moving_sec": 33367.2,
-    "elevation_gain_m": -4.2
+    "distance_km": 33.3672,
+    "elapsed_sec": 4814.0,
+    "moving_sec": 3564.0,
+    "total_elevation_m": 137.0
   },
   "7504974386": {
     "name": "傍晚骑行",
     "date": "Jul 16, 2022, 11:34:45 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 4993.0,
-    "moving_sec": 42254.7,
-    "elevation_gain_m": 7.6
+    "distance_km": 42.2547,
+    "elapsed_sec": 6767.0,
+    "moving_sec": 4993.0,
+    "total_elevation_m": 173.0
   },
   "7504974171": {
     "name": "傍晚骑行",
     "date": "Jul 14, 2022, 12:30:39 PM",
     "type": "Ride",
-    "distance_km": 0.0087,
+    "distance_km": 7.0774,
     "elapsed_sec": 818.0,
-    "moving_sec": 7077.4,
-    "elevation_gain_m": -6.0
+    "moving_sec": 818.0,
+    "total_elevation_m": 17.0
   },
   "7504974218": {
     "name": "傍晚骑行",
     "date": "Jul 14, 2022, 10:58:07 AM",
     "type": "Ride",
-    "distance_km": 0.0079,
-    "elapsed_sec": 2770.0,
-    "moving_sec": 21834.1,
-    "elevation_gain_m": -3.4
+    "distance_km": 21.8341,
+    "elapsed_sec": 4060.0,
+    "moving_sec": 2770.0,
+    "total_elevation_m": 122.0
   },
   "7504974167": {
     "name": "傍晚骑行",
     "date": "Jul 9, 2022, 11:36:31 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 5080.0,
-    "moving_sec": 43119.3,
-    "elevation_gain_m": 9.8
+    "distance_km": 43.1193,
+    "elapsed_sec": 6359.0,
+    "moving_sec": 5080.0,
+    "total_elevation_m": 183.0
   },
   "7430393523": {
     "name": "傍晚骑行",
     "date": "Jul 7, 2022, 12:49:25 PM",
     "type": "Ride",
-    "distance_km": 0.0036,
+    "distance_km": 1.4726,
     "elapsed_sec": 404.0,
-    "moving_sec": 1472.6,
-    "elevation_gain_m": 9.2
+    "moving_sec": 404.0,
+    "total_elevation_m": 81.0
   },
   "7430393521": {
     "name": "傍晚骑行",
     "date": "Jul 7, 2022, 12:22:14 PM",
     "type": "Ride",
-    "distance_km": 0.0037,
+    "distance_km": 1.4712,
     "elapsed_sec": 393.0,
-    "moving_sec": 1471.2,
-    "elevation_gain_m": 15.8
+    "moving_sec": 393.0,
+    "total_elevation_m": 79.0
   },
   "7430393550": {
     "name": "傍晚骑行",
     "date": "Jul 7, 2022, 11:51:31 AM",
     "type": "Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 1332.0,
-    "moving_sec": 10679.4,
-    "elevation_gain_m": 12.8
+    "distance_km": 10.6794,
+    "elapsed_sec": 1404.0,
+    "moving_sec": 1332.0,
+    "total_elevation_m": 19.0
   },
   "7430393624": {
     "name": "傍晚骑行",
     "date": "Jul 6, 2022, 11:31:44 AM",
     "type": "Ride",
-    "distance_km": 0.0086,
-    "elapsed_sec": 5095.0,
-    "moving_sec": 43859.7,
-    "elevation_gain_m": -12.2
+    "distance_km": 43.8597,
+    "elapsed_sec": 6186.0,
+    "moving_sec": 5095.0,
+    "total_elevation_m": 203.0
   },
   "7430393518": {
     "name": "傍晚骑行",
     "date": "Jul 5, 2022, 12:50:08 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
+    "distance_km": 5.4748,
     "elapsed_sec": 960.0,
-    "moving_sec": 5474.8,
-    "elevation_gain_m": 4.6
+    "moving_sec": 960.0,
+    "total_elevation_m": 13.0
   },
   "7430393519": {
     "name": "傍晚骑行",
     "date": "Jul 5, 2022, 12:28:42 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
+    "distance_km": 6.8763,
     "elapsed_sec": 956.0,
-    "moving_sec": 6876.3,
-    "elevation_gain_m": 4.8
+    "moving_sec": 956.0,
+    "total_elevation_m": 30.0
   },
   "7430393581": {
     "name": "傍晚骑行",
     "date": "Jul 5, 2022, 11:10:07 AM",
     "type": "Ride",
-    "distance_km": 0.0084,
-    "elapsed_sec": 3296.0,
-    "moving_sec": 27605.2,
-    "elevation_gain_m": -72.6
+    "distance_km": 27.6052,
+    "elapsed_sec": 3691.0,
+    "moving_sec": 3296.0,
+    "total_elevation_m": 154.0
   },
   "7402698104": {
     "name": "傍晚骑行",
     "date": "Jul 1, 2022, 11:36:33 AM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 5398.0,
-    "moving_sec": 43851.1,
-    "elevation_gain_m": -20.0
+    "distance_km": 43.8511,
+    "elapsed_sec": 7233.0,
+    "moving_sec": 5398.0,
+    "total_elevation_m": 193.0
   },
   "7387609621": {
     "name": "晚间骑行",
     "date": "Jun 29, 2022, 1:01:12 PM",
     "type": "Ride",
-    "distance_km": 0.009,
+    "distance_km": 4.9928,
     "elapsed_sec": 557.0,
-    "moving_sec": 4992.8,
-    "elevation_gain_m": 7.0
+    "moving_sec": 557.0,
+    "total_elevation_m": 11.0
   },
   "7387609570": {
     "name": "傍晚骑行",
     "date": "Jun 29, 2022, 12:39:34 PM",
     "type": "Ride",
-    "distance_km": 0.0092,
+    "distance_km": 7.5902,
     "elapsed_sec": 821.0,
-    "moving_sec": 7590.2,
-    "elevation_gain_m": 26.0
+    "moving_sec": 821.0,
+    "total_elevation_m": 29.0
   },
   "7387609616": {
     "name": "傍晚骑行",
     "date": "Jun 29, 2022, 11:41:44 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
+    "distance_km": 29.0543,
     "elapsed_sec": 3107.0,
-    "moving_sec": 29054.3,
-    "elevation_gain_m": -19.6
+    "moving_sec": 3107.0,
+    "total_elevation_m": 104.0
   },
   "7387609669": {
     "name": "傍晚骑行",
     "date": "Jun 27, 2022, 11:00:46 AM",
     "type": "Ride",
-    "distance_km": 0.0092,
-    "elapsed_sec": 5744.0,
-    "moving_sec": 52953.8,
-    "elevation_gain_m": 1.6
+    "distance_km": 52.9538,
+    "elapsed_sec": 8737.0,
+    "moving_sec": 5744.0,
+    "total_elevation_m": 14.0
   },
   "7374837128": {
     "name": "晚间骑行",
     "date": "Jun 26, 2022, 1:27:10 PM",
     "type": "Ride",
-    "distance_km": 0.0095,
+    "distance_km": 18.2877,
     "elapsed_sec": 1918.0,
-    "moving_sec": 18287.7,
-    "elevation_gain_m": 21.6
+    "moving_sec": 1918.0,
+    "total_elevation_m": 43.0
   },
   "7374837134": {
     "name": "傍晚骑行",
     "date": "Jun 26, 2022, 11:55:24 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 2427.0,
-    "moving_sec": 17192.5,
-    "elevation_gain_m": -3.0
+    "distance_km": 17.1925,
+    "elapsed_sec": 2588.0,
+    "moving_sec": 2427.0,
+    "total_elevation_m": 92.0
   },
   "7374837112": {
     "name": "傍晚骑行",
     "date": "Jun 26, 2022, 11:13:55 AM",
     "type": "Ride",
-    "distance_km": 0.0098,
+    "distance_km": 8.7907,
     "elapsed_sec": 900.0,
-    "moving_sec": 8790.7,
-    "elevation_gain_m": 5.8
+    "moving_sec": 900.0,
+    "total_elevation_m": 44.0
   },
   "7374837113": {
     "name": "傍晚骑行",
     "date": "Jun 22, 2022, 12:04:22 PM",
     "type": "Ride",
-    "distance_km": 0.0107,
+    "distance_km": 9.5665,
     "elapsed_sec": 891.0,
-    "moving_sec": 9566.5,
-    "elevation_gain_m": 4.8
+    "moving_sec": 891.0,
+    "total_elevation_m": 10.0
   },
   "7374837130": {
     "name": "傍晚骑行",
     "date": "Jun 21, 2022, 11:31:05 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
+    "distance_km": 23.633,
     "elapsed_sec": 2502.0,
-    "moving_sec": 23633.0,
-    "elevation_gain_m": 9.2
+    "moving_sec": 2502.0,
+    "total_elevation_m": 93.0
   },
   "7374837110": {
     "name": "傍晚骑行",
     "date": "Jun 21, 2022, 10:57:31 AM",
     "type": "Ride",
-    "distance_km": 0.009,
+    "distance_km": 6.0267,
     "elapsed_sec": 669.0,
-    "moving_sec": 6026.7,
-    "elevation_gain_m": -5.0
+    "moving_sec": 669.0,
+    "total_elevation_m": 12.0
   },
   "7334536149": {
     "name": "晨间骑行",
     "date": "Jun 19, 2022, 2:21:55 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 6901.0,
-    "moving_sec": 65242.7,
-    "elevation_gain_m": 5.4
+    "distance_km": 65.2427,
+    "elapsed_sec": 8077.0,
+    "moving_sec": 6901.0,
+    "total_elevation_m": 170.0
   },
   "7334536024": {
     "name": "傍晚骑行",
     "date": "Jun 16, 2022, 11:34:33 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 4365.0,
-    "moving_sec": 41283.4,
-    "elevation_gain_m": 9.6
+    "distance_km": 41.2834,
+    "elapsed_sec": 6225.0,
+    "moving_sec": 4365.0,
+    "total_elevation_m": 174.0
   },
   "7334536054": {
     "name": "傍晚骑行",
     "date": "Jun 14, 2022, 12:04:32 PM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 4795.0,
-    "moving_sec": 41832.5,
-    "elevation_gain_m": -1.8
+    "distance_km": 41.8325,
+    "elapsed_sec": 7279.0,
+    "moving_sec": 4795.0,
+    "total_elevation_m": 178.0
   },
   "7305804908": {
     "name": "傍晚骑行",
     "date": "Jun 13, 2022, 11:38:02 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 3237.0,
-    "moving_sec": 30887.6,
-    "elevation_gain_m": 2.6
+    "distance_km": 30.8876,
+    "elapsed_sec": 4955.0,
+    "moving_sec": 3237.0,
+    "total_elevation_m": 5.0
   },
   "7305804949": {
     "name": "晨间骑行",
     "date": "Jun 11, 2022, 12:23:30 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
-    "elapsed_sec": 6616.0,
-    "moving_sec": 58310.5,
-    "elevation_gain_m": 7.0
+    "distance_km": 58.3105,
+    "elapsed_sec": 8912.0,
+    "moving_sec": 6616.0,
+    "total_elevation_m": 250.0
   },
   "7305804973": {
     "name": "傍晚骑行",
     "date": "Jun 9, 2022, 11:10:49 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 5874.0,
-    "moving_sec": 51369.9,
-    "elevation_gain_m": -34.0
+    "distance_km": 51.3699,
+    "elapsed_sec": 7148.0,
+    "moving_sec": 5874.0,
+    "total_elevation_m": 198.0
   },
   "7275274522": {
     "name": "傍晚骑行",
     "date": "Jun 7, 2022, 12:26:34 PM",
     "type": "Ride",
-    "distance_km": 0.0089,
+    "distance_km": 4.7256,
     "elapsed_sec": 528.0,
-    "moving_sec": 4725.6,
-    "elevation_gain_m": 2.2
+    "moving_sec": 528.0,
+    "total_elevation_m": 3.0
   },
   "7275274567": {
     "name": "傍晚骑行",
     "date": "Jun 7, 2022, 11:32:41 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
+    "distance_km": 23.0995,
     "elapsed_sec": 2456.0,
-    "moving_sec": 23099.5,
-    "elevation_gain_m": 11.4
+    "moving_sec": 2456.0,
+    "total_elevation_m": 94.0
   },
   "7275274513": {
     "name": "傍晚骑行",
     "date": "Jun 7, 2022, 11:12:44 AM",
     "type": "Ride",
-    "distance_km": 0.0093,
+    "distance_km": 5.1551,
     "elapsed_sec": 556.0,
-    "moving_sec": 5155.1,
-    "elevation_gain_m": 18.0
+    "moving_sec": 556.0,
+    "total_elevation_m": 10.0
   },
   "7275274500": {
     "name": "傍晚骑行",
     "date": "Jun 6, 2022, 11:44:45 AM",
     "type": "Ride",
-    "distance_km": 0.0084,
-    "elapsed_sec": 3217.0,
-    "moving_sec": 27115.1,
-    "elevation_gain_m": -55.2
+    "distance_km": 27.1151,
+    "elapsed_sec": 3943.0,
+    "moving_sec": 3217.0,
+    "total_elevation_m": 1.0
   },
   "7275274510": {
     "name": "傍晚骑行",
     "date": "May 31, 2022, 11:32:07 AM",
     "type": "Ride",
-    "distance_km": 0.0092,
+    "distance_km": 23.4943,
     "elapsed_sec": 2541.0,
-    "moving_sec": 23494.3,
-    "elevation_gain_m": 13.4
+    "moving_sec": 2541.0,
+    "total_elevation_m": 98.0
   },
   "7275274490": {
     "name": "傍晚骑行",
     "date": "May 26, 2022, 12:10:37 PM",
     "type": "Ride",
-    "distance_km": 0.0091,
+    "distance_km": 16.8703,
     "elapsed_sec": 1862.0,
-    "moving_sec": 16870.3,
-    "elevation_gain_m": -52.0
+    "moving_sec": 1862.0,
+    "total_elevation_m": 13.0
   },
   "7185152713": {
     "name": "咱们就是说骑一个东山",
     "date": "May 22, 2022, 12:06:52 AM",
     "type": "Ride",
-    "distance_km": 0.0095,
-    "elapsed_sec": 5768.0,
-    "moving_sec": 54600.2,
-    "elevation_gain_m": -5.0
+    "distance_km": 54.6002,
+    "elapsed_sec": 6395.0,
+    "moving_sec": 5768.0,
+    "total_elevation_m": 77.0
   },
   "7179750094": {
     "name": "晨间骑行",
     "date": "May 21, 2022, 12:17:48 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
-    "elapsed_sec": 6137.0,
-    "moving_sec": 56125.3,
-    "elevation_gain_m": -9.0
+    "distance_km": 56.1253,
+    "elapsed_sec": 7994.0,
+    "moving_sec": 6137.0,
+    "total_elevation_m": 251.0
   },
   "7179749820": {
     "name": "傍晚骑行",
     "date": "May 19, 2022, 12:39:18 PM",
     "type": "Ride",
-    "distance_km": 0.007,
+    "distance_km": 1.4768,
     "elapsed_sec": 211.0,
-    "moving_sec": 1476.8,
-    "elevation_gain_m": 18.6
+    "moving_sec": 211.0,
+    "total_elevation_m": 0.0
   },
   "7179749819": {
     "name": "傍晚骑行",
     "date": "May 19, 2022, 12:29:08 PM",
     "type": "Ride",
-    "distance_km": 0.0034,
+    "distance_km": 1.7279,
     "elapsed_sec": 514.0,
-    "moving_sec": 1727.9,
-    "elevation_gain_m": 6.8
+    "moving_sec": 514.0,
+    "total_elevation_m": 86.0
   },
   "7179749818": {
     "name": "傍晚骑行",
     "date": "May 19, 2022, 12:19:15 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
+    "distance_km": 1.0051,
     "elapsed_sec": 140.0,
-    "moving_sec": 1005.1,
-    "elevation_gain_m": 9.4
+    "moving_sec": 140.0,
+    "total_elevation_m": 1.0
   },
   "7179749796": {
     "name": "傍晚骑行",
     "date": "May 19, 2022, 11:42:48 AM",
     "type": "Ride",
-    "distance_km": 0.0096,
-    "elapsed_sec": 1961.0,
-    "moving_sec": 18873.3,
-    "elevation_gain_m": -1.0
+    "distance_km": 18.8733,
+    "elapsed_sec": 2129.0,
+    "moving_sec": 1961.0,
+    "total_elevation_m": 68.0
   },
   "7179749835": {
     "name": "傍晚骑行",
     "date": "May 18, 2022, 11:18:33 AM",
     "type": "Ride",
-    "distance_km": 0.0083,
+    "distance_km": 30.0498,
     "elapsed_sec": 3602.0,
-    "moving_sec": 30049.8,
-    "elevation_gain_m": -4.2
+    "moving_sec": 3602.0,
+    "total_elevation_m": 60.0
   },
   "7179749826": {
     "name": "傍晚骑行",
     "date": "May 17, 2022, 11:31:10 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
+    "distance_km": 31.4238,
     "elapsed_sec": 3356.0,
-    "moving_sec": 31423.8,
-    "elevation_gain_m": 12.2
+    "moving_sec": 3356.0,
+    "total_elevation_m": 123.0
   },
   "7150461052": {
     "name": "晨间骑行",
     "date": "May 15, 2022, 12:21:05 AM",
     "type": "Ride",
-    "distance_km": 0.0092,
-    "elapsed_sec": 6206.0,
-    "moving_sec": 57058.7,
-    "elevation_gain_m": 0.8
+    "distance_km": 57.0587,
+    "elapsed_sec": 8332.0,
+    "moving_sec": 6206.0,
+    "total_elevation_m": 253.0
   },
   "7134829593": {
     "name": "午后骑行",
     "date": "May 13, 2022, 7:53:27 AM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 3844.0,
-    "moving_sec": 31349.7,
-    "elevation_gain_m": 9.2
+    "distance_km": 31.3497,
+    "elapsed_sec": 4671.0,
+    "moving_sec": 3844.0,
+    "total_elevation_m": 284.0
   },
   "7129407222": {
     "name": "傍晚骑行",
     "date": "May 11, 2022, 12:28:30 PM",
     "type": "Ride",
-    "distance_km": 0.0088,
+    "distance_km": 3.74,
     "elapsed_sec": 423.0,
-    "moving_sec": 3740.0,
-    "elevation_gain_m": 5.6
+    "moving_sec": 423.0,
+    "total_elevation_m": 8.0
   },
   "7129407271": {
     "name": "傍晚骑行",
     "date": "May 11, 2022, 11:53:27 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
+    "distance_km": 13.8084,
     "elapsed_sec": 1591.0,
-    "moving_sec": 13808.4,
-    "elevation_gain_m": 7.2
+    "moving_sec": 1591.0,
+    "total_elevation_m": 28.0
   },
   "7129407239": {
     "name": "傍晚骑行",
     "date": "May 11, 2022, 11:23:43 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
+    "distance_km": 3.7815,
     "elapsed_sec": 416.0,
-    "moving_sec": 3781.5,
-    "elevation_gain_m": 8.8
+    "moving_sec": 416.0,
+    "total_elevation_m": 8.0
   },
   "7129407288": {
     "name": "傍晚骑行",
     "date": "May 10, 2022, 11:34:42 AM",
     "type": "Ride",
-    "distance_km": 0.0093,
+    "distance_km": 23.274,
     "elapsed_sec": 2511.0,
-    "moving_sec": 23274.0,
-    "elevation_gain_m": 4.0
+    "moving_sec": 2511.0,
+    "total_elevation_m": 91.0
   },
   "7129407293": {
     "name": "晨间骑行",
     "date": "May 7, 2022, 11:09:06 PM",
     "type": "Ride",
-    "distance_km": 0.0086,
-    "elapsed_sec": 6713.0,
-    "moving_sec": 57661.2,
-    "elevation_gain_m": -0.8
+    "distance_km": 57.6612,
+    "elapsed_sec": 8495.0,
+    "moving_sec": 6713.0,
+    "total_elevation_m": 266.0
   },
   "7129407318": {
     "name": "傍晚骑行",
     "date": "May 6, 2022, 11:08:42 AM",
     "type": "Ride",
-    "distance_km": 0.009,
-    "elapsed_sec": 6400.0,
-    "moving_sec": 57700.7,
-    "elevation_gain_m": 11.2
+    "distance_km": 57.7007,
+    "elapsed_sec": 7679.0,
+    "moving_sec": 6400.0,
+    "total_elevation_m": 245.0
   },
   "7129407329": {
     "name": "晨间骑行",
     "date": "May 4, 2022, 1:11:58 AM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 7111.0,
-    "moving_sec": 54677.7,
-    "elevation_gain_m": -8.6
+    "distance_km": 54.6777,
+    "elapsed_sec": 10649.0,
+    "moving_sec": 7111.0,
+    "total_elevation_m": 264.0
   },
   "7129407199": {
     "name": "傍晚骑行",
     "date": "May 3, 2022, 11:32:39 AM",
     "type": "Ride",
-    "distance_km": 0.0098,
+    "distance_km": 23.4447,
     "elapsed_sec": 2397.0,
-    "moving_sec": 23444.7,
-    "elevation_gain_m": 8.6
+    "moving_sec": 2397.0,
+    "total_elevation_m": 93.0
   },
   "7129407350": {
     "name": "晨间骑行",
     "date": "Apr 30, 2022, 11:04:58 PM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 8941.0,
-    "moving_sec": 73572.8,
-    "elevation_gain_m": -0.8
+    "distance_km": 73.5728,
+    "elapsed_sec": 14283.0,
+    "moving_sec": 8941.0,
+    "total_elevation_m": 349.0
   },
   "7129407330": {
     "name": "晨间骑行",
     "date": "Apr 30, 2022, 1:07:21 AM",
     "type": "Ride",
-    "distance_km": 0.008,
-    "elapsed_sec": 7151.0,
-    "moving_sec": 56983.1,
-    "elevation_gain_m": -5.2
+    "distance_km": 56.9831,
+    "elapsed_sec": 9029.0,
+    "moving_sec": 7151.0,
+    "total_elevation_m": 275.0
   },
   "7129407170": {
     "name": "午后骑行",
     "date": "Apr 29, 2022, 6:42:31 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 4229.0,
-    "moving_sec": 29922.2,
-    "elevation_gain_m": 4.2
+    "distance_km": 29.9222,
+    "elapsed_sec": 5501.0,
+    "moving_sec": 4229.0,
+    "total_elevation_m": 297.0
   },
   "7129407114": {
     "name": "傍晚骑行",
     "date": "Apr 27, 2022, 11:17:30 AM",
     "type": "Ride",
-    "distance_km": 0.0094,
-    "elapsed_sec": 4403.0,
-    "moving_sec": 41594.8,
-    "elevation_gain_m": -13.0
+    "distance_km": 41.5948,
+    "elapsed_sec": 4898.0,
+    "moving_sec": 4403.0,
+    "total_elevation_m": 95.0
   },
   "7129407130": {
     "name": "傍晚骑行",
     "date": "Apr 26, 2022, 11:09:19 AM",
     "type": "Ride",
-    "distance_km": 0.0086,
-    "elapsed_sec": 2250.0,
-    "moving_sec": 19463.0,
-    "elevation_gain_m": 4.2
+    "distance_km": 19.463,
+    "elapsed_sec": 3249.0,
+    "moving_sec": 2250.0,
+    "total_elevation_m": 71.0
   },
   "7129407143": {
     "name": "傍晚骑行",
     "date": "Apr 20, 2022, 11:07:25 AM",
     "type": "Ride",
-    "distance_km": 0.0084,
-    "elapsed_sec": 2572.0,
-    "moving_sec": 21703.9,
-    "elevation_gain_m": 9.4
+    "distance_km": 21.7039,
+    "elapsed_sec": 3124.0,
+    "moving_sec": 2572.0,
+    "total_elevation_m": 47.0
   },
   "7129407140": {
     "name": "傍晚骑行",
     "date": "Apr 19, 2022, 11:32:51 AM",
     "type": "Ride",
-    "distance_km": 0.0091,
+    "distance_km": 23.0975,
     "elapsed_sec": 2533.0,
-    "moving_sec": 23097.5,
-    "elevation_gain_m": 6.0
+    "moving_sec": 2533.0,
+    "total_elevation_m": 94.0
   },
   "7129407122": {
     "name": "傍晚骑行",
     "date": "Apr 18, 2022, 12:22:25 PM",
     "type": "Ride",
-    "distance_km": 0.0069,
+    "distance_km": 6.6956,
     "elapsed_sec": 974.0,
-    "moving_sec": 6695.6,
-    "elevation_gain_m": 9.8
+    "moving_sec": 974.0,
+    "total_elevation_m": 28.0
   },
   "7129407103": {
     "name": "傍晚骑行",
     "date": "Apr 18, 2022, 11:40:07 AM",
     "type": "Ride",
-    "distance_km": 0.0079,
+    "distance_km": 14.6865,
     "elapsed_sec": 1862.0,
-    "moving_sec": 14686.5,
-    "elevation_gain_m": 13.6
+    "moving_sec": 1862.0,
+    "total_elevation_m": 118.0
   },
   "7129407119": {
     "name": "傍晚骑行",
     "date": "Apr 17, 2022, 11:48:38 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 1907.0,
-    "moving_sec": 16245.7,
-    "elevation_gain_m": -6.2
+    "distance_km": 16.2457,
+    "elapsed_sec": 2379.0,
+    "moving_sec": 1907.0,
+    "total_elevation_m": 88.0
   },
   "7129418347": {
     "name": "午间骑行",
     "date": "Apr 16, 2022, 4:33:13 AM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 1220.0,
-    "moving_sec": 7299.1,
-    "elevation_gain_m": -19.0
+    "distance_km": 7.2991,
+    "elapsed_sec": 2475.0,
+    "moving_sec": 1220.0,
+    "total_elevation_m": 96.0
   },
   "7129418507": {
     "name": "晨间骑行",
     "date": "Apr 16, 2022, 12:37:41 AM",
     "type": "Ride",
-    "distance_km": 0.009,
-    "elapsed_sec": 4544.0,
-    "moving_sec": 40788.3,
-    "elevation_gain_m": 6.4
+    "distance_km": 40.7883,
+    "elapsed_sec": 5816.0,
+    "moving_sec": 4544.0,
+    "total_elevation_m": 190.0
   },
   "7129418370": {
     "name": "傍晚骑行",
     "date": "Apr 11, 2022, 11:17:21 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 2112.0,
-    "moving_sec": 18366.3,
-    "elevation_gain_m": -0.4
+    "distance_km": 18.3663,
+    "elapsed_sec": 2267.0,
+    "moving_sec": 2112.0,
+    "total_elevation_m": 35.0
   },
   "7129418520": {
     "name": "晨间骑行",
     "date": "Apr 9, 2022, 12:30:55 AM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 4882.0,
-    "moving_sec": 40172.5,
-    "elevation_gain_m": -5.4
+    "distance_km": 40.1725,
+    "elapsed_sec": 6680.0,
+    "moving_sec": 4882.0,
+    "total_elevation_m": 185.0
   },
   "7129418342": {
     "name": "午后骑行",
     "date": "Apr 5, 2022, 7:16:38 AM",
     "type": "Ride",
-    "distance_km": 0.0079,
+    "distance_km": 17.9964,
     "elapsed_sec": 2280.0,
-    "moving_sec": 17996.4,
-    "elevation_gain_m": 4.4
+    "moving_sec": 2280.0,
+    "total_elevation_m": 52.0
   },
   "7129418361": {
     "name": "午后骑行",
     "date": "Apr 5, 2022, 5:34:32 AM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 4798.0,
-    "moving_sec": 38894.2,
-    "elevation_gain_m": 6.0
+    "distance_km": 38.8942,
+    "elapsed_sec": 5600.0,
+    "moving_sec": 4798.0,
+    "total_elevation_m": 212.0
   },
   "7129418279": {
     "name": "午后骑行",
     "date": "Apr 3, 2022, 8:41:29 AM",
     "type": "Ride",
-    "distance_km": 0.0056,
-    "elapsed_sec": 1081.0,
-    "moving_sec": 6064.6,
-    "elevation_gain_m": 5.6
+    "distance_km": 6.0646,
+    "elapsed_sec": 3701.0,
+    "moving_sec": 1081.0,
+    "total_elevation_m": 126.0
   },
   "7129418262": {
     "name": "晨间骑行",
     "date": "Mar 27, 2022, 12:33:49 AM",
     "type": "Ride",
-    "distance_km": 0.0079,
-    "elapsed_sec": 1074.0,
-    "moving_sec": 8508.9,
-    "elevation_gain_m": -1.2
+    "distance_km": 8.5089,
+    "elapsed_sec": 1117.0,
+    "moving_sec": 1074.0,
+    "total_elevation_m": 50.0
   },
   "7129418366": {
     "name": "傍晚骑行",
     "date": "Mar 22, 2022, 12:04:30 PM",
     "type": "Ride",
-    "distance_km": 0.0073,
+    "distance_km": 12.7432,
     "elapsed_sec": 1738.0,
-    "moving_sec": 12743.2,
-    "elevation_gain_m": 6.4
+    "moving_sec": 1738.0,
+    "total_elevation_m": 41.0
   },
   "7129418311": {
     "name": "傍晚骑行",
     "date": "Mar 22, 2022, 11:08:58 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 1659.0,
-    "moving_sec": 14103.5,
-    "elevation_gain_m": -13.2
+    "distance_km": 14.1035,
+    "elapsed_sec": 2112.0,
+    "moving_sec": 1659.0,
+    "total_elevation_m": 56.0
   },
   "7129418310": {
     "name": "傍晚骑行",
     "date": "Mar 16, 2022, 12:16:10 PM",
     "type": "Ride",
-    "distance_km": 0.0084,
+    "distance_km": 17.6875,
     "elapsed_sec": 2110.0,
-    "moving_sec": 17687.5,
-    "elevation_gain_m": 0.8
+    "moving_sec": 2110.0,
+    "total_elevation_m": 47.0
   },
   "7129418337": {
     "name": "傍晚骑行",
     "date": "Mar 16, 2022, 11:10:08 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 2415.0,
-    "moving_sec": 20436.7,
-    "elevation_gain_m": 3.8
+    "distance_km": 20.4367,
+    "elapsed_sec": 3692.0,
+    "moving_sec": 2415.0,
+    "total_elevation_m": 138.0
   },
   "7129418331": {
     "name": "傍晚骑行",
     "date": "Mar 15, 2022, 11:34:30 AM",
     "type": "Ride",
-    "distance_km": 0.009,
+    "distance_km": 15.8255,
     "elapsed_sec": 1763.0,
-    "moving_sec": 15825.5,
-    "elevation_gain_m": 2.6
+    "moving_sec": 1763.0,
+    "total_elevation_m": 66.0
   },
   "7129418245": {
     "name": "晨间骑行",
     "date": "Mar 12, 2022, 1:03:00 AM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 2452.0,
-    "moving_sec": 18926.8,
-    "elevation_gain_m": 4.0
+    "distance_km": 18.9268,
+    "elapsed_sec": 2682.0,
+    "moving_sec": 2452.0,
+    "total_elevation_m": 48.0
   },
   "7129418269": {
     "name": "晨间骑行",
     "date": "Mar 12, 2022, 12:38:22 AM",
     "type": "Ride",
-    "distance_km": 0.0096,
-    "elapsed_sec": 941.0,
-    "moving_sec": 9058.5,
-    "elevation_gain_m": -10.6
+    "distance_km": 9.0585,
+    "elapsed_sec": 1393.0,
+    "moving_sec": 941.0,
+    "total_elevation_m": 45.0
   },
   "7129418188": {
     "name": "傍晚骑行",
     "date": "Mar 10, 2022, 11:03:22 AM",
     "type": "Ride",
-    "distance_km": 0.0083,
-    "elapsed_sec": 1951.0,
-    "moving_sec": 16123.5,
-    "elevation_gain_m": -8.4
+    "distance_km": 16.1235,
+    "elapsed_sec": 2394.0,
+    "moving_sec": 1951.0,
+    "total_elevation_m": 81.0
   },
   "7129418273": {
     "name": "傍晚骑行",
     "date": "Mar 8, 2022, 11:33:17 AM",
     "type": "Ride",
-    "distance_km": 0.0076,
+    "distance_km": 10.7801,
     "elapsed_sec": 1411.0,
-    "moving_sec": 10780.1,
-    "elevation_gain_m": -1.6
+    "moving_sec": 1411.0,
+    "total_elevation_m": 47.0
   },
   "7129418186": {
     "name": "傍晚骑行",
     "date": "Mar 8, 2022, 11:11:59 AM",
     "type": "Ride",
-    "distance_km": 0.0099,
-    "elapsed_sec": 320.0,
-    "moving_sec": 3153.7,
-    "elevation_gain_m": 5.8
+    "distance_km": 3.1537,
+    "elapsed_sec": 1022.0,
+    "moving_sec": 320.0,
+    "total_elevation_m": 7.0
   },
   "7129418280": {
     "name": "晨间骑行",
     "date": "Mar 5, 2022, 2:17:47 AM",
     "type": "Ride",
-    "distance_km": 0.0057,
+    "distance_km": 7.7391,
     "elapsed_sec": 1359.0,
-    "moving_sec": 7739.1,
-    "elevation_gain_m": 21.6
+    "moving_sec": 1359.0,
+    "total_elevation_m": 40.0
   },
   "7129418302": {
     "name": "晨间骑行",
     "date": "Mar 5, 2022, 12:37:37 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 2472.0,
-    "moving_sec": 21606.4,
-    "elevation_gain_m": -39.0
+    "distance_km": 21.6064,
+    "elapsed_sec": 3058.0,
+    "moving_sec": 2472.0,
+    "total_elevation_m": 130.0
   },
   "7129418403": {
     "name": "午后骑行",
     "date": "Mar 2, 2022, 5:04:11 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 7232.0,
-    "moving_sec": 52408.9,
-    "elevation_gain_m": 11.4
+    "distance_km": 52.4089,
+    "elapsed_sec": 10617.0,
+    "moving_sec": 7232.0,
+    "total_elevation_m": 274.0
   },
   "7129426102": {
     "name": "午后骑行",
     "date": "Feb 28, 2022, 5:32:58 AM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 4036.0,
-    "moving_sec": 30823.7,
-    "elevation_gain_m": -9.4
+    "distance_km": 30.8237,
+    "elapsed_sec": 8012.0,
+    "moving_sec": 4036.0,
+    "total_elevation_m": 155.0
   },
   "7129426174": {
     "name": "晨间骑行",
     "date": "Feb 26, 2022, 1:38:36 AM",
     "type": "Ride",
-    "distance_km": 0.0069,
-    "elapsed_sec": 6494.0,
-    "moving_sec": 44663.7,
-    "elevation_gain_m": -8.0
+    "distance_km": 44.6637,
+    "elapsed_sec": 7007.0,
+    "moving_sec": 6494.0,
+    "total_elevation_m": 210.0
   },
   "7129426085": {
     "name": "午后骑行",
     "date": "Jan 31, 2022, 6:30:58 AM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 4311.0,
-    "moving_sec": 27115.3,
-    "elevation_gain_m": 7.6
+    "distance_km": 27.1153,
+    "elapsed_sec": 5427.0,
+    "moving_sec": 4311.0,
+    "total_elevation_m": 174.0
   },
   "7129425965": {
     "name": "晚间骑行",
@@ -377223,8 +377225,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 1806.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -69.6
+    "moving_sec": 1806.0,
+    "total_elevation_m": 0.0
   },
   "7129425970": {
     "name": "午后骑行",
@@ -377232,8 +377234,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 3603.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -58.6
+    "moving_sec": 3603.0,
+    "total_elevation_m": 0.0
   },
   "7129425950": {
     "name": "午后骑行",
@@ -377241,8 +377243,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 902.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -59.8
+    "moving_sec": 902.0,
+    "total_elevation_m": 0.0
   },
   "7129426000": {
     "name": "午后骑行",
@@ -377250,8 +377252,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 4765.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -105.6
+    "moving_sec": 4765.0,
+    "total_elevation_m": 0.0
   },
   "7129425989": {
     "name": "晚间骑行",
@@ -377259,8 +377261,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 1204.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -102.0
+    "moving_sec": 1204.0,
+    "total_elevation_m": 0.0
   },
   "7129425955": {
     "name": "晚间骑行",
@@ -377268,8 +377270,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 1956.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -97.0
+    "moving_sec": 1956.0,
+    "total_elevation_m": 0.0
   },
   "7129425962": {
     "name": "晚间骑行",
@@ -377277,53 +377279,53 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 2151.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -116.8
+    "moving_sec": 2151.0,
+    "total_elevation_m": 0.0
   },
   "7129426025": {
     "name": "午后骑行",
     "date": "Nov 26, 2021, 7:21:40 AM",
     "type": "Ride",
-    "distance_km": 0.0019,
-    "elapsed_sec": 2661.0,
-    "moving_sec": 5034.4,
-    "elevation_gain_m": 2.0
+    "distance_km": 5.0344,
+    "elapsed_sec": 6576.0,
+    "moving_sec": 2661.0,
+    "total_elevation_m": 127.0
   },
   "7129426021": {
     "name": "午后骑行",
     "date": "Nov 26, 2021, 6:10:33 AM",
     "type": "Ride",
-    "distance_km": 0.007,
-    "elapsed_sec": 2911.0,
-    "moving_sec": 20480.3,
-    "elevation_gain_m": -14.4
+    "distance_km": 20.4803,
+    "elapsed_sec": 4193.0,
+    "moving_sec": 2911.0,
+    "total_elevation_m": 64.0
   },
   "7129425984": {
     "name": "午后骑行",
     "date": "Nov 19, 2021, 9:00:34 AM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 2962.0,
-    "moving_sec": 18752.0,
-    "elevation_gain_m": -4.6
+    "distance_km": 18.752,
+    "elapsed_sec": 3964.0,
+    "moving_sec": 2962.0,
+    "total_elevation_m": 39.0
   },
   "7129425998": {
     "name": "午后骑行",
     "date": "Nov 19, 2021, 6:17:37 AM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 4327.0,
-    "moving_sec": 32068.5,
-    "elevation_gain_m": -10.8
+    "distance_km": 32.0685,
+    "elapsed_sec": 9701.0,
+    "moving_sec": 4327.0,
+    "total_elevation_m": 68.0
   },
   "6296197598": {
     "name": "Afternoon Ride",
     "date": "Nov 19, 2021, 6:11:30 AM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 8095.0,
-    "moving_sec": 55312.2,
-    "elevation_gain_m": -4.0
+    "distance_km": 55.3122,
+    "elapsed_sec": 13396.0,
+    "moving_sec": 8095.0,
+    "total_elevation_m": 139.0
   },
   "7129425895": {
     "name": "傍晚骑行",
@@ -377331,8 +377333,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 1204.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -90.4
+    "moving_sec": 1204.0,
+    "total_elevation_m": 0.0
   },
   "7129425893": {
     "name": "傍晚骑行",
@@ -377340,8 +377342,8 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 1893.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": 24.6
+    "moving_sec": 1893.0,
+    "total_elevation_m": 0.0
   },
   "7129425899": {
     "name": "傍晚骑行",
@@ -377349,719 +377351,719 @@ const ACTIVITY_METADATA = {
     "type": "Ride",
     "distance_km": 0.0,
     "elapsed_sec": 1296.0,
-    "moving_sec": 0.0,
-    "elevation_gain_m": -66.8
+    "moving_sec": 1296.0,
+    "total_elevation_m": 0.0
   },
   "7129425927": {
     "name": "晨间骑行",
     "date": "Oct 31, 2021, 1:11:26 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 1488.0,
-    "moving_sec": 12653.1,
-    "elevation_gain_m": 2.6
+    "distance_km": 12.6531,
+    "elapsed_sec": 1542.0,
+    "moving_sec": 1488.0,
+    "total_elevation_m": 8.0
   },
   "7129426098": {
     "name": "午后骑行",
     "date": "Oct 29, 2021, 5:38:46 AM",
     "type": "Ride",
-    "distance_km": 0.0073,
-    "elapsed_sec": 8413.0,
-    "moving_sec": 61780.2,
-    "elevation_gain_m": -0.4
+    "distance_km": 61.7802,
+    "elapsed_sec": 14039.0,
+    "moving_sec": 8413.0,
+    "total_elevation_m": 80.0
   },
   "7129425917": {
     "name": "傍晚骑行",
     "date": "Oct 27, 2021, 12:26:57 PM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 815.0,
-    "moving_sec": 6287.6,
-    "elevation_gain_m": 0.8
+    "distance_km": 6.2876,
+    "elapsed_sec": 1169.0,
+    "moving_sec": 815.0,
+    "total_elevation_m": 9.0
   },
   "7129425799": {
     "name": "傍晚骑行",
     "date": "Oct 27, 2021, 12:08:37 PM",
     "type": "Ride",
-    "distance_km": 0.0082,
-    "elapsed_sec": 669.0,
-    "moving_sec": 5469.1,
-    "elevation_gain_m": -5.6
+    "distance_km": 5.4691,
+    "elapsed_sec": 714.0,
+    "moving_sec": 669.0,
+    "total_elevation_m": 9.0
   },
   "7129425853": {
     "name": "傍晚骑行",
     "date": "Oct 27, 2021, 11:25:01 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 1901.0,
-    "moving_sec": 13488.1,
-    "elevation_gain_m": -8.8
+    "distance_km": 13.4881,
+    "elapsed_sec": 2333.0,
+    "moving_sec": 1901.0,
+    "total_elevation_m": 39.0
   },
   "7129429673": {
     "name": "傍晚骑行",
     "date": "Oct 9, 2021, 11:47:05 AM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 2155.0,
-    "moving_sec": 16855.8,
-    "elevation_gain_m": -1.6
+    "distance_km": 16.8558,
+    "elapsed_sec": 3886.0,
+    "moving_sec": 2155.0,
+    "total_elevation_m": 18.0
   },
   "7129429657": {
     "name": "晚间骑行",
     "date": "Oct 6, 2021, 1:35:06 PM",
     "type": "Ride",
-    "distance_km": 0.0083,
+    "distance_km": 2.179,
     "elapsed_sec": 263.0,
-    "moving_sec": 2179.0,
-    "elevation_gain_m": -1.4
+    "moving_sec": 263.0,
+    "total_elevation_m": 0.0
   },
   "7129429656": {
     "name": "傍晚骑行",
     "date": "Oct 6, 2021, 12:13:36 PM",
     "type": "Ride",
-    "distance_km": 0.0057,
-    "elapsed_sec": 3174.0,
-    "moving_sec": 18138.1,
-    "elevation_gain_m": -1.0
+    "distance_km": 18.1381,
+    "elapsed_sec": 4080.0,
+    "moving_sec": 3174.0,
+    "total_elevation_m": 23.0
   },
   "7129429718": {
     "name": "晚间骑行",
     "date": "Sep 30, 2021, 7:43:16 PM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 15409.0,
-    "moving_sec": 111078.4,
-    "elevation_gain_m": -16.6
+    "distance_km": 111.0784,
+    "elapsed_sec": 22934.0,
+    "moving_sec": 15409.0,
+    "total_elevation_m": 157.0
   },
   "7129429661": {
     "name": "傍晚骑行",
     "date": "Sep 27, 2021, 12:12:52 PM",
     "type": "Ride",
-    "distance_km": 0.0064,
-    "elapsed_sec": 2917.0,
-    "moving_sec": 18612.0,
-    "elevation_gain_m": 4.0
+    "distance_km": 18.612,
+    "elapsed_sec": 3284.0,
+    "moving_sec": 2917.0,
+    "total_elevation_m": 17.0
   },
   "7129429642": {
     "name": "傍晚骑行",
     "date": "Sep 27, 2021, 11:34:24 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
+    "distance_km": 3.0122,
     "elapsed_sec": 346.0,
-    "moving_sec": 3012.2,
-    "elevation_gain_m": 4.0
+    "moving_sec": 346.0,
+    "total_elevation_m": 3.0
   },
   "7129429650": {
     "name": "傍晚骑行",
     "date": "Sep 27, 2021, 11:11:37 AM",
     "type": "Ride",
-    "distance_km": 0.0088,
+    "distance_km": 6.083,
     "elapsed_sec": 688.0,
-    "moving_sec": 6083.0,
-    "elevation_gain_m": 19.0
+    "moving_sec": 688.0,
+    "total_elevation_m": 6.0
   },
   "7129429641": {
     "name": "傍晚骑行",
     "date": "Sep 25, 2021, 12:13:05 PM",
     "type": "Ride",
-    "distance_km": 0.0081,
+    "distance_km": 5.9032,
     "elapsed_sec": 730.0,
-    "moving_sec": 5903.2,
-    "elevation_gain_m": -7.6
+    "moving_sec": 730.0,
+    "total_elevation_m": 13.0
   },
   "7129429610": {
     "name": "傍晚骑行",
     "date": "Sep 25, 2021, 11:43:05 AM",
     "type": "Ride",
-    "distance_km": 0.008,
+    "distance_km": 6.1971,
     "elapsed_sec": 775.0,
-    "moving_sec": 6197.1,
-    "elevation_gain_m": 8.4
+    "moving_sec": 775.0,
+    "total_elevation_m": 8.0
   },
   "7129429607": {
     "name": "傍晚骑行",
     "date": "Sep 25, 2021, 11:30:28 AM",
     "type": "Ride",
-    "distance_km": 0.0086,
+    "distance_km": 3.0823,
     "elapsed_sec": 359.0,
-    "moving_sec": 3082.3,
-    "elevation_gain_m": 5.8
+    "moving_sec": 359.0,
+    "total_elevation_m": 5.0
   },
   "7129429600": {
     "name": "晚间骑行",
     "date": "Sep 22, 2021, 1:27:53 PM",
     "type": "Ride",
-    "distance_km": 0.0051,
-    "elapsed_sec": 2483.0,
-    "moving_sec": 12660.0,
-    "elevation_gain_m": -8.0
+    "distance_km": 12.66,
+    "elapsed_sec": 2913.0,
+    "moving_sec": 2483.0,
+    "total_elevation_m": 23.0
   },
   "7129429598": {
     "name": "傍晚骑行",
     "date": "Sep 22, 2021, 12:04:55 PM",
     "type": "Ride",
-    "distance_km": 0.0101,
+    "distance_km": 7.1537,
     "elapsed_sec": 711.0,
-    "moving_sec": 7153.7,
-    "elevation_gain_m": 6.8
+    "moving_sec": 711.0,
+    "total_elevation_m": 6.0
   },
   "7129429601": {
     "name": "傍晚骑行",
     "date": "Sep 22, 2021, 11:18:35 AM",
     "type": "Ride",
-    "distance_km": 0.0072,
-    "elapsed_sec": 1747.0,
-    "moving_sec": 12536.9,
-    "elevation_gain_m": -3.0
+    "distance_km": 12.5369,
+    "elapsed_sec": 2191.0,
+    "moving_sec": 1747.0,
+    "total_elevation_m": 32.0
   },
   "7129429625": {
     "name": "傍晚骑行",
     "date": "Sep 19, 2021, 11:46:57 AM",
     "type": "Ride",
-    "distance_km": 0.006,
-    "elapsed_sec": 3106.0,
-    "moving_sec": 18703.4,
-    "elevation_gain_m": 3.0
+    "distance_km": 18.7034,
+    "elapsed_sec": 4144.0,
+    "moving_sec": 3106.0,
+    "total_elevation_m": 20.0
   },
   "7129429604": {
     "name": "傍晚骑行",
     "date": "Sep 17, 2021, 12:17:29 PM",
     "type": "Ride",
-    "distance_km": 0.0082,
+    "distance_km": 14.6844,
     "elapsed_sec": 1791.0,
-    "moving_sec": 14684.4,
-    "elevation_gain_m": 7.2
+    "moving_sec": 1791.0,
+    "total_elevation_m": 36.0
   },
   "7129429588": {
     "name": "傍晚骑行",
     "date": "Sep 17, 2021, 12:01:13 PM",
     "type": "Ride",
-    "distance_km": 0.0093,
+    "distance_km": 5.9337,
     "elapsed_sec": 635.0,
-    "moving_sec": 5933.7,
-    "elevation_gain_m": 2.2
+    "moving_sec": 635.0,
+    "total_elevation_m": 0.0
   },
   "7129429589": {
     "name": "傍晚骑行",
     "date": "Sep 17, 2021, 11:30:03 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 1046.0,
-    "moving_sec": 8897.8,
-    "elevation_gain_m": -17.2
+    "distance_km": 8.8978,
+    "elapsed_sec": 1092.0,
+    "moving_sec": 1046.0,
+    "total_elevation_m": 50.0
   },
   "7129429505": {
     "name": "傍晚骑行",
     "date": "Sep 15, 2021, 12:46:33 PM",
     "type": "Ride",
-    "distance_km": 0.0077,
-    "elapsed_sec": 1880.0,
-    "moving_sec": 14522.8,
-    "elevation_gain_m": 8.6
+    "distance_km": 14.5228,
+    "elapsed_sec": 2020.0,
+    "moving_sec": 1880.0,
+    "total_elevation_m": 40.0
   },
   "7129429496": {
     "name": "傍晚骑行",
     "date": "Sep 15, 2021, 12:14:40 PM",
     "type": "Ride",
-    "distance_km": 0.0092,
+    "distance_km": 6.6947,
     "elapsed_sec": 727.0,
-    "moving_sec": 6694.7,
-    "elevation_gain_m": -2.2
+    "moving_sec": 727.0,
+    "total_elevation_m": 3.0
   },
   "7129429507": {
     "name": "傍晚骑行",
     "date": "Sep 15, 2021, 11:35:24 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
-    "elapsed_sec": 1010.0,
-    "moving_sec": 8796.3,
-    "elevation_gain_m": -1.6
+    "distance_km": 8.7963,
+    "elapsed_sec": 1970.0,
+    "moving_sec": 1010.0,
+    "total_elevation_m": 50.0
   },
   "7129429518": {
     "name": "晨间骑行",
     "date": "Sep 12, 2021, 1:18:20 AM",
     "type": "Ride",
-    "distance_km": 0.006,
+    "distance_km": 11.7397,
     "elapsed_sec": 1969.0,
-    "moving_sec": 11739.7,
-    "elevation_gain_m": 6.4
+    "moving_sec": 1969.0,
+    "total_elevation_m": 1.0
   },
   "7129429511": {
     "name": "晨间骑行",
     "date": "Sep 12, 2021, 12:13:11 AM",
     "type": "Ride",
-    "distance_km": 0.0081,
-    "elapsed_sec": 1938.0,
-    "moving_sec": 15766.4,
-    "elevation_gain_m": -5.2
+    "distance_km": 15.7664,
+    "elapsed_sec": 3895.0,
+    "moving_sec": 1938.0,
+    "total_elevation_m": 0.0
   },
   "7129429506": {
     "name": "晨间骑行",
     "date": "Sep 4, 2021, 11:17:51 PM",
     "type": "Ride",
-    "distance_km": 0.0076,
+    "distance_km": 9.4496,
     "elapsed_sec": 1245.0,
-    "moving_sec": 9449.6,
-    "elevation_gain_m": -0.4
+    "moving_sec": 1245.0,
+    "total_elevation_m": 35.0
   },
   "7129429498": {
     "name": "晨间骑行",
     "date": "Sep 4, 2021, 10:35:16 PM",
     "type": "Ride",
-    "distance_km": 0.0084,
-    "elapsed_sec": 1199.0,
-    "moving_sec": 10104.7,
-    "elevation_gain_m": 0.4
+    "distance_km": 10.1047,
+    "elapsed_sec": 1889.0,
+    "moving_sec": 1199.0,
+    "total_elevation_m": 49.0
   },
   "7129434277": {
     "name": "傍晚骑行",
     "date": "Sep 3, 2021, 12:01:03 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 1222.0,
-    "moving_sec": 7934.6,
-    "elevation_gain_m": -6.2
+    "distance_km": 7.9346,
+    "elapsed_sec": 1261.0,
+    "moving_sec": 1222.0,
+    "total_elevation_m": 32.0
   },
   "7129434221": {
     "name": "傍晚骑行",
     "date": "Sep 3, 2021, 11:31:56 AM",
     "type": "Ride",
-    "distance_km": 0.0087,
+    "distance_km": 6.539,
     "elapsed_sec": 754.0,
-    "moving_sec": 6539.0,
-    "elevation_gain_m": -3.6
+    "moving_sec": 754.0,
+    "total_elevation_m": 34.0
   },
   "7129434207": {
     "name": "傍晚骑行",
     "date": "Aug 31, 2021, 11:39:00 AM",
     "type": "Ride",
-    "distance_km": 0.0074,
+    "distance_km": 6.0475,
     "elapsed_sec": 815.0,
-    "moving_sec": 6047.5,
-    "elevation_gain_m": -10.6
+    "moving_sec": 815.0,
+    "total_elevation_m": 30.0
   },
   "7129434202": {
     "name": "傍晚骑行",
     "date": "Aug 30, 2021, 12:24:00 PM",
     "type": "Ride",
-    "distance_km": 0.0078,
+    "distance_km": 7.6969,
     "elapsed_sec": 986.0,
-    "moving_sec": 7696.9,
-    "elevation_gain_m": -12.8
+    "moving_sec": 986.0,
+    "total_elevation_m": 33.0
   },
   "7129434223": {
     "name": "傍晚骑行",
     "date": "Aug 30, 2021, 11:32:55 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
+    "distance_km": 8.751,
     "elapsed_sec": 1028.0,
-    "moving_sec": 8751.0,
-    "elevation_gain_m": -12.0
+    "moving_sec": 1028.0,
+    "total_elevation_m": 43.0
   },
   "7129434239": {
     "name": "晨间骑行",
     "date": "Aug 29, 2021, 12:42:08 AM",
     "type": "Ride",
-    "distance_km": 0.0059,
+    "distance_km": 13.7743,
     "elapsed_sec": 2319.0,
-    "moving_sec": 13774.3,
-    "elevation_gain_m": 3.0
+    "moving_sec": 2319.0,
+    "total_elevation_m": 0.0
   },
   "7129434209": {
     "name": "晨间骑行",
     "date": "Aug 28, 2021, 11:49:49 PM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 900.0,
-    "moving_sec": 7649.5,
-    "elevation_gain_m": 5.6
+    "distance_km": 7.6495,
+    "elapsed_sec": 3124.0,
+    "moving_sec": 900.0,
+    "total_elevation_m": 0.0
   },
   "7129434196": {
     "name": "傍晚骑行",
     "date": "Aug 25, 2021, 11:59:30 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
+    "distance_km": 7.8919,
     "elapsed_sec": 1106.0,
-    "moving_sec": 7891.9,
-    "elevation_gain_m": -2.4
+    "moving_sec": 1106.0,
+    "total_elevation_m": 32.0
   },
   "7129434220": {
     "name": "傍晚骑行",
     "date": "Aug 25, 2021, 11:33:47 AM",
     "type": "Ride",
-    "distance_km": 0.0082,
+    "distance_km": 7.867,
     "elapsed_sec": 963.0,
-    "moving_sec": 7867.0,
-    "elevation_gain_m": 5.2
+    "moving_sec": 963.0,
+    "total_elevation_m": 32.0
   },
   "7129434255": {
     "name": "午后骑行",
     "date": "Aug 22, 2021, 9:42:51 AM",
     "type": "Ride",
-    "distance_km": 0.003,
-    "elapsed_sec": 1673.0,
-    "moving_sec": 5084.3,
-    "elevation_gain_m": -7.8
+    "distance_km": 5.0843,
+    "elapsed_sec": 2889.0,
+    "moving_sec": 1673.0,
+    "total_elevation_m": 228.0
   },
   "7129434228": {
     "name": "傍晚骑行",
     "date": "Aug 21, 2021, 12:40:20 PM",
     "type": "Ride",
-    "distance_km": 0.0079,
+    "distance_km": 10.8496,
     "elapsed_sec": 1374.0,
-    "moving_sec": 10849.6,
-    "elevation_gain_m": 1.4
+    "moving_sec": 1374.0,
+    "total_elevation_m": 33.0
   },
   "7129434208": {
     "name": "傍晚骑行",
     "date": "Aug 21, 2021, 11:34:38 AM",
     "type": "Ride",
-    "distance_km": 0.0085,
-    "elapsed_sec": 694.0,
-    "moving_sec": 5905.5,
-    "elevation_gain_m": -0.4
+    "distance_km": 5.9055,
+    "elapsed_sec": 714.0,
+    "moving_sec": 694.0,
+    "total_elevation_m": 5.0
   },
   "7129434197": {
     "name": "傍晚骑行",
     "date": "Aug 21, 2021, 11:05:14 AM",
     "type": "Ride",
-    "distance_km": 0.0082,
+    "distance_km": 9.1318,
     "elapsed_sec": 1119.0,
-    "moving_sec": 9131.8,
-    "elevation_gain_m": -6.2
+    "moving_sec": 1119.0,
+    "total_elevation_m": 46.0
   },
   "7129434168": {
     "name": "傍晚骑行",
     "date": "Aug 19, 2021, 12:28:12 PM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 1651.0,
-    "moving_sec": 12478.4,
-    "elevation_gain_m": -6.0
+    "distance_km": 12.4784,
+    "elapsed_sec": 2698.0,
+    "moving_sec": 1651.0,
+    "total_elevation_m": 33.0
   },
   "7129434193": {
     "name": "傍晚骑行",
     "date": "Aug 19, 2021, 12:05:38 PM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 1000.0,
-    "moving_sec": 6850.2,
-    "elevation_gain_m": -4.4
+    "distance_km": 6.8502,
+    "elapsed_sec": 1071.0,
+    "moving_sec": 1000.0,
+    "total_elevation_m": 5.0
   },
   "7129434170": {
     "name": "傍晚骑行",
     "date": "Aug 19, 2021, 11:35:12 AM",
     "type": "Ride",
-    "distance_km": 0.0083,
+    "distance_km": 9.0382,
     "elapsed_sec": 1091.0,
-    "moving_sec": 9038.2,
-    "elevation_gain_m": -18.2
+    "moving_sec": 1091.0,
+    "total_elevation_m": 42.0
   },
   "7129434176": {
     "name": "傍晚骑行",
     "date": "Aug 17, 2021, 12:25:51 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
+    "distance_km": 11.9349,
     "elapsed_sec": 1836.0,
-    "moving_sec": 11934.9,
-    "elevation_gain_m": -2.2
+    "moving_sec": 1836.0,
+    "total_elevation_m": 39.0
   },
   "7129434178": {
     "name": "傍晚骑行",
     "date": "Aug 17, 2021, 11:49:43 AM",
     "type": "Ride",
-    "distance_km": 0.0063,
-    "elapsed_sec": 934.0,
-    "moving_sec": 5858.5,
-    "elevation_gain_m": 4.4
+    "distance_km": 5.8585,
+    "elapsed_sec": 949.0,
+    "moving_sec": 934.0,
+    "total_elevation_m": 32.0
   },
   "7129434226": {
     "name": "傍晚骑行",
     "date": "Aug 17, 2021, 11:41:16 AM",
     "type": "Ride",
-    "distance_km": 0.0058,
+    "distance_km": 1.226,
     "elapsed_sec": 212.0,
-    "moving_sec": 1226.0,
-    "elevation_gain_m": 5.8
+    "moving_sec": 212.0,
+    "total_elevation_m": 9.0
   },
   "7129434180": {
     "name": "傍晚骑行",
     "date": "Aug 6, 2021, 12:47:12 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 2483.0,
-    "moving_sec": 16598.1,
-    "elevation_gain_m": 2.8
+    "distance_km": 16.5981,
+    "elapsed_sec": 2820.0,
+    "moving_sec": 2483.0,
+    "total_elevation_m": 42.0
   },
   "7129434185": {
     "name": "傍晚骑行",
     "date": "Aug 6, 2021, 11:30:18 AM",
     "type": "Ride",
-    "distance_km": 0.0074,
-    "elapsed_sec": 2289.0,
-    "moving_sec": 16873.0,
-    "elevation_gain_m": 0.8
+    "distance_km": 16.873,
+    "elapsed_sec": 3035.0,
+    "moving_sec": 2289.0,
+    "total_elevation_m": 57.0
   },
   "7129434162": {
     "name": "傍晚骑行",
     "date": "Aug 4, 2021, 12:33:25 PM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 1755.0,
-    "moving_sec": 12485.9,
-    "elevation_gain_m": 5.8
+    "distance_km": 12.4859,
+    "elapsed_sec": 1778.0,
+    "moving_sec": 1755.0,
+    "total_elevation_m": 33.0
   },
   "7129434092": {
     "name": "傍晚骑行",
     "date": "Aug 4, 2021, 11:39:50 AM",
     "type": "Ride",
-    "distance_km": 0.0078,
-    "elapsed_sec": 1061.0,
-    "moving_sec": 8261.0,
-    "elevation_gain_m": -97.0
+    "distance_km": 8.261,
+    "elapsed_sec": 1595.0,
+    "moving_sec": 1061.0,
+    "total_elevation_m": 40.0
   },
   "7129434098": {
     "name": "傍晚骑行",
     "date": "Aug 2, 2021, 11:42:05 AM",
     "type": "Ride",
-    "distance_km": 0.0071,
-    "elapsed_sec": 1274.0,
-    "moving_sec": 9041.3,
-    "elevation_gain_m": -8.8
+    "distance_km": 9.0413,
+    "elapsed_sec": 1441.0,
+    "moving_sec": 1274.0,
+    "total_elevation_m": 40.0
   },
   "7129434281": {
     "name": "晨间骑行",
     "date": "Jul 31, 2021, 11:36:57 PM",
     "type": "Ride",
-    "distance_km": 0.0097,
-    "elapsed_sec": 5900.0,
-    "moving_sec": 57277.4,
-    "elevation_gain_m": -31.4
+    "distance_km": 57.2774,
+    "elapsed_sec": 8126.0,
+    "moving_sec": 5900.0,
+    "total_elevation_m": 26.0
   },
   "7129438562": {
     "name": "晨间骑行",
     "date": "Jul 31, 2021, 12:24:41 AM",
     "type": "Ride",
-    "distance_km": 0.01,
+    "distance_km": 5.5924,
     "elapsed_sec": 560.0,
-    "moving_sec": 5592.4,
-    "elevation_gain_m": 41.2
+    "moving_sec": 560.0,
+    "total_elevation_m": 0.0
   },
   "7129438594": {
     "name": "晨间骑行",
     "date": "Jul 31, 2021, 12:00:45 AM",
     "type": "Ride",
-    "distance_km": 0.0044,
-    "elapsed_sec": 1270.0,
-    "moving_sec": 5606.7,
-    "elevation_gain_m": -31.8
+    "distance_km": 5.6067,
+    "elapsed_sec": 1318.0,
+    "moving_sec": 1270.0,
+    "total_elevation_m": 276.0
   },
   "7129438561": {
     "name": "晨间骑行",
     "date": "Jul 30, 2021, 11:48:18 PM",
     "type": "Ride",
-    "distance_km": 0.0098,
+    "distance_km": 5.5875,
     "elapsed_sec": 571.0,
-    "moving_sec": 5587.5,
-    "elevation_gain_m": 26.6
+    "moving_sec": 571.0,
+    "total_elevation_m": 0.0
   },
   "7129438582": {
     "name": "晨间骑行",
     "date": "Jul 30, 2021, 11:16:27 PM",
     "type": "Ride",
-    "distance_km": 0.0045,
+    "distance_km": 5.5757,
     "elapsed_sec": 1252.0,
-    "moving_sec": 5575.7,
-    "elevation_gain_m": -17.6
+    "moving_sec": 1252.0,
+    "total_elevation_m": 276.0
   },
   "7129438564": {
     "name": "晨间骑行",
     "date": "Jul 30, 2021, 11:04:20 PM",
     "type": "Ride",
-    "distance_km": 0.0103,
+    "distance_km": 5.6664,
     "elapsed_sec": 552.0,
-    "moving_sec": 5666.4,
-    "elevation_gain_m": 19.6
+    "moving_sec": 552.0,
+    "total_elevation_m": 0.0
   },
   "7129438592": {
     "name": "晨间骑行",
     "date": "Jul 30, 2021, 10:42:13 PM",
     "type": "Ride",
-    "distance_km": 0.005,
+    "distance_km": 5.4482,
     "elapsed_sec": 1090.0,
-    "moving_sec": 5448.2,
-    "elevation_gain_m": 26.0
+    "moving_sec": 1090.0,
+    "total_elevation_m": 274.0
   },
   "7129438580": {
     "name": "晨间骑行",
     "date": "Jul 30, 2021, 10:24:56 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 778.0,
-    "moving_sec": 5211.3,
-    "elevation_gain_m": 106.4
+    "distance_km": 5.2113,
+    "elapsed_sec": 868.0,
+    "moving_sec": 778.0,
+    "total_elevation_m": 20.0
   },
   "7129438682": {
     "name": "傍晚骑行",
     "date": "Jul 29, 2021, 11:41:06 AM",
     "type": "Ride",
-    "distance_km": 0.0101,
-    "elapsed_sec": 4468.0,
-    "moving_sec": 45259.4,
-    "elevation_gain_m": -1.8
+    "distance_km": 45.2594,
+    "elapsed_sec": 5269.0,
+    "moving_sec": 4468.0,
+    "total_elevation_m": 169.0
   },
   "7129438610": {
     "name": "傍晚骑行",
     "date": "Jul 21, 2021, 12:03:00 PM",
     "type": "Ride",
-    "distance_km": 0.0113,
+    "distance_km": 39.2574,
     "elapsed_sec": 3488.0,
-    "moving_sec": 39257.4,
-    "elevation_gain_m": 2.2
+    "moving_sec": 3488.0,
+    "total_elevation_m": 48.0
   },
   "7129438642": {
     "name": "傍晚骑行",
     "date": "Jul 20, 2021, 11:47:31 AM",
     "type": "Ride",
-    "distance_km": 0.0118,
-    "elapsed_sec": 4836.0,
-    "moving_sec": 57071.8,
-    "elevation_gain_m": -11.6
+    "distance_km": 57.0718,
+    "elapsed_sec": 5264.0,
+    "moving_sec": 4836.0,
+    "total_elevation_m": 15.0
   },
   "7129438612": {
     "name": "傍晚骑行",
     "date": "Jul 18, 2021, 12:03:00 PM",
     "type": "Ride",
-    "distance_km": 0.0065,
-    "elapsed_sec": 4623.0,
-    "moving_sec": 30195.0,
-    "elevation_gain_m": -37.0
+    "distance_km": 30.195,
+    "elapsed_sec": 5615.0,
+    "moving_sec": 4623.0,
+    "total_elevation_m": 0.0
   },
   "7129438533": {
     "name": "傍晚骑行",
     "date": "Jul 17, 2021, 12:04:16 PM",
     "type": "Ride",
-    "distance_km": 0.0108,
-    "elapsed_sec": 5223.0,
-    "moving_sec": 56450.5,
-    "elevation_gain_m": -39.0
+    "distance_km": 56.4505,
+    "elapsed_sec": 5970.0,
+    "moving_sec": 5223.0,
+    "total_elevation_m": 296.0
   },
   "7129438579": {
     "name": "傍晚骑行",
     "date": "Jul 15, 2021, 12:04:03 PM",
     "type": "Ride",
-    "distance_km": 0.0111,
+    "distance_km": 31.4317,
     "elapsed_sec": 2822.0,
-    "moving_sec": 31431.7,
-    "elevation_gain_m": -2.6
+    "moving_sec": 2822.0,
+    "total_elevation_m": 117.0
   },
   "7129438541": {
     "name": "傍晚骑行",
     "date": "Jul 13, 2021, 11:29:55 AM",
     "type": "Ride",
-    "distance_km": 0.0104,
-    "elapsed_sec": 1954.0,
-    "moving_sec": 20233.6,
-    "elevation_gain_m": 7.0
+    "distance_km": 20.2336,
+    "elapsed_sec": 2404.0,
+    "moving_sec": 1954.0,
+    "total_elevation_m": 78.0
   },
   "7129438530": {
     "name": "傍晚骑行",
     "date": "Jul 11, 2021, 11:53:55 AM",
     "type": "Ride",
-    "distance_km": 0.0073,
+    "distance_km": 7.9591,
     "elapsed_sec": 1085.0,
-    "moving_sec": 7959.1,
-    "elevation_gain_m": -27.8
+    "moving_sec": 1085.0,
+    "total_elevation_m": 33.0
   },
   "7129438452": {
     "name": "午间骑行",
     "date": "Jul 10, 2021, 3:05:42 AM",
     "type": "Ride",
-    "distance_km": 0.0068,
-    "elapsed_sec": 972.0,
-    "moving_sec": 6603.5,
-    "elevation_gain_m": -22.2
+    "distance_km": 6.6035,
+    "elapsed_sec": 1047.0,
+    "moving_sec": 972.0,
+    "total_elevation_m": 11.0
   },
   "7129438418": {
     "name": "晨间骑行",
     "date": "Jul 10, 2021, 2:46:49 AM",
     "type": "Ride",
-    "distance_km": 0.0104,
-    "elapsed_sec": 522.0,
-    "moving_sec": 5454.8,
-    "elevation_gain_m": 33.6
+    "distance_km": 5.4548,
+    "elapsed_sec": 746.0,
+    "moving_sec": 522.0,
+    "total_elevation_m": 0.0
   },
   "7129438454": {
     "name": "晨间骑行",
     "date": "Jul 10, 2021, 2:22:45 AM",
     "type": "Ride",
-    "distance_km": 0.0045,
+    "distance_km": 5.4167,
     "elapsed_sec": 1199.0,
-    "moving_sec": 5416.7,
-    "elevation_gain_m": -6.6
+    "moving_sec": 1199.0,
+    "total_elevation_m": 272.0
   },
   "7129438453": {
     "name": "晨间骑行",
     "date": "Jul 10, 2021, 1:45:47 AM",
     "type": "Ride",
-    "distance_km": 0.0044,
+    "distance_km": 5.5397,
     "elapsed_sec": 1266.0,
-    "moving_sec": 5539.7,
-    "elevation_gain_m": 2.8
+    "moving_sec": 1266.0,
+    "total_elevation_m": 279.0
   },
   "7129438447": {
     "name": "晨间骑行",
     "date": "Jul 10, 2021, 1:25:50 AM",
     "type": "Ride",
-    "distance_km": 0.0076,
-    "elapsed_sec": 791.0,
-    "moving_sec": 5977.4,
-    "elevation_gain_m": -75.0
+    "distance_km": 5.9774,
+    "elapsed_sec": 896.0,
+    "moving_sec": 791.0,
+    "total_elevation_m": 21.0
   },
   "7129438506": {
     "name": "傍晚骑行",
     "date": "Jul 6, 2021, 11:36:05 AM",
     "type": "Ride",
-    "distance_km": 0.0115,
+    "distance_km": 31.593,
     "elapsed_sec": 2755.0,
-    "moving_sec": 31593.0,
-    "elevation_gain_m": -4.8
+    "moving_sec": 2755.0,
+    "total_elevation_m": 117.0
   },
   "5552965694": {
     "name": "Evening Ride",
     "date": "Jun 30, 2021, 12:48:18 PM",
     "type": "Ride",
-    "distance_km": 0.0034,
-    "elapsed_sec": 2820.0,
-    "moving_sec": 9718.2,
-    "elevation_gain_m": 4.0
+    "distance_km": 9.7182,
+    "elapsed_sec": 2861.0,
+    "moving_sec": 2820.0,
+    "total_elevation_m": 14.9
   },
   "5552539117": {
     "name": "Evening Ride",
     "date": "Jun 30, 2021, 11:38:59 AM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 1369.0,
-    "moving_sec": 9204.8,
-    "elevation_gain_m": 3.0
+    "distance_km": 9.2048,
+    "elapsed_sec": 1370.0,
+    "moving_sec": 1369.0,
+    "total_elevation_m": 11.5
   },
   "5542572723": {
     "name": "Evening Ride",
     "date": "Jun 28, 2021, 12:37:28 PM",
     "type": "Ride",
-    "distance_km": 0.0067,
-    "elapsed_sec": 1356.0,
-    "moving_sec": 9145.2,
-    "elevation_gain_m": 3.6
+    "distance_km": 9.1452,
+    "elapsed_sec": 1357.0,
+    "moving_sec": 1356.0,
+    "total_elevation_m": 11.4
   },
   "5542448758": {
     "name": "Evening Ride",
     "date": "Jun 28, 2021, 12:15:00 PM",
     "type": "Ride",
-    "distance_km": 0.0058,
-    "elapsed_sec": 853.0,
-    "moving_sec": 4927.4,
-    "elevation_gain_m": 3.0
+    "distance_km": 4.9274,
+    "elapsed_sec": 864.0,
+    "moving_sec": 853.0,
+    "total_elevation_m": 8.5
   }
 };
 

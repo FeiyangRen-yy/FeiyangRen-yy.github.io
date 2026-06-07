@@ -285,30 +285,36 @@ def main():
                             sport_region_seen[sport][region].add(item)
                             sport_region_mapping[sport][region].append(item)
 
-            def number_at(position):
+            def number_for(*names):
                 try:
-                    value = row[position].strip()
-                    return float(value) if value else None
+                    for name in names:
+                        position = idx.get(name)
+                        if position is None or position >= len(row):
+                            continue
+                        value = row[position].strip()
+                        if value:
+                            return float(value)
                 except Exception:
-                    return None
+                    pass
+                return None
 
             meta = {
                 "name": row[idx["Activity Name"]].strip(),
                 "date": row[idx["Activity Date"]].strip(),
                 "type": activity_type,
             }
-            distance_m = number_at(19)
-            elapsed = number_at(16)
-            moving = number_at(17)
-            elevation = number_at(22)
+            distance_m = number_for("Distance")
+            elapsed = number_for("Elapsed Time")
+            moving = number_for("Moving Time")
+            total_elevation = number_for("Total Elevation", "Elevation Gain")
             if distance_m is not None:
                 meta["distance_km"] = round(distance_m / 1000, 4)
             if elapsed is not None:
                 meta["elapsed_sec"] = elapsed
             if moving is not None:
                 meta["moving_sec"] = moving
-            if elevation is not None:
-                meta["elevation_gain_m"] = elevation
+            if total_elevation is not None:
+                meta["total_elevation_m"] = total_elevation
             activity_metadata[aid] = meta
 
     for item in media_files:
@@ -333,6 +339,7 @@ def main():
     content += js_const("GPX_ACTIVITY_KIND", gpx_activity_kind) + "\n"
     content += js_const("SPORT_GPX_ROUTES", sport_gpx_routes) + "\n"
     content += js_const("SPORT_GPX_ROUTE_IDS", sport_gpx_route_ids) + "\n"
+    content += "const ACTIVITY_METADATA_VERSION = 2;\n\n"
     content += js_const("ACTIVITY_METADATA", activity_metadata) + "\n"
     content += """// Backwards-compatible alias for existing UI code.
 const ACTIVITY_SUMMARIES = ACTIVITY_METADATA;

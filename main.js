@@ -43,10 +43,10 @@ function switchTab(tabId) {
     if (activeSvg) activeSvg.className = 'text-white/70 group-hover:text-white';
 
     if (tabId === 'cycling') {
-        setTimeout(() => {
+        requestAnimationFrame(() => requestAnimationFrame(() => {
             initAllActivityMaps();
             resizeVisibleMaps();
-        }, 150);
+        }));
     }
 }
 
@@ -258,6 +258,7 @@ function renderRoutes(ctx) {
             color: '#ffffff',
             weight: weight + 4,
             opacity: 0.55,
+            interactive: false,
             smoothFactor: 1.3,
             lineCap: 'round',
             lineJoin: 'round',
@@ -268,6 +269,7 @@ function renderRoutes(ctx) {
             color,
             weight,
             opacity,
+            bubblingMouseEvents: false,
             smoothFactor: 1.3,
             lineCap: 'round',
             lineJoin: 'round',
@@ -286,6 +288,10 @@ function renderRoutes(ctx) {
                 this.setStyle(this.originalStyle);
                 this.casingLayer?.setStyle(this.originalCasingStyle);
             }
+        });
+        polyline.on('click', event => {
+            if (event.originalEvent) L.DomEvent.stopPropagation(event.originalEvent);
+            showMediaForClickedSegment(ctx, event.latlng);
         });
         ctx.routeLayers.push(polyline);
         allPoints.push(...route);
@@ -419,6 +425,24 @@ function getCurrentRegion(bounds) {
     return null;
 }
 
+function routeIntersectsBounds(ctx, layer, bounds) {
+    if (!layer.getBounds().intersects(bounds)) return false;
+
+    const points = layer.getLatLngs();
+    if (points.some(point => bounds.contains(point))) return true;
+
+    const pixelBounds = L.bounds(
+        ctx.map.latLngToLayerPoint(bounds.getNorthWest()),
+        ctx.map.latLngToLayerPoint(bounds.getSouthEast())
+    );
+    for (let index = 1; index < points.length; index += 1) {
+        const start = ctx.map.latLngToLayerPoint(points[index - 1]);
+        const end = ctx.map.latLngToLayerPoint(points[index]);
+        if (L.LineUtil.clipSegment(start, end, pixelBounds, index > 1)) return true;
+    }
+    return false;
+}
+
 function updateMediaForCurrentView(ctx) {
     if (!ctx.map || Date.now() < ctx.skipMediaUpdateUntil) return;
     const bounds = ctx.map.getBounds();
@@ -427,7 +451,7 @@ function updateMediaForCurrentView(ctx) {
     const isOverallView = !region || zoom < 9;
     const routesInView = [];
     ctx.routeLayers.forEach(layer => {
-        if (layer.activityId && layer.getLatLngs().some(point => bounds.contains(point))) {
+        if (layer.activityId && routeIntersectsBounds(ctx, layer, bounds)) {
             routesInView.push(layer.activityId);
         }
     });
@@ -475,12 +499,90 @@ function getGpxToActivityMap() {
     return map;
 }
 
-function showMediaForCurrentView(ctx, activityIds, mediaFiles, bounds, zoom, currentRegion, isOverallView) {
+function distanceToRouteInPixels(ctx, layer, latlng) {
+    const clickPoint = ctx.map.latLngToLayerPoint(latlng);
+    const points = layer.getLatLngs();
+    let minimum = Infinity;
+    for (let index = 1; index < points.length; index += 1) {
+        const start = ctx.map.latLngToLayerPoint(points[index - 1]);
+        const end = ctx.map.latLngToLayerPoint(points[index]);
+        minimum = Math.min(minimum, L.LineUtil.pointToSegmentDistance(clickPoint, start, end));
+    }
+    return minimum;
+}
+
+function setHighlightedRoute(ctx, layer, activityId) {
+    if (ctx.highlightedRoute && ctx.highlightedRoute !== layer) {
+        ctx.highlightedRoute.setStyle(ctx.highlightedRoute.originalStyle);
+        ctx.highlightedRoute.casingLayer?.setStyle(ctx.highlightedRoute.originalCasingStyle);
+        ctx.highlightedRoute.casingLayer?.bringToBack();
+        ctx.highlightedRoute.bringToBack();
+    }
+    layer.setStyle({ color: '#FF6B35', weight: 6, opacity: 0.95 });
+    layer.casingLayer?.setStyle({ color: '#FFE2D2', weight: 11, opacity: 0.9 });
+    layer.casingLayer?.bringToFront();
+    layer.bringToFront();
+    ctx.highlightedRoute = layer;
+    updateActivitySummary(ctx, activityId, layer);
+}
+
+function showMediaForClickedSegment(ctx, latlng) {
+    const gpxToActivity = getGpxToActivityMap();
+    const tolerance = Math.max(10, 16 - ctx.map.getZoom() * 0.35);
+    const clickPoint = ctx.map.latLngToLayerPoint(latlng);
+    const clickBounds = L.latLngBounds(
+        ctx.map.layerPointToLatLng(clickPoint.subtract([tolerance, tolerance])),
+        ctx.map.layerPointToLatLng(clickPoint.add([tolerance, tolerance]))
+    );
+    const candidates = ctx.routeLayers
+        .filter(layer => layer.getBounds().intersects(clickBounds))
+        .map(layer => {
+            const activityId = gpxToActivity[String(layer.activityId)] || String(layer.activityId);
+            const files = MEDIA_MAPPING?.[activityId] || [];
+            return {
+                layer,
+                activityId,
+                files,
+                distance: distanceToRouteInPixels(ctx, layer, latlng)
+            };
+        })
+        .filter(candidate => candidate.distance <= tolerance)
+        .sort((a, b) => {
+            if (Boolean(a.files.length) !== Boolean(b.files.length)) return b.files.length - a.files.length;
+            return a.distance - b.distance;
+        });
+
+    const selected = candidates[0];
+    if (!selected) return;
+
+    setHighlightedRoute(ctx, selected.layer, selected.activityId);
+    ctx.skipMediaUpdateUntil = Date.now() + 2000;
+    const media = selected.files.map(file => ({
+        file,
+        source: 'activity',
+        activityId: selected.activityId
+    }));
+    ctx.lastShownViewKey = null;
+    showMediaForCurrentView(
+        ctx,
+        [selected.layer.activityId],
+        media,
+        ctx.map.getBounds(),
+        ctx.map.getZoom(),
+        getCurrentRegion(ctx.map.getBounds()),
+        false,
+        { key: `segment-${selected.activityId}`, summary: media.length
+            ? `${media.length} media from an activity on this segment (click media to explore)`
+            : null }
+    );
+}
+
+function showMediaForCurrentView(ctx, activityIds, mediaFiles, bounds, zoom, currentRegion, isOverallView, options = {}) {
     const section = document.getElementById(ctx.config.mediaSectionId);
     const container = document.getElementById(ctx.config.mediaContainerId);
     if (!section || !container) return;
 
-    const viewKey = `${ctx.sport}-${bounds.toBBoxString()}-${zoom}-${currentRegion || 'all'}`;
+    const viewKey = options.key || `${ctx.sport}-${bounds.toBBoxString()}-${zoom}-${currentRegion || 'all'}`;
     if (ctx.lastShownViewKey === viewKey) return;
     ctx.lastShownViewKey = viewKey;
 
@@ -492,9 +594,9 @@ function showMediaForCurrentView(ctx, activityIds, mediaFiles, bounds, zoom, cur
         return;
     }
 
-    const summary = isOverallView
+    const summary = options.summary || (isOverallView
         ? `${mediaFiles.length} ${ctx.config.label.toLowerCase()} media (all regions — click media to explore)`
-        : `${mediaFiles.length} ${ctx.config.label.toLowerCase()} media for ${mediaFiles.some(item => item.source === 'activity') ? 'visible routes' : (currentRegion || 'this area')} (click media to explore)`;
+        : `${mediaFiles.length} ${ctx.config.label.toLowerCase()} media for ${mediaFiles.some(item => item.source === 'activity') ? 'visible routes' : (currentRegion || 'this area')} (click media to explore)`);
     const carouselId = `${ctx.sport}-media-carousel-${Date.now()}`;
     const items = mediaFiles.map((item, index) => {
         let activityId = item.activityId;
@@ -542,18 +644,7 @@ function highlightRouteForActivity(activityId, sport) {
     const target = ctx.routeLayers.find(layer => String(layer.activityId) === String(gpxId));
     if (!target) return;
 
-    if (ctx.highlightedRoute && ctx.highlightedRoute !== target) {
-        ctx.highlightedRoute.setStyle(ctx.highlightedRoute.originalStyle);
-        ctx.highlightedRoute.casingLayer?.setStyle(ctx.highlightedRoute.originalCasingStyle);
-        ctx.highlightedRoute.casingLayer?.bringToBack();
-        ctx.highlightedRoute.bringToBack();
-    }
-    target.setStyle({ color: '#FF6B35', weight: 6, opacity: 0.95 });
-    target.casingLayer?.setStyle({ color: '#FFE2D2', weight: 11, opacity: 0.9 });
-    target.casingLayer?.bringToFront();
-    target.bringToFront();
-    ctx.highlightedRoute = target;
-    updateActivitySummary(ctx, activityId);
+    setHighlightedRoute(ctx, target, activityId);
     ctx.skipMediaUpdateUntil = Date.now() + 1500;
     ctx.map.fitBounds(L.latLngBounds(target.getLatLngs()), { padding: [50, 50], maxZoom: 16, duration: 1.0 });
 }
@@ -570,7 +661,16 @@ function clearRouteHighlightAndSummary(ctx) {
     if (section) section.classList.add('hidden');
 }
 
-function updateActivitySummary(ctx, activityId) {
+function calculateRouteDistanceKm(layer) {
+    const points = layer?.getLatLngs() || [];
+    let distanceMeters = 0;
+    for (let index = 1; index < points.length; index += 1) {
+        distanceMeters += points[index - 1].distanceTo(points[index]);
+    }
+    return distanceMeters / 1000;
+}
+
+function updateActivitySummary(ctx, activityId, routeLayer) {
     const section = document.getElementById(ctx.config.summarySectionId);
     const content = document.getElementById(ctx.config.summaryContentId);
     const summary = ACTIVITY_METADATA?.[activityId];
@@ -579,10 +679,21 @@ function updateActivitySummary(ctx, activityId) {
     if (summary.name) rows.push(['Name', summary.name]);
     if (summary.date) rows.push(['Date', summary.date]);
     if (summary.type) rows.push(['Type', summary.type]);
-    if (summary.distance_km != null) rows.push(['Distance', `${Number(summary.distance_km).toFixed(2)} km`]);
-    if (summary.elapsed_sec != null) rows.push(['Elapsed time', formatSeconds(summary.elapsed_sec)]);
-    if (summary.moving_sec != null) rows.push(['Moving time', formatSeconds(summary.moving_sec)]);
-    if (summary.elevation_gain_m != null) rows.push(['Elevation gain', `${Number(summary.elevation_gain_m).toFixed(0)} m`]);
+    const hasVerifiedMetadata = typeof ACTIVITY_METADATA_VERSION !== 'undefined'
+        && ACTIVITY_METADATA_VERSION >= 2;
+    const routeDistanceKm = calculateRouteDistanceKm(routeLayer);
+    const distanceKm = hasVerifiedMetadata && summary.distance_km != null
+        ? Number(summary.distance_km)
+        : routeDistanceKm;
+    if (distanceKm > 0) {
+        rows.push(['Distance', `${distanceKm.toFixed(2)} km`]);
+    }
+    if (hasVerifiedMetadata && summary.moving_sec != null) {
+        rows.push(['Moving time', formatSeconds(summary.moving_sec)]);
+    }
+    if (hasVerifiedMetadata && summary.total_elevation_m != null) {
+        rows.push(['Total elevation', `${Number(summary.total_elevation_m).toFixed(0)} m`]);
+    }
     content.innerHTML = rows.map(([label, value]) => `<div><span class="text-white/60">${label}:</span> <span class="text-white/90">${escapeHtml(value)}</span></div>`).join('');
     section.classList.remove('hidden');
 }
@@ -678,7 +789,10 @@ function waitForDataAndInit() {
         setTimeout(waitForDataAndInit, 100);
         return;
     }
-    initAllActivityMaps();
+    const activitySection = document.getElementById('cycling-section');
+    if (activitySection && !activitySection.classList.contains('hidden-content')) {
+        initAllActivityMaps();
+    }
 }
 
 if (document.readyState === 'loading') {
