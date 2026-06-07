@@ -1,1 +1,4 @@
-export_87958775 (1)/
+scripts/__pycache__/
+export_87958775/*
+!export_87958775/media/
+!export_87958775/media/**

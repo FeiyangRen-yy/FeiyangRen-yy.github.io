@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 import csv
+import filecmp
 import gzip
 import json
 import re
+import shutil
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -210,9 +212,24 @@ def js_const(name, value):
     return f"const {name} = " + json.dumps(value, indent=2, ensure_ascii=False) + ";\n"
 
 
+def sync_media_files(source_dir, target_dir):
+    target_dir.mkdir(parents=True, exist_ok=True)
+    source_names = {path.name for path in source_dir.iterdir() if path.is_file()}
+    for path in target_dir.iterdir():
+        if path.is_file() and path.name not in source_names:
+            path.unlink()
+    for source in source_dir.iterdir():
+        if not source.is_file():
+            continue
+        target = target_dir / source.name
+        if not target.exists() or not filecmp.cmp(source, target, shallow=False):
+            shutil.copy2(source, target)
+
+
 def main():
-    export_dir = Path(sys.argv[1] if len(sys.argv) > 1 else "export_87958775 (1)")
+    export_dir = Path(sys.argv[1] if len(sys.argv) > 1 else "export_87958775")
     output = Path(sys.argv[2] if len(sys.argv) > 2 else "media-mapping.js")
+    deployed_media_dir = Path(sys.argv[3] if len(sys.argv) > 3 else "export_87958775/media")
     media_dir = export_dir / "media"
     activities_csv = export_dir / "activities.csv"
 
@@ -324,7 +341,7 @@ def main():
                 sport_region_mapping[sport]["US"].append(item)
 
     content = """// Media mapping - generated from Strava export.
-// Run: python3 scripts/generate-media-library.py "export_87958775 (1)"
+// Run: python3 scripts/generate-media-library.py export_87958775
 //
 // MEDIA_MAPPING = activity ID -> files.
 // SPORT_REGION_MEDIA_MAPPING = sport -> region -> media.
@@ -357,8 +374,10 @@ function getMediaUrl(filename) {
 """
     content += js_const("ALL_MEDIA_FILES", media_files)
     output.write_text(content, encoding="utf-8")
+    sync_media_files(media_dir, deployed_media_dir)
 
     print(f"wrote {output}")
+    print(f"synced media to {deployed_media_dir}")
     print(f"media files: {len(media_files)}")
     print(f"mapped activities: {len(media_mapping)}")
     print(f"ignored missing referenced media: {len(ignored_missing)}")
